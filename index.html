@@ -3,377 +3,265 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-  <meta name="theme-color" content="#be383e">
-  <meta name="description" content="Zane's Karate Journey — a web recreation of Zane's original karate portfolio.">
+  <meta name="theme-color" content="#f4f2ef">
+  <meta name="description" content="Zane Gabriel O. Gallana's karate journey, achievements and competition record.">
   <title>Zane's Karate Journey</title>
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <header class="site-nav">
-    <a class="site-brand" href="#home" aria-label="Zane's Karate Journey home">
-      <span class="brand-mark">Z</span>
-      <span>ZANE'S KARATE JOURNEY</span>
+  <header class="site-header">
+    <a class="brand" href="#home" aria-label="Zane's Karate Journey">
+      <span class="brand-disc">空</span>
+      <span class="brand-copy">
+        <strong>ZANE</strong>
+        <small>KARATE JOURNEY</small>
+      </span>
     </a>
-    <nav aria-label="Primary navigation">
+
+    <button class="menu-toggle" type="button" aria-label="Open navigation" aria-expanded="false">
+      <span></span><span></span>
+    </button>
+
+    <nav class="main-nav" aria-label="Primary navigation">
       <a href="#home">Home</a>
+      <a href="#about">About</a>
       <a href="#journey">Journey</a>
       <a href="#achievements">Achievements</a>
-      <a href="#journey-continued">2025–2026</a>
       <a href="#gallery">Gallery</a>
-      <a href="#support">Support</a>
+      <a class="nav-cta" href="#support">Support Zane</a>
     </nav>
   </header>
 
-  <main class="portfolio" aria-label="Zane's Karate Journey">
-    <section class="pdf-page page-1" id="home" aria-labelledby="hero-title">
-      <div class="cloud cloud-tl" aria-hidden="true"></div>
-      <div class="hero-photo-card">
-        <img src="assets/p1-img2.webp" alt="Zane in karate uniform wearing a medal and holding his Go! I'm-a Zane! sign">
+  <main>
+    <section class="hero" id="home">
+      <div class="hero-decor decor-left" aria-hidden="true"></div>
+      <div class="hero-content">
+        <div class="hero-heading">
+          <p class="eyebrow">A YOUNG KARATEKA WITH BIG DREAMS</p>
+          <h1>BUILDING<br><em>A WARRIOR</em><br>ONE STEP AT A TIME.</h1>
+        </div>
+
+        <div class="hero-intro">
+          <p>Hi, I'm Zane. I started karate at age five and dream of one day representing the Philippines on the national team.</p>
+          <a class="text-link" href="#journey">Explore my journey <span>↘</span></a>
+        </div>
+
+        <div class="hero-visual">
+          <div class="vertical-tag">KARATEKA</div>
+          <div class="hero-photo">
+            <img src="assets/p1-img2.webp" alt="Zane in karate uniform wearing a medal and holding his Go! I'm-a Zane! sign">
+          </div>
+          <div class="brush-kanji" aria-hidden="true">道</div>
+        </div>
       </div>
-      <div class="hero-copy">
-        <p class="hero-kicker">HELLO</p>
-        <h1 id="hero-title">MY NAME IS <strong>ZANE,</strong></h1>
-        <p class="hero-description">I am an aspiring karateka, with dreams of joining the<br>Philippine Karate National Team<br>and represent our country one day.</p>
-        <a class="hero-button" href="#journey">LEARN MORE ABOUT ME</a>
+
+      <div class="stat-strip" aria-label="Zane's karate highlights">
+        <div><strong>AGE 5</strong><span>Started Karate</span></div>
+        <div><strong>PURPLE</strong><span>Current Belt</span></div>
+        <div><strong>39</strong><span>Total Medals</span></div>
+        <div><strong>20</strong><span>Gold Medals</span></div>
       </div>
     </section>
 
-    <section class="pdf-page page-2" id="journey" aria-label="Karate journey 2023">
-      <p class="story">
-        As a kid, I was totally obsessed with Power Rangers and Ninja Kids! I couldn't help but mimic their epic moves and pretend to be a superhero. One day, my "yoya" (lola) caught
-        me in action and asked, "How about giving karate a shot?" On the morning of <strong>July 22, 2023</strong>, I eagerly joined a karate class , and I jumped into karate class like a ninja on a
-        mission—and I've been loving every kick and punch ever since!
-      </p>
-
-      <div class="timeline-columns">
-        <div class="timeline-col">
-          <article class="event event-title">
-            <h2>STARTED KARATE - WHITE BELT<br>(AGE: 5)</h2>
-          </article>
-
-          <article class="event">
-            <h2>NEWBIE 4-5 YEARS OLD</h2>
-            <h3>PASKA CHAMPIONSHIP</h3>
-            <p>8/27/23 - Robinson Metro East</p>
-            <div class="awards one">
-              <span>KUMITE<i class="medal bronze" aria-label="Bronze medal"></i></span>
-            </div>
-          </article>
-
-          <article class="event">
-            <h2>PROMOTED TO BLUE BELT</h2>
-            <p>September 17, 2023</p>
-          </article>
-
-          <article class="event">
-            <h3>1ST CAVITE KARATE DOJO-SKIP<br>KARATE-DO CHAMPIONSHIP</h3>
-            <p>10/7/23 - Robinsons Mall, Novaliches</p>
-            <div class="awards">
-              <span>KATA<i class="medal silver"></i></span>
-              <span>KUMITE<i class="medal silver"></i></span>
-            </div>
-          </article>
-        </div>
-
-        <div class="timeline-col right">
-          <article class="event">
-            <h3>1ST SHIDOKAI KARATEDO-KYOKAI<br>OPEN KARATE CHAMPIONSHIP</h3>
-            <p>10/29/23 - Waltermart, Taytay</p>
-            <div class="awards triple">
-              <span>KATA<i class="medal gold"></i></span>
-              <span>KUMITE<i class="medal gold"></i></span>
-              <span>OPEN CLASS -KUMITE<i class="medal gold"></i></span>
-            </div>
-          </article>
-
-          <article class="event">
-            <h2>NEWBIE 5-6 YEARS OLD</h2>
-            <h3>SHIHAN ERNIE MEMORIAL CUP - BDKA<br>OPEN KARATE TOURNAMENT</h3>
-            <p>11/18/23 - Tiendesitas Ortigas</p>
-            <div class="awards one"><span>KATA<i class="medal gold"></i></span></div>
-          </article>
-
-          <article class="event">
-            <h3>19TH PKTS KARATEDO CHAMPIONSHIP</h3>
-            <p>11/26/23 - Robinsons Metro East</p>
-            <div class="awards">
-              <span>KATA<i class="medal gold"></i></span>
-              <span>KUMITE<i class="medal silver"></i></span>
-            </div>
-          </article>
-
-          <article class="event">
-            <h3>RSK-PSKI KARATE-DO CHAMPIONSHIP</h3>
-            <p>12/3/23 - Tiendesitas Ortigas</p>
-            <div class="awards one"><span>KUMITE<i class="medal bronze"></i></span></div>
-          </article>
-        </div>
-      </div>
-
-      <aside class="definition definition-kumite">
-        <strong>KUMITE</strong>
-        <p>Kumite can mean 'sparring'.<br>Kumite is where two competitors<br>face off performing defensive<br>and offensive techniques in a<br>standing competition.<br>Competitors can use punches,<br>kicks or takedowns against their<br>opponents.</p>
-      </aside>
-      <div class="cloud cloud-br" aria-hidden="true"></div>
-      <div class="cloud cloud-bl" aria-hidden="true"></div>
-    </section>
-
-    <section class="pdf-page page-3" id="achievements" aria-label="Karate journey 2024 and academic achievements">
-      <div class="timeline-columns">
-        <div class="timeline-col">
-          <article class="event">
-            <h2>PROMOTED TO RED BELT</h2>
-            <p>December 17, 2023</p>
-          </article>
-
-          <article class="event">
-            <h2>NOVICE 6-7 YEARS OLD</h2>
-            <h3>11th ISKF-RYO SHOTOKAN Karate-do<br>Championship</h3>
-            <p>3/17/24 - Greenhills Mall</p>
-            <div class="awards"><span>KATA<i class="medal silver"></i></span><span>KUMITE<i class="medal silver"></i></span></div>
-          </article>
-
-          <article class="event">
-            <h3>2ND ISKF - KYODAI KARATE-DO CHAMPIONSHIP</h3>
-            <p>4/7/24 - Greenhills Mall</p>
-            <div class="awards"><span>KATA<i class="medal silver"></i></span><span>KUMITE<i class="medal silver"></i></span></div>
-          </article>
-
-          <article class="event">
-            <h3>1ST CELINO KARATE DOJO- SHOSHINKAN<br>KARATE-DO FRIENDSHIP TOURNAMENT</h3>
-            <p>5/5/24 - Robinson Mall, Las Piñas</p>
-            <div class="awards"><span>KATA<i class="medal gold"></i></span><span>KUMITE<i class="medal silver"></i></span></div>
-          </article>
-        </div>
-
-        <div class="timeline-col right">
-          <article class="event">
-            <h2>PROMOTED TO ORANGE BELT</h2>
-            <p>June 15, 2024 - Skipped Yellow Belt</p>
-          </article>
-
-          <article class="event">
-            <h3>SHITO-RYU KARATE-DO PHILIPPINES<br>YAMADA-HA SHUKOKAI INTERCLASS<br>TOURNAMENT</h3>
-            <p>6/30/24 One Mall, Valenzuela</p>
-            <div class="awards one wide"><span>OPEN CLASS - KUMITE<i class="medal gold"></i></span></div>
-          </article>
-
-          <article class="event">
-            <h3>2ND CAVITE KARATE DOJO-SKIP<br>KARATE-DO CHAMPIONSHIP</h3>
-            <p>8/4/24 Robinson Novaliches</p>
-            <div class="awards">
-              <span>KATA<i class="medal gold"></i></span>
-              <span>KUMITE<b class="dnq">DNQ<small>Did not qualify</small></b></span>
-            </div>
-          </article>
-
-          <article class="event">
-            <h2>NOVICE/INTERMEDIATE<br>6-7 YEARS OLD</h2>
-            <h3>BLACK DIAMOND KARATE ASSOCIATION<br>ISKF GOODWILL KARATE CUP</h3>
-            <p>10/28/24 - Starmall, Edsa Shaw</p>
-            <div class="awards labels-long">
-              <span>INTERMEDIATE -KATA<i class="medal gold"></i></span>
-              <span>NOVICE - KUMITE<i class="medal silver"></i></span>
-            </div>
-          </article>
-        </div>
-      </div>
-
-      <div class="portrait-card">
-        <img src="assets/p3-img2.webp" alt="Zane holding a medal and his Go! I'm-a Zane! sign">
-      </div>
-
-      <aside class="definition definition-kata">
-        <strong>KATA</strong>
-        <p>Kata, in Japanese, means 'form.' In Karate terms,<br>Kata is the practice of performing sequences of<br>specific Karate moves targeting a virtual opponent.</p>
-      </aside>
-
-      <section class="academic">
-        <h2>ACADEMIC ACHIEVEMENTS</h2>
+    <section class="about section-shell" id="about">
+      <div class="section-title">
+        <span>01</span>
         <div>
-          <p><strong>GRADE 1 - 1ST QUARTER</strong><br>With Honors: 94% General Average</p>
-          <p><strong>KINDER 2</strong><br>Academic Achiever - 1st Honor<br>Class Leader, Best in Memory Verse</p>
-        </div>
-      </section>
-      <div class="cloud cloud-br small" aria-hidden="true"></div>
-    </section>
-
-    <section class="pdf-page page-4" id="journey-continued" aria-label="Karate journey late 2024 through March 2026">
-      <p class="story">
-        Zane continued competing across local, national and international tournaments, building on every lesson from training and every experience on the mat.
-      </p>
-
-      <div class="timeline-columns">
-        <div class="timeline-col">
-          <article class="event">
-            <h2>NOVICE / INTERMEDIATE 6-7 YEARS OLD</h2>
-            <h3>20TH PKTS KARATEDO CHAMPIONSHIP</h3>
-            <p>11/10/24 · Robinson Metro East</p>
-            <div class="awards">
-              <span>INTERMEDIATE - KATA<i class="medal silver"></i></span>
-              <span>NOVICE - KUMITE<i class="medal bronze"></i></span>
-            </div>
-          </article>
-
-          <article class="event">
-            <h2>PROMOTED TO GREEN BELT</h2>
-            <p>Date not recorded</p>
-          </article>
-
-          <article class="event">
-            <h2>PROMOTED TO PURPLE BELT</h2>
-            <p>December 2024 · Current Belt</p>
-          </article>
-
-          <article class="event">
-            <h2>INTERMEDIATE / NOVICE 6-7 YEARS OLD</h2>
-            <h3>4TH GOVERNOR'S CUP LAGUNA KARATEDO CHAMPIONSHIP</h3>
-            <p>2/1/25 · Laguna Sports Complex</p>
-            <div class="awards">
-              <span>INTERMEDIATE - KATA<i class="medal gold"></i></span>
-              <span>NOVICE - KUMITE<i class="medal silver"></i></span>
-            </div>
-          </article>
-
-          <article class="event">
-            <h3>6TH KARATE PILIPINAS NATIONAL CHAMPIONSHIPS</h3>
-            <p>3/1/25</p>
-            <div class="no-medal-lines">
-              <span>INTERMEDIATE - KATA · 2ND ROUND · NO MEDAL</span>
-              <span>INTERMEDIATE - KUMITE · 2ND ROUND · NO MEDAL</span>
-            </div>
-          </article>
-
-          <article class="event">
-            <h3>6TH ABR KARATE CUP</h3>
-            <p>4/5/25 · San Jose del Monte, Bulacan</p>
-            <div class="awards">
-              <span>INTERMEDIATE - KATA<i class="medal gold"></i></span>
-              <span>INTERMEDIATE - KUMITE<i class="medal gold"></i></span>
-            </div>
-          </article>
-        </div>
-
-        <div class="timeline-col right">
-          <article class="event">
-            <h3>KSK OPEN PASIG · KPI SANCTIONED TOURNAMENT</h3>
-            <p>4/20/25 · Pasig</p>
-            <div class="awards">
-              <span>INTERMEDIATE - KATA<i class="medal gold"></i></span>
-              <span>NOVICE - KUMITE<i class="medal gold"></i></span>
-            </div>
-          </article>
-
-          <article class="event">
-            <h3>2ND CELINO KARATE TOURNAMENT</h3>
-            <p>5/11/25 · Waltermart Valenzuela</p>
-            <div class="awards four-awards">
-              <span>OPEN - KATA<i class="medal silver"></i></span>
-              <span>INTERMEDIATE - KATA<i class="medal gold"></i></span>
-              <span>OPEN - KUMITE<i class="medal silver"></i></span>
-              <span>INTERMEDIATE - KUMITE<i class="medal silver"></i></span>
-            </div>
-          </article>
-
-          <article class="event">
-            <h3>ALL LUZON MKKPI KARATEDO CHAMPIONSHIP</h3>
-            <p>September 2025</p>
-            <div class="awards three-awards">
-              <span>ADVANCED - KATA<i class="medal silver"></i></span>
-              <span>INTERMEDIATE - KATA<i class="medal gold"></i></span>
-              <span>NOVICE - KUMITE<i class="medal gold"></i></span>
-            </div>
-          </article>
-
-          <article class="event">
-            <h3>21ST PKTS OPEN KARATE CHAMPIONSHIP</h3>
-            <p>11/16/25 · Robinsons Metro East, Cainta</p>
-            <div class="awards three-awards">
-              <span>INTERMEDIATE - KATA<i class="medal silver"></i></span>
-              <span>OPEN - KATA<i class="medal gold"></i></span>
-              <span>INTERMEDIATE - KUMITE<i class="medal gold"></i></span>
-            </div>
-          </article>
-
-          <article class="event">
-            <h2>OPEN KATA · AGES 8-12</h2>
-            <h3>WMA INTERNATIONAL TOURNAMENT</h3>
-            <p>March 2026</p>
-            <div class="awards one">
-              <span>OPEN - KATA<i class="medal gold"></i></span>
-            </div>
-          </article>
+          <p class="eyebrow">ABOUT ZANE</p>
+          <h2>DISCIPLINE.<br>FOCUS. <em>COURAGE.</em></h2>
         </div>
       </div>
 
-      <aside class="definition definition-kumite medal-summary">
-        <strong>MEDAL TOTALS</strong>
-        <p>20 Gold · 16 Silver · 3 Bronze<br><b>39 Medals through March 2026</b></p>
-      </aside>
+      <div class="about-grid">
+        <div class="about-photo-wrap">
+          <div class="about-photo">
+            <img src="assets/p3-img2.webp" alt="Zane holding a karate medal">
+          </div>
+          <div class="about-stamp">
+            <strong>2023</strong>
+            <span>THE JOURNEY<br>BEGAN</span>
+          </div>
+        </div>
 
-      <div class="cloud cloud-br" aria-hidden="true"></div>
-      <div class="cloud cloud-bl" aria-hidden="true"></div>
-    </section>
+        <div class="about-copy">
+          <h3>From superhero moves at home to real discipline on the mat.</h3>
+          <p>Zane loved Power Rangers and Ninja Kids and would copy their moves around the house. On July 22, 2023, he stepped into his first karate class and discovered something he genuinely loved.</p>
+          <p>Since then, karate has become a journey of training, competition, confidence and growth—one tournament and one belt at a time.</p>
 
-    <section class="pdf-page page-5" id="gallery" aria-label="Karate photo memories">
-      <div class="photo-collage">
-        <img class="g1" src="assets/p5-img1.webp" alt="Zane at a karate championship">
-        <img class="g2" src="assets/p5-img2.webp" alt="Zane with family">
-        <img class="g3" src="assets/p5-img3.webp" alt="Zane celebrating with fellow karate competitors">
-        <img class="g4" src="assets/p5-img4.webp" alt="Zane at a karate tournament">
-        <img class="g5" src="assets/p5-img5.webp" alt="Zane celebrating a medal">
-        <img class="g6" src="assets/p5-img6.webp" alt="Zane at a karate event">
-        <img class="g7" src="assets/p5-img7.webp" alt="Zane with family and friends">
-        <img class="g8" src="assets/p5-img8.webp" alt="Zane and family">
-        <img class="g9" src="assets/p5-img9.webp" alt="Zane showing his medal and sign">
+          <div class="values">
+            <article><span>01</span><strong>Discipline</strong><p>Learning consistency, respect and responsibility.</p></article>
+            <article><span>02</span><strong>Focus</strong><p>Building concentration through kata and training.</p></article>
+            <article><span>03</span><strong>Confidence</strong><p>Growing through challenges, wins and setbacks.</p></article>
+          </div>
+        </div>
       </div>
     </section>
 
-    <section class="pdf-page page-6" id="support" aria-label="Support Zane's karate journey">
-      <div class="quote">
-        <span class="quote-mark open" aria-hidden="true">“</span>
-        <blockquote>Practicing karate is both enjoyable and potentially costly.<br><br>I would greatly appreciate your assistance in helping me<br>realize my dream, progressing one step at a time.</blockquote>
-        <span class="quote-mark close" aria-hidden="true">”</span>
-        <cite>-Zane</cite>
+    <section class="journey section-shell" id="journey">
+      <div class="split-heading">
+        <div>
+          <p class="eyebrow">BELT PROGRESSION</p>
+          <h2>THE JOURNEY<br>FROM <em>WHITE TO PURPLE.</em></h2>
+        </div>
+        <p>Each belt marks another stage of learning. Zane progressed from White to Blue, Red, Orange, Green and then Purple Belt.</p>
       </div>
 
-      <div class="support-portrait">
+      <div class="belt-row">
+        <div class="belt-card belt-white"><span>01</span><strong>WHITE BELT</strong><small>Started at age 5</small></div>
+        <div class="belt-card belt-blue"><span>02</span><strong>BLUE BELT</strong><small>Sept. 17, 2023</small></div>
+        <div class="belt-card belt-red"><span>03</span><strong>RED BELT</strong><small>Dec. 17, 2023</small></div>
+        <div class="belt-card belt-orange"><span>04</span><strong>ORANGE BELT</strong><small>June 15, 2024</small></div>
+        <div class="belt-card belt-green"><span>05</span><strong>GREEN BELT</strong><small>Before Purple Belt</small></div>
+        <div class="belt-card belt-purple"><span>06</span><strong>PURPLE BELT</strong><small>Dec. 2024 · Current</small></div>
+      </div>
+    </section>
+
+    <section class="achievements section-shell" id="achievements">
+      <div class="section-title">
+        <span>02</span>
+        <div>
+          <p class="eyebrow">COMPETITION RECORD</p>
+          <h2>ACHIEVEMENTS<br><em>THROUGH MARCH 2026.</em></h2>
+        </div>
+      </div>
+
+      <div class="achievement-summary">
+        <div><strong>20</strong><span>Gold</span><i class="medal gold"></i></div>
+        <div><strong>16</strong><span>Silver</span><i class="medal silver"></i></div>
+        <div><strong>3</strong><span>Bronze</span><i class="medal bronze"></i></div>
+        <div class="summary-total"><strong>39</strong><span>Total Medals</span></div>
+      </div>
+
+      <div class="timeline">
+        <div class="year-block">
+          <div class="year-label">2023</div>
+          <div class="events">
+            <article class="event-card"><time>AUG 27</time><h3>PASKA Championship</h3><p>Robinsons Metro East</p><div class="results"><span>Kumite · Newbie 4–5 yrs <i class="medal bronze"></i></span></div></article>
+            <article class="event-card"><time>OCT 7</time><h3>1st Cavite Karate Dojo-SKIP Karate-do Championship</h3><p>Robinsons Mall, Novaliches</p><div class="results"><span>Kata <i class="medal silver"></i></span><span>Kumite <i class="medal silver"></i></span></div></article>
+            <article class="event-card"><time>OCT 29</time><h3>1st Shidokai Karatedo-Kyokai Open Karate Championship</h3><p>Waltermart, Taytay</p><div class="results"><span>Kata <i class="medal gold"></i></span><span>Kumite <i class="medal gold"></i></span><span>Open Kumite <i class="medal gold"></i></span></div></article>
+            <article class="event-card"><time>NOV 18</time><h3>Shihan Ernie Memorial Cup · BDKA Open Karate Tournament</h3><p>Tiendesitas, Ortigas</p><div class="results"><span>Kata · Newbie 5–6 yrs <i class="medal gold"></i></span></div></article>
+            <article class="event-card"><time>NOV 26</time><h3>19th PKTS Karatedo Championship</h3><p>Robinsons Metro East</p><div class="results"><span>Kata <i class="medal gold"></i></span><span>Kumite <i class="medal silver"></i></span></div></article>
+            <article class="event-card"><time>DEC 3</time><h3>RSK-PSKI Karate-do Championship</h3><p>Tiendesitas, Ortigas</p><div class="results"><span>Kumite <i class="medal bronze"></i></span></div></article>
+          </div>
+        </div>
+
+        <div class="year-block">
+          <div class="year-label">2024</div>
+          <div class="events">
+            <article class="event-card"><time>MAR 17</time><h3>11th ISKF-RSK Championship</h3><p>Greenhills Mall</p><div class="results"><span>Novice Kata <i class="medal silver"></i></span><span>Novice Kumite <i class="medal silver"></i></span></div></article>
+            <article class="event-card"><time>APR 7</time><h3>2nd ISKF · Kyodai Karate-do Championship</h3><p>Greenhills Mall</p><div class="results"><span>Novice Kata 6–7 yrs <i class="medal silver"></i></span><span>Novice Kumite 6–7 yrs <i class="medal silver"></i></span></div></article>
+            <article class="event-card"><time>MAY 5</time><h3>1st Celino Karate Dojo · Shoshinkan Friendship Tournament</h3><p>One Mall, Valenzuela</p><div class="results"><span>Open Kata <i class="medal gold"></i></span><span>Open Kumite <i class="medal silver"></i></span></div></article>
+            <article class="event-card"><time>JUN 30</time><h3>Shito-Ryu Karate-do Philippines · Yamada-Ha Shukokai Interclass</h3><p>One Mall, Valenzuela</p><div class="results"><span>Open Kumite <i class="medal gold"></i></span></div></article>
+            <article class="event-card"><time>AUG 4</time><h3>2nd Cavite Karate Dojo-SKIP Karate-do Championship</h3><p>Robinsons Novaliches</p><div class="results"><span>Kata <i class="medal gold"></i></span><span class="no-medal">Kumite · DNQ</span></div></article>
+            <article class="event-card"><time>OCT 28</time><h3>Black Diamond Karate Association · ISKF Goodwill Karate Cup</h3><p>Starmall, EDSA Shaw</p><div class="results"><span>Intermediate Kata <i class="medal gold"></i></span><span>Novice Kumite <i class="medal silver"></i></span></div></article>
+            <article class="event-card"><time>NOV 10</time><h3>20th PKTS Karatedo Championship</h3><div class="results"><span>Intermediate Kata <i class="medal silver"></i></span><span>Novice Kumite <i class="medal bronze"></i></span></div></article>
+          </div>
+        </div>
+
+        <div class="year-block">
+          <div class="year-label">2025</div>
+          <div class="events">
+            <article class="event-card"><time>FEB 1</time><h3>4th Governor's Cup Laguna Karatedo Championship</h3><p>Laguna Sports Complex</p><div class="results"><span>Intermediate Kata 6–7 yrs <i class="medal gold"></i></span><span>Novice Kumite 6–7 yrs <i class="medal silver"></i></span></div></article>
+            <article class="event-card"><time>MAR 1</time><h3>6th Karate Pilipinas National Championships</h3><div class="results"><span class="no-medal">Intermediate Kata · 2nd Round</span><span class="no-medal">Intermediate Kumite · 2nd Round</span></div></article>
+            <article class="event-card"><time>APR 5</time><h3>6th ABR Karate Cup</h3><p>San Jose del Monte, Bulacan</p><div class="results"><span>Intermediate Kata <i class="medal gold"></i></span><span>Intermediate Kumite <i class="medal gold"></i></span></div></article>
+            <article class="event-card"><time>APR 20</time><h3>KSK Open Pasig · KPI Sanctioned Tournament</h3><p>Pasig</p><div class="results"><span>Intermediate Kata 6–7 yrs <i class="medal gold"></i></span><span>Novice Kumite 6–7 yrs <i class="medal gold"></i></span></div></article>
+            <article class="event-card"><time>MAY 11</time><h3>2nd Celino Karate Tournament</h3><p>Waltermart Valenzuela</p><div class="results"><span>Open Kata · 7 yrs <i class="medal silver"></i></span><span>Intermediate Kata 6–7 yrs <i class="medal gold"></i></span><span>Open Kumite <i class="medal silver"></i></span><span>Intermediate Kumite <i class="medal silver"></i></span></div></article>
+            <article class="event-card"><time>SEP</time><h3>All Luzon MKKPI Karatedo Championship</h3><div class="results"><span>Advanced Kata <i class="medal silver"></i></span><span>Intermediate Kata <i class="medal gold"></i></span><span>Novice Kumite <i class="medal gold"></i></span></div></article>
+            <article class="event-card"><time>NOV 16</time><h3>21st PKTS Open Karate Championship</h3><p>Robinsons Metro East, Cainta</p><div class="results"><span>Intermediate Kata 6–7 yrs <i class="medal silver"></i></span><span>Open Kata 6–7 yrs <i class="medal gold"></i></span><span>Intermediate Kumite 6–7 yrs <i class="medal gold"></i></span></div></article>
+          </div>
+        </div>
+
+        <div class="year-block year-feature">
+          <div class="year-label">2026</div>
+          <div class="events">
+            <article class="event-card featured-event"><time>MAR</time><h3>WMA International Tournament</h3><p>Open Kata · Ages 8–12</p><div class="results"><span>Gold Medal <i class="medal gold"></i></span></div></article>
+          </div>
+        </div>
+      </div>
+
+      <p class="record-note">Medal totals exclude DNQ and non-medal second-round finishes.</p>
+    </section>
+
+    <section class="tournament-showcase section-shell">
+      <div class="split-heading">
+        <div>
+          <p class="eyebrow">COMPETING & LEARNING</p>
+          <h2>EVERY EVENT<br>BUILDS THE <em>NEXT VERSION.</em></h2>
+        </div>
+        <p>Winning matters, but so does learning how to prepare, perform under pressure, recover and return stronger.</p>
+      </div>
+
+      <div class="tournament-cards">
+        <article class="tournament-card large">
+          <img src="assets/p5-img1.webp" alt="Zane at a karate competition">
+          <div><span>COMPETITION</span><h3>Show up prepared.</h3></div>
+        </article>
+        <article class="tournament-card">
+          <img src="assets/p5-img4.webp" alt="Zane celebrating at a karate tournament">
+          <div><span>PROGRESS</span><h3>Learn from every round.</h3></div>
+        </article>
+        <article class="tournament-card">
+          <img src="assets/p5-img5.webp" alt="Zane celebrating a medal">
+          <div><span>ACHIEVEMENT</span><h3>Celebrate the work.</h3></div>
+        </article>
+      </div>
+    </section>
+
+    <section class="gallery section-shell" id="gallery">
+      <div class="section-title">
+        <span>03</span>
+        <div>
+          <p class="eyebrow">GALLERY</p>
+          <h2>MOMENTS<br><em>ON & OFF THE MAT.</em></h2>
+        </div>
+      </div>
+
+      <div class="gallery-grid">
+        <img class="gallery-tall" src="assets/p5-img1.webp" alt="Zane at a karate championship">
+        <img src="assets/p5-img2.webp" alt="Zane with family">
+        <img src="assets/p5-img3.webp" alt="Zane celebrating with fellow karate competitors">
+        <img class="gallery-wide" src="assets/p5-img4.webp" alt="Zane at a karate tournament">
+        <img src="assets/p5-img5.webp" alt="Zane celebrating a medal">
+        <img src="assets/p5-img6.webp" alt="Zane at a karate event">
+        <img src="assets/p5-img7.webp" alt="Zane with family and friends">
+        <img class="gallery-wide" src="assets/p5-img9.webp" alt="Zane showing his medal and sign">
+      </div>
+    </section>
+
+    <section class="support" id="support">
+      <div class="support-copy">
+        <p class="eyebrow">SUPPORT THE JOURNEY</p>
+        <blockquote>“Practicing karate is both enjoyable and potentially costly. I would greatly appreciate your assistance in helping me realize my dream, progressing one step at a time.”</blockquote>
+        <cite>— Zane</cite>
+      </div>
+
+      <div class="support-visual">
+        <div class="support-circle"></div>
         <img src="assets/p6-img1.webp" alt="Zane giving two thumbs up">
       </div>
-
-      <section class="tournament-panel">
-        <h2>UPCOMING TOURNAMENTS:</h2>
-        <div class="tournament-grid">
-          <article>
-            <h3>November 10,2024</h3>
-            <strong>Robinson Metro East</strong>
-            <p><u>Category:</u></p>
-            <p>KATA &nbsp;&nbsp;&nbsp; KUMITE</p>
-          </article>
-          <article>
-            <h3>December 8,2024</h3>
-            <strong>Starmall Edsa Shaw</strong>
-            <p><u>Category:</u></p>
-            <p>KATA &nbsp;&nbsp;&nbsp; KUMITE</p>
-          </article>
-        </div>
-        <div class="registration">
-          <h3>REGISTRATION PER CATEGORY:</h3>
-          <p>KATA: P500</p>
-          <p>KUMITE: P500</p>
-          <p>OPEN CLASS:P500</p>
-        </div>
-      </section>
     </section>
   </main>
 
-  <nav class="page-dots" aria-label="Portfolio pages">
-    <a href="#home" aria-label="Page 1"></a>
-    <a href="#journey" aria-label="Page 2"></a>
-    <a href="#achievements" aria-label="Page 3"></a>
-    <a href="#2024-recap" aria-label="Page 4"></a>
-    <a href="#gallery" aria-label="Page 5"></a>
-    <a href="#support" aria-label="Page 6"></a>
-  </nav>
+  <footer>
+    <a class="brand footer-brand" href="#home">
+      <span class="brand-disc">空</span>
+      <span class="brand-copy"><strong>ZANE</strong><small>KARATE JOURNEY</small></span>
+    </a>
+    <p>Zane Gabriel O. Gallana · Philippines</p>
+    <a href="#home">Back to top ↑</a>
+  </footer>
+
+  <script>
+    const toggle = document.querySelector('.menu-toggle');
+    const nav = document.querySelector('.main-nav');
+    toggle?.addEventListener('click', () => {
+      const open = document.body.classList.toggle('nav-open');
+      toggle.setAttribute('aria-expanded', String(open));
+    });
+    nav?.querySelectorAll('a').forEach(link => link.addEventListener('click', () => {
+      document.body.classList.remove('nav-open');
+      toggle?.setAttribute('aria-expanded', 'false');
+    }));
+  </script>
 </body>
 </html>

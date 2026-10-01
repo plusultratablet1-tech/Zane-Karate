@@ -219,74 +219,23 @@ img{display:block;max-width:100%}
 .dnq small{margin-top:.6em;color:#666;font-size:.38em;text-decoration:none;font-style:normal}
 .labels-long span{align-items:flex-start}
 
-/* PAGE 4 — UPDATED RECORD */
-.record-page{padding:3.2% 5.2% 3.2%}
-.record-heading{position:relative;text-align:center;z-index:2}
-.record-kicker{
-  margin:0;color:var(--red-dark);
-  font-size:clamp(8px,1.15vw,14px);font-weight:900;letter-spacing:.11em
-}
-.record-heading h2{
-  margin:.4% 0 1.5%;
-  color:var(--red-dark);font-family:"Anton","Arial Narrow",sans-serif;
-  font-size:clamp(22px,3.7vw,46px);font-weight:400;line-height:.95
-}
-.record-heading h2 span{display:block;margin-top:.35em;color:#3f3f3f;font-family:"Roboto Condensed",sans-serif;font-size:.34em;font-weight:800;letter-spacing:.13em}
-.medal-totals{display:flex;justify-content:center;gap:5.5%}
-.medal-totals>span{display:grid;grid-template-columns:auto auto;grid-template-rows:auto auto;align-items:center;column-gap:.55em}
-.medal-totals .medal{grid-row:1/3;width:clamp(21px,2.8vw,35px)}
-.medal-totals strong{font-size:clamp(13px,1.8vw,22px);line-height:1}
-.medal-totals small{font-size:clamp(6px,.8vw,10px);font-weight:900;color:#666;letter-spacing:.08em}
-
-.belt-progression{
-  position:relative;z-index:2;
-  display:flex;align-items:center;justify-content:center;gap:.7%;
-  margin:1.7% auto 2.1%;width:96%;
-}
-.belt-progression>b{color:#aaa;font-size:clamp(12px,2vw,24px)}
-.belt{
-  min-width:12.2%;padding:.72% 1%;
-  border-radius:6px;text-align:center;
-  font-size:clamp(7px,1.05vw,13px);font-weight:900;letter-spacing:.07em;
-  box-shadow:0 2px 7px #0001
-}
-.belt small{display:block;margin-top:.25em;font-size:.68em;font-weight:700;letter-spacing:0}
-.white-belt{background:#fff;border:1px solid #bbb;color:#333}
-.blue-belt{background:#2765b8;color:#fff}
-.red-belt{background:#b52f37;color:#fff}
-.orange-belt{background:#e18422;color:#fff}
-.green-belt{background:#2f8a52;color:#fff}
-.purple-belt{background:#755095;color:#fff}
-
-.late-2024{
-  position:relative;z-index:2;
-  display:grid;grid-template-columns:1.2fr .8fr;gap:2%;
-  margin:0 1% 2%;
-}
-.late-2024 article{border-radius:14px;background:#fff8;padding:1.25% 1.6%;border:1px solid #0000000d}
-.late-2024 h3{margin:0 0 .35em;font-size:clamp(7px,1.12vw,14px);font-weight:900}
-.late-2024 p{margin:.18em 0;font-size:clamp(6px,.92vw,11px);font-style:italic;color:#555}
-.record-results{display:flex;gap:4%;margin-top:.65em}
-.record-results span{display:flex;align-items:center;gap:.5em;font-size:clamp(6px,.82vw,10px);font-weight:900}
-.record-results .medal{width:clamp(15px,2vw,25px);flex:0 0 auto}
-
-.record-columns{gap:5%;padding:0 1%}
-.record-columns .event{margin-bottom:3.6%}
-.record-columns .event h2{font-size:clamp(10px,1.45vw,18px)}
-.record-columns .event h3{font-size:clamp(7px,1.05vw,13px)}
-.record-columns .event p{font-size:clamp(6px,.9vw,11px)}
-.record-columns .awards{gap:4%;margin-top:2%}
-.record-columns .awards span{font-size:clamp(5.5px,.72vw,9px);white-space:normal;text-align:center}
-.record-columns .awards .medal{width:clamp(16px,2.15vw,27px)}
-.record-results.compact{display:grid;grid-template-columns:1fr 1fr;gap:.4em 1.1em}
-.record-results.compact span{justify-content:space-between;font-size:clamp(5.5px,.74vw,9px)}
-.no-medal-results{display:grid;gap:.3em;margin-top:.65em}
-.no-medal-results span{font-size:clamp(6px,.8vw,10px);font-style:italic;color:#666}
-.highlight-record{padding:2% 2.3%;border-radius:15px;background:#be383e10}
-.record-note{
-  position:absolute;left:0;right:0;bottom:1.4%;
-  margin:0;text-align:center;font-size:clamp(5px,.7vw,9px);font-style:italic;color:#777
-}
+/* PAGE 4 — CONTINUED TIMELINE */
+.page-4 .story{margin-bottom:3.2%}
+.page-4 .timeline-columns{gap:6%}
+.page-4 .event{margin-bottom:4.1%}
+.page-4 .event h2{font-size:clamp(10px,1.65vw,20px)}
+.page-4 .event h3{font-size:clamp(7px,1.13vw,14px)}
+.page-4 .event p{font-size:clamp(6px,.98vw,12px)}
+.page-4 .awards{gap:5%;margin-top:2.4%;flex-wrap:wrap}
+.page-4 .awards span{font-size:clamp(5.5px,.77vw,9.5px)}
+.page-4 .medal{width:clamp(17px,2.35vw,29px)}
+.page-4 .four-awards{display:grid;grid-template-columns:1fr 1fr;gap:.8em 1.1em}
+.page-4 .three-awards{display:grid;grid-template-columns:repeat(3,1fr);gap:.7em}
+.page-4 .four-awards span,.page-4 .three-awards span{white-space:normal;text-align:center}
+.no-medal-lines{display:grid;gap:.35em;margin-top:.7em}
+.no-medal-lines span{font-size:clamp(5.5px,.78vw,9.5px);font-weight:800;color:#666}
+.medal-summary{width:26%;bottom:4.5%;padding:1.55% 2%}
+.medal-summary p{line-height:1.45}
 
 /* PAGE 5 */
 .page-5{padding:4.7% 8.5% 3.7%}
@@ -390,18 +339,8 @@ img{display:block;max-width:100%}
   .hero-description{width:92%;font-size:14px}
   .hero-button{font-size:13px;padding:13px 18px}
   .page-2,.page-3,.page-4{padding:28px 22px 34px}
-  .record-page{padding:30px 20px 40px}
-  .record-heading h2{font-size:34px}
-  .medal-totals{gap:20px}
-  .belt-progression{flex-wrap:wrap;gap:8px;margin:20px 0}
-  .belt-progression>b{display:none}
-  .belt{min-width:30%;padding:9px 7px}
-  .late-2024{grid-template-columns:1fr;margin:0 0 22px}
-  .late-2024 article{padding:14px}
-  .record-results{flex-wrap:wrap}
-  .record-columns .event{margin-bottom:24px!important}
-  .record-results.compact{grid-template-columns:1fr}
-  .record-note{position:relative;bottom:auto;margin-top:20px}
+  .page-4 .four-awards,.page-4 .three-awards{grid-template-columns:1fr 1fr}
+  .page-4 .medal-summary{width:100%;margin-top:18px}
   .story{width:100%;font-size:12px;margin-bottom:28px}
   .timeline-columns,.page-3 .timeline-columns{display:block;padding:0}
   .timeline-col,.page-3 .timeline-col{padding-left:20px;margin-bottom:22px}

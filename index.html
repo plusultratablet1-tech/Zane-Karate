@@ -518,6 +518,61 @@
       if(event.key==='ArrowLeft') renderLightbox(activeIndex-1);
       if(event.key==='ArrowRight') renderLightbox(activeIndex+1);
     });
+
+
+    const achievementTable=document.querySelector('.achievement-table');
+    if(achievementTable){
+      const rows=[...achievementTable.querySelectorAll('tbody > tr')];
+      const yearRows=rows.filter(row=>row.classList.contains('year-row'));
+      yearRows.forEach((yearRow,index)=>{
+        const year=yearRow.textContent.trim();
+        const detailRows=[];
+        let next=yearRow.nextElementSibling;
+        while(next && !next.classList.contains('year-row')){
+          detailRows.push(next);
+          next=next.nextElementSibling;
+        }
+
+        yearRow.classList.add('year-accordion-row');
+        const cell=yearRow.querySelector('th');
+        if(cell){
+          cell.innerHTML=`
+            <button class="year-toggle" type="button" aria-expanded="${index===0}" aria-controls="year-${year}">
+              <span class="year-toggle-main">
+                <span class="year-toggle-year">${year}</span>
+                <span class="year-toggle-hint">${index===0 ? 'Showing results' : 'Click to view results'}</span>
+              </span>
+              <span class="year-toggle-icon" aria-hidden="true">${index===0 ? '−' : '+'}</span>
+            </button>`;
+        }
+
+        detailRows.forEach(row=>{
+          row.classList.add('year-detail-row');
+          row.dataset.year=year;
+          if(index!==0) row.hidden=true;
+        });
+
+        const button=yearRow.querySelector('.year-toggle');
+        button?.addEventListener('click',()=>{
+          const willOpen=button.getAttribute('aria-expanded')!=='true';
+
+          yearRows.forEach(otherYearRow=>{
+            const otherButton=otherYearRow.querySelector('.year-toggle');
+            if(!otherButton) return;
+            const otherYear=otherYearRow.textContent.match(/\d{4}/)?.[0];
+            const otherOpen=otherYear===year && willOpen;
+            otherButton.setAttribute('aria-expanded',String(otherOpen));
+            const hint=otherButton.querySelector('.year-toggle-hint');
+            const icon=otherButton.querySelector('.year-toggle-icon');
+            if(hint) hint.textContent=otherOpen ? 'Showing results' : 'Click to view results';
+            if(icon) icon.textContent=otherOpen ? '−' : '+';
+            achievementTable.querySelectorAll(`.year-detail-row[data-year="${otherYear}"]`).forEach(row=>{
+              row.hidden=!otherOpen;
+            });
+          });
+        });
+      });
+    }
   </script>
 </body>
 </html>

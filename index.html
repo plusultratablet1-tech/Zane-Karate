@@ -389,15 +389,32 @@
           <p>Training, tournaments, medals, family and memories from Zane's karate journey.</p>
         </div>
 
-        <div class="gallery-grid">
-          <img class="tall" src="assets/p5-img1.webp" alt="Zane at a karate championship">
-          <img src="assets/p5-img2.webp" alt="Zane with family">
-          <img src="assets/p5-img3.webp" alt="Zane celebrating with fellow karate competitors">
-          <img src="assets/p5-img4.webp" alt="Zane at a karate tournament">
-          <img src="assets/p5-img5.webp" alt="Zane celebrating a medal">
-          <img src="assets/p5-img6.webp" alt="Zane at a karate event">
-          <img src="assets/p5-img7.webp" alt="Zane with family and friends">
-          <img class="wide" src="assets/p5-img9.webp" alt="Zane showing his medal and sign">
+        <div class="gallery-grid" aria-label="Zane karate photo gallery">
+          <button class="gallery-item tall" type="button" aria-label="Open photo 1">
+            <img src="assets/p5-img1.webp" alt="Zane at a karate championship">
+          </button>
+          <button class="gallery-item" type="button" aria-label="Open photo 2">
+            <img src="assets/p5-img2.webp" alt="Zane with family">
+          </button>
+          <button class="gallery-item" type="button" aria-label="Open photo 3">
+            <img src="assets/p5-img3.webp" alt="Zane celebrating with fellow karate competitors">
+          </button>
+          <button class="gallery-item" type="button" aria-label="Open photo 4">
+            <img src="assets/p5-img4.webp" alt="Zane at a karate tournament">
+          </button>
+          <button class="gallery-item" type="button" aria-label="Open photo 5">
+            <img src="assets/p5-img5.webp" alt="Zane celebrating a medal">
+          </button>
+          <button class="gallery-item" type="button" aria-label="Open photo 6">
+            <img src="assets/p5-img6.webp" alt="Zane at a karate event">
+          </button>
+          <button class="gallery-item" type="button" aria-label="Open photo 7">
+            <img src="assets/p5-img7.webp" alt="Zane with family and friends">
+          </button>
+          <button class="gallery-item wide" type="button" aria-label="Open photo 8">
+            <img src="assets/p5-img9.webp" alt="Zane showing his medal and sign">
+          </button>
+        </div>
         </div>
       </div>
     </section>
@@ -415,6 +432,19 @@
       </div>
     </section>
   </main>
+
+  <div class="lightbox" id="gallery-lightbox" aria-hidden="true">
+    <button class="lightbox-close" type="button" aria-label="Close image viewer">×</button>
+    <button class="lightbox-nav lightbox-prev" type="button" aria-label="Previous image">‹</button>
+    <figure class="lightbox-stage">
+      <img class="lightbox-image" src="" alt="">
+      <figcaption>
+        <span class="lightbox-caption"></span>
+        <span class="lightbox-count"></span>
+      </figcaption>
+    </figure>
+    <button class="lightbox-nav lightbox-next" type="button" aria-label="Next image">›</button>
+  </div>
 
   <footer class="sensei-footer">
     <div class="theme-container">
@@ -435,6 +465,59 @@
       document.body.classList.remove('nav-open');
       toggle?.setAttribute('aria-expanded','false');
     }));
+
+    const galleryItems=[...document.querySelectorAll('.gallery-item')];
+    const lightbox=document.querySelector('#gallery-lightbox');
+    const lightboxImage=lightbox?.querySelector('.lightbox-image');
+    const lightboxCaption=lightbox?.querySelector('.lightbox-caption');
+    const lightboxCount=lightbox?.querySelector('.lightbox-count');
+    const closeButton=lightbox?.querySelector('.lightbox-close');
+    const prevButton=lightbox?.querySelector('.lightbox-prev');
+    const nextButton=lightbox?.querySelector('.lightbox-next');
+    let activeIndex=0;
+    let lastFocused=null;
+
+    function renderLightbox(index){
+      if(!galleryItems.length||!lightbox||!lightboxImage) return;
+      activeIndex=(index+galleryItems.length)%galleryItems.length;
+      const image=galleryItems[activeIndex].querySelector('img');
+      lightboxImage.src=image.currentSrc||image.src;
+      lightboxImage.alt=image.alt;
+      if(lightboxCaption) lightboxCaption.textContent=image.alt;
+      if(lightboxCount) lightboxCount.textContent=(activeIndex+1)+' / '+galleryItems.length;
+    }
+
+    function openLightbox(index){
+      lastFocused=document.activeElement;
+      renderLightbox(index);
+      lightbox?.classList.add('is-open');
+      lightbox?.setAttribute('aria-hidden','false');
+      document.body.classList.add('lightbox-open');
+      closeButton?.focus();
+    }
+
+    function closeLightbox(){
+      lightbox?.classList.remove('is-open');
+      lightbox?.setAttribute('aria-hidden','true');
+      document.body.classList.remove('lightbox-open');
+      if(lastFocused instanceof HTMLElement) lastFocused.focus();
+    }
+
+    galleryItems.forEach((item,index)=>{
+      item.addEventListener('click',()=>openLightbox(index));
+    });
+    prevButton?.addEventListener('click',()=>renderLightbox(activeIndex-1));
+    nextButton?.addEventListener('click',()=>renderLightbox(activeIndex+1));
+    closeButton?.addEventListener('click',closeLightbox);
+    lightbox?.addEventListener('click',(event)=>{
+      if(event.target===lightbox) closeLightbox();
+    });
+    document.addEventListener('keydown',(event)=>{
+      if(!lightbox?.classList.contains('is-open')) return;
+      if(event.key==='Escape') closeLightbox();
+      if(event.key==='ArrowLeft') renderLightbox(activeIndex-1);
+      if(event.key==='ArrowRight') renderLightbox(activeIndex+1);
+    });
   </script>
 </body>
 </html>

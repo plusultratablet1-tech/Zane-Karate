@@ -84,22 +84,30 @@ section{scroll-margin-top:90px}
 .hero-kanji{position:absolute;z-index:4;left:-8%;bottom:84px;font-family:"Averia Serif Libre",serif;font-size:92px;font-weight:700;line-height:.65;transform:rotate(-7deg)}
 .hero-kanji small{font-size:.58em}
 
-.theme-about{padding:100px 0 145px}
-.about-row{display:grid;grid-template-columns:22% 78%;align-items:start}
-.about-label{padding-right:130px}
-.label-card{width:115px;background:#fff;padding:8px;box-shadow:0 0 0 1px #ddd}
-.label-card:before{content:"";display:block;position:absolute}
-.label-card{border-radius:4px;text-align:center}
-.label-kanji{display:block;color:var(--accent);font-family:"Averia Serif Libre",serif;font-size:60px;font-weight:600;border:1px solid #eee;padding:12px 8px 4px}
-.label-card strong{display:block;border:1px solid #eee;border-top:0;padding:6px 8px 14px;font-family:"Averia Serif Libre",serif;font-size:18px;line-height:1.2}
+.theme-about{padding:105px 0 135px}
+.about-reading{display:grid;grid-template-columns:220px minmax(0,760px);gap:78px;align-items:start}
+.about-heading{padding-top:10px}
+.about-heading .about-eyebrow{
+  display:block;color:var(--accent);font-size:13px;font-weight:600;letter-spacing:.18em
+}
+.about-heading strong{
+  display:block;margin-top:6px;font-family:"Averia Serif Libre",serif;
+  font-size:52px;font-weight:600;line-height:.95
+}
+.about-reader{max-width:760px}
+.about-reader h2{
+  margin:0 0 30px;font-family:"Averia Serif Libre",serif;
+  font-size:55px;line-height:1.08;font-weight:600
+}
+.about-reader p{
+  margin:0 0 20px;color:#707070;font-size:18px;line-height:1.75;
+  max-width:720px
+}
+.under-link{display:inline-flex;align-items:center;gap:8px;margin-top:14px;font-family:"Averia Serif Libre",serif;font-size:18px;font-weight:600;text-decoration:none;border-bottom:1px solid #bbb;padding-bottom:3px}
+.under-link i{width:8px;height:8px;border-radius:50%;background:var(--accent)}
 .about-main h2,.section-lead h2,.feature-copy h2{
   margin:0;font-family:"Averia Serif Libre",serif;font-weight:600;font-size:55px;line-height:1.15
 }
-.about-columns{display:grid;grid-template-columns:1fr 1fr;gap:42px;max-width:900px;margin-top:28px}
-.about-columns p{margin:0;color:var(--text);font-size:15px;line-height:1.85}
-.under-link{display:inline-flex;align-items:center;gap:8px;margin-top:24px;font-family:"Averia Serif Libre",serif;font-size:18px;font-weight:600;text-decoration:none}
-.under-link i{width:8px;height:8px;border-radius:50%;background:var(--accent)}
-.under-link{border-bottom:1px solid #bbb;padding-bottom:2px}
 
 .martial-strip{height:102px;border-top:1px solid rgba(191,43,43,.25);border-bottom:1px solid rgba(191,43,43,.25);display:flex;align-items:center;justify-content:space-around;gap:30px;overflow:auto;padding:0 30px}
 .martial-strip span{flex:0 0 auto;font-family:"Averia Serif Libre",serif;font-size:17px;font-weight:600}
@@ -139,29 +147,101 @@ section{scroll-margin-top:90px}
 .achievements-heading{grid-template-columns:1fr}
 .achievements-heading>div{max-width:760px}
 .medal-summary{margin-top:70px;display:grid;grid-template-columns:repeat(4,1fr);border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
-.medal-summary>div{min-height:120px;display:flex;align-items:center;justify-content:center;gap:12px;border-right:1px solid var(--line)}
+.medal-summary>div{min-height:150px;display:flex;align-items:center;justify-content:center;gap:16px;border-right:1px solid var(--line)}
 .medal-summary>div:last-child{border-right:0}
-.medal-summary strong{font-family:"Averia Serif Libre",serif;font-size:42px}
-.medal-summary span{color:var(--text);font-size:12px;text-transform:uppercase;letter-spacing:.1em}
+.medal-summary strong{font-family:"Averia Serif Libre",serif;font-size:54px}
+.medal-summary span{color:var(--text);font-size:13px;text-transform:uppercase;letter-spacing:.1em}
 .medal-summary .total{background:var(--accent);color:#fff}
 .medal-summary .total span{color:#fff}
-.medal{display:inline-block;width:24px;aspect-ratio:1;border-radius:50%;box-shadow:inset 3px 3px 8px #fff8,inset -3px -3px 8px #0002}
+.medal{display:inline-block;width:36px;aspect-ratio:1;border-radius:50%;box-shadow:inset 4px 4px 10px #fff9,inset -4px -4px 9px #0002,0 2px 3px #0001}
 .gold{background:linear-gradient(130deg,#b17d22,#f6dc79,#c89327)}
 .silver{background:linear-gradient(130deg,#8f8f8f,#f3f3f3,#9c9c9c)}
 .bronze{background:linear-gradient(130deg,#8f5d3d,#e2bd98,#9b6542)}
-.record-list{margin-top:70px;border-top:1px solid var(--line)}
-.record-year{display:grid;grid-template-columns:150px 1fr;border-bottom:1px solid var(--line)}
-.record-year>h3{margin:0;padding:32px 0;font-family:"Averia Serif Libre",serif;font-size:42px;color:var(--accent)}
-.record-items{border-left:1px solid var(--line)}
-.record-items article{display:grid;grid-template-columns:80px 1fr .9fr;gap:20px;padding:24px 30px;border-bottom:1px solid var(--line)}
-.record-items article:last-child{border-bottom:0}
-.record-items time{color:var(--accent);font-size:11px;font-weight:600;text-transform:uppercase}
-.record-items h4{margin:0;font-family:"Averia Serif Libre",serif;font-size:20px;line-height:1.2}
-.record-items p{margin:6px 0 0;color:var(--text);font-size:11px}
-.results{display:flex;flex-wrap:wrap;justify-content:flex-end;gap:7px 13px}
-.results span{display:flex;align-items:center;gap:7px;font-size:9px;font-weight:600;text-transform:uppercase;text-align:right}
-.results .medal{width:17px}
-.results .no-medal{border:1px solid #bbb;border-radius:999px;padding:6px 9px;color:var(--text)}
+.achievement-table-wrap{
+  margin-top:70px;
+  border-top:1px solid var(--line);
+  overflow-x:auto;
+  -webkit-overflow-scrolling:touch;
+}
+.achievement-table{
+  width:100%;
+  min-width:1040px;
+  border-collapse:collapse;
+  table-layout:fixed;
+}
+.achievement-table th,
+.achievement-table td{
+  padding:20px 18px;
+  border-bottom:1px solid var(--line);
+  text-align:left;
+  vertical-align:top;
+}
+.achievement-table thead th{
+  padding-top:18px;padding-bottom:18px;
+  color:var(--accent);
+  font-family:"Averia Serif Libre",serif;
+  font-size:15px;
+  font-weight:600;
+  letter-spacing:.02em;
+  background:rgba(255,255,255,.22);
+  position:sticky;
+  top:0;
+  z-index:2;
+}
+.achievement-table th:nth-child(1){width:12%}
+.achievement-table th:nth-child(2){width:29%}
+.achievement-table th:nth-child(3){width:18%}
+.achievement-table th:nth-child(4){width:19%}
+.achievement-table th:nth-child(5){width:22%}
+.achievement-table tbody td{
+  color:#666;
+  font-size:13px;
+  line-height:1.55;
+}
+.achievement-table tbody td:nth-child(2){
+  color:var(--primary);
+  font-family:"Averia Serif Libre",serif;
+  font-size:17px;
+  font-weight:600;
+}
+.year-row th{
+  padding:26px 18px 12px;
+  background:transparent;
+  color:var(--accent);
+  font-family:"Averia Serif Libre",serif;
+  font-size:36px;
+  font-weight:600;
+  border-bottom:1px solid var(--line);
+}
+.table-result{
+  display:grid;
+  grid-template-columns:1fr 38px auto;
+  align-items:center;
+  gap:10px;
+  padding:6px 0;
+  color:var(--primary);
+  font-size:12px;
+  line-height:1.3;
+}
+.table-result+.table-result{border-top:1px dashed rgba(48,41,37,.16)}
+.table-result .medal{width:32px}
+.table-result b{
+  min-width:52px;
+  font-size:10px;
+  text-transform:uppercase;
+  letter-spacing:.08em;
+  color:var(--primary);
+}
+.no-medal-result{
+  grid-template-columns:1fr auto;
+  color:var(--text);
+}
+.no-medal-result b{
+  padding:5px 8px;
+  border:1px solid #bbb;
+  border-radius:999px;
+  text-align:center;
+}
 
 .theme-gallery{padding:130px 0}
 .gallery-grid{display:grid;grid-template-columns:repeat(4,1fr);grid-auto-rows:230px;gap:10px;margin-top:70px}
@@ -184,8 +264,8 @@ section{scroll-margin-top:90px}
   .header-inner{grid-template-columns:25% 55% 20%;height:90px}
   .sensei-nav{gap:25px}.sensei-nav a{font-size:15px}.contact-pill{font-size:15px;padding:11px 16px}
   .hero-left h1{font-size:66px}.hero-sub{font-size:16px;width:330px}.hero-grid{min-height:560px}.hero-right{min-height:560px}.red-panel{height:520px}
-  .about-label{padding-right:80px}.feature-copy{padding-left:110px}.section-lead>p{padding-left:30px}
-  .record-items article{grid-template-columns:70px 1fr}.results{grid-column:2;justify-content:flex-start}
+  .about-reading{grid-template-columns:180px minmax(0,1fr);gap:48px}
+  .feature-copy{padding-left:110px}.section-lead>p{padding-left:30px}
 }
 @media(max-width:760px){
   .header-inner{height:72px;grid-template-columns:1fr auto}.contact-pill{display:none}.menu-toggle{display:grid;width:40px;height:40px;border:0;background:transparent;place-content:center;gap:6px}.menu-toggle span{display:block;width:23px;height:2px;background:var(--primary)}
@@ -193,11 +273,12 @@ section{scroll-margin-top:90px}
   .theme-container{width:calc(100% - 36px)}
   .theme-hero{padding-top:10px}.hero-grid{grid-template-columns:1fr;min-height:auto}.hero-left{padding-top:35px}.hero-left h1{font-size:52px;line-height:1.2}.focus-line{margin-left:0;gap:12px}.sunburst{width:43px;height:43px}.hero-sub{width:90%;font-size:14px}.cta-line-wrap{height:100px}.swoop-line{width:300px;top:44px}.round-cta{left:230px;top:5px;width:80px;height:80px;font-size:14px}
   .hero-right{min-height:470px}.red-panel{top:0;right:7%;width:72%;height:430px}.hero-kanji{left:6%;bottom:45px;font-size:65px}.pattern-emblem{width:122px;height:122px;font-size:62px}.panel-caption{bottom:42px}
-  .theme-about{padding:75px 0}.about-row{grid-template-columns:1fr;gap:30px}.about-label{padding:0}.about-columns{grid-template-columns:1fr}.about-main h2,.section-lead h2,.feature-copy h2{font-size:39px}
+  .theme-about{padding:75px 0}.about-reading{grid-template-columns:1fr;gap:24px}.about-heading strong{font-size:44px}.about-reader h2{font-size:42px;margin-bottom:22px}.about-reader p{font-size:16px;line-height:1.7}.about-main h2,.section-lead h2,.feature-copy h2{font-size:39px}
   .martial-strip{justify-content:flex-start;height:80px}
   .theme-programs{padding:85px 0}.section-lead,.section-lead.compact{grid-template-columns:1fr;gap:22px}.section-lead>p{padding-left:0}.program-grid{grid-template-columns:1fr}.program-card{border-right:0;border-bottom:1px solid var(--line)}
   .theme-feature{padding:50px 0 100px}.feature-grid{width:calc(100% - 36px);grid-template-columns:1fr;gap:50px}.feature-visual{height:430px}.feature-copy{padding-left:0}
-  .medal-summary{grid-template-columns:1fr 1fr}.medal-summary>div:nth-child(2){border-right:0}.record-year{grid-template-columns:1fr}.record-year>h3{padding:25px 0 12px}.record-items{border-left:0}.record-items article{grid-template-columns:1fr;padding:20px 0}.results{grid-column:1}
+  .medal-summary{grid-template-columns:1fr 1fr}.medal-summary>div:nth-child(2){border-right:0}.medal-summary>div{min-height:125px}.medal-summary strong{font-size:46px}.medal-summary .medal{width:32px}
+  .achievement-table-wrap{margin-top:45px;margin-left:-18px;margin-right:-18px;padding:0 18px}
   .gallery-grid{grid-template-columns:1fr 1fr;grid-auto-rows:180px}.gallery-grid .wide{grid-column:span 2}
   .support-grid{grid-template-columns:1fr}.theme-support blockquote{font-size:36px}.support-photo{height:320px}
   .sensei-footer .theme-container{flex-direction:column;gap:18px;text-align:center}
@@ -206,5 +287,5 @@ section{scroll-margin-top:90px}
   .sensei-brand strong{font-size:21px}.brand-round{width:38px;height:38px}
   .hero-left h1{font-size:42px}.hero-right{min-height:405px}.red-panel{height:380px;width:76%}.hero-kanji{font-size:55px}.pattern-emblem{width:105px;height:105px;font-size:54px}.pattern-emblem:before{inset:-18px}.pattern-emblem:after{inset:-34px}
   .gallery-grid{grid-template-columns:1fr;grid-auto-rows:245px}.gallery-grid .wide,.gallery-grid .tall{grid-column:auto;grid-row:auto}
-  .medal-summary strong{font-size:34px}.theme-support blockquote{font-size:31px}
+  .medal-summary strong{font-size:38px}.medal-summary>div{gap:10px}.medal-summary .medal{width:28px}.theme-support blockquote{font-size:31px}
 }

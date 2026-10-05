@@ -516,9 +516,12 @@ body.lightbox-open{overflow:hidden}
   text-align:center;
 }
 .event-logo-card img{
-  width:min(250px,90%);
-  aspect-ratio:1;
+  width:100%;
+  max-width:520px;
+  height:auto;
   object-fit:contain;
+  border-radius:14px;
+  box-shadow:0 12px 28px rgba(48,41,37,.08);
 }
 .event-logo-card span{
   color:var(--accent);
@@ -919,7 +922,7 @@ body.lightbox-open{overflow:hidden}
   .support-wrap{gap:48px}
   .support-event{grid-template-columns:1fr}
   .event-logo-card{min-height:280px;border-right:0;border-bottom:1px solid var(--line);padding:30px}
-  .event-logo-card img{width:min(210px,70vw)}
+  .event-logo-card img{width:100%;max-width:520px}
   .support-story{padding:42px 28px}
   .support-story h2,.gear-heading h2{font-size:39px}
   .selection-copy{font-size:15px}

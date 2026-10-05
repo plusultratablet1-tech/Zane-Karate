@@ -687,6 +687,38 @@ body.lightbox-open{overflow:hidden}
   font-size:30px;
   font-weight:600;
 }
+
+.campaign-deadline{
+  display:grid;
+  grid-template-columns:auto auto minmax(0,1fr);
+  align-items:center;
+  gap:18px;
+  margin-top:28px;
+  padding:18px 20px;
+  border:1px solid rgba(239,156,156,.38);
+  border-radius:14px;
+  background:rgba(255,255,255,.06);
+}
+.deadline-label{
+  color:#ef9c9c;
+  font-size:10px;
+  font-weight:700;
+  letter-spacing:.12em;
+  text-transform:uppercase;
+}
+.campaign-deadline strong{
+  white-space:nowrap;
+  font-family:"Averia Serif Libre",serif;
+  font-size:22px;
+  font-weight:600;
+}
+.campaign-deadline p{
+  margin:0;
+  color:#c9c0ba;
+  font-size:11px;
+  line-height:1.6;
+}
+
 .fund-progress{
   height:15px;
   margin-top:34px;
@@ -899,7 +931,9 @@ body.lightbox-open{overflow:hidden}
   .campaign-top{grid-template-columns:1fr;gap:30px}
   .campaign-card h2{font-size:37px}
   .campaign-goal{text-align:left;min-width:0}
-  .campaign-goal strong{font-size:50px}
+  .campaign-goal strong{font-size:50px}  .campaign-deadline{grid-template-columns:1fr;gap:8px;padding:18px}
+  .campaign-deadline strong{font-size:20px}
+
   .campaign-stats{grid-template-columns:1fr}
   .campaign-stats>div,.campaign-stats>div+div{padding:18px 0;border-right:0;border-bottom:1px solid rgba(255,255,255,.16)}
   .campaign-stats>div:last-child{border-bottom:0}

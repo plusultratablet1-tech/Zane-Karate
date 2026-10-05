@@ -808,6 +808,43 @@ body.lightbox-open{overflow:hidden}
   line-height:1.65;
 }
 
+
+.transport-support{
+  display:grid;
+  grid-template-columns:42% 58%;
+  gap:40px;
+  padding:42px 46px;
+  border:1px dashed rgba(191,43,43,.45);
+  border-radius:22px;
+  background:rgba(191,43,43,.045);
+}
+.transport-support h2{
+  margin:8px 0 0;
+  font-family:"Averia Serif Libre",serif;
+  font-size:40px;
+  line-height:1.1;
+  font-weight:600;
+}
+.transport-copy p{
+  margin:0;
+  color:var(--text);
+  font-size:14px;
+  line-height:1.8;
+}
+.transport-copy strong{color:var(--primary)}
+.transport-badge{
+  display:inline-block;
+  margin-top:18px;
+  padding:8px 12px;
+  border-radius:999px;
+  background:var(--accent);
+  color:#fff;
+  font-size:10px;
+  font-weight:600;
+  letter-spacing:.08em;
+  text-transform:uppercase;
+}
+
 .support-closing{
   width:min(850px,100%);
   margin:0 auto;
@@ -876,7 +913,9 @@ body.lightbox-open{overflow:hidden}
   .requirements-copy h2{font-size:36px}
   .requirements-list{grid-template-columns:1fr}
   .requirements-list>div{min-height:0;border-right:0!important;border-bottom:1px solid var(--line)!important}
-  .requirements-list>div:last-child{border-bottom:0!important}
+  .requirements-list>div:last-child{border-bottom:0!important}  .transport-support{grid-template-columns:1fr;padding:30px 24px}
+  .transport-support h2{font-size:34px}
+
   .support-closing p{font-size:28px}
   .campaign-disclaimer{margin:-16px 0 0}
 

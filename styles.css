@@ -345,6 +345,55 @@ section{scroll-margin-top:90px}
 }
 .year-detail-row[hidden]{display:none}
 
+
+.promotion-row td{
+  padding:10px 18px 12px;
+  background:rgba(191,43,43,.035);
+  border-bottom:1px solid var(--line);
+}
+.promotion-highlight{
+  display:flex;
+  align-items:center;
+  flex-wrap:wrap;
+  gap:10px 14px;
+  min-height:42px;
+  padding:10px 14px;
+  border:1px solid rgba(191,43,43,.16);
+  border-radius:12px;
+  background:rgba(255,255,255,.46);
+}
+.belt-dot{
+  width:13px;
+  height:13px;
+  border-radius:50%;
+  flex:0 0 13px;
+  box-shadow:0 0 0 3px rgba(255,255,255,.8),0 0 0 4px rgba(48,41,37,.08);
+}
+.belt-blue{background:#315aa6}
+.belt-red{background:#c33a34}
+.belt-orange{background:#e58b2c}
+.belt-purple{background:#70459a}
+.promotion-date{
+  color:var(--text);
+  font-size:11px;
+  font-weight:600;
+  letter-spacing:.03em;
+}
+.promotion-highlight strong{
+  color:var(--primary);
+  font-family:"Averia Serif Libre",serif;
+  font-size:16px;
+  font-weight:600;
+}
+.promotion-note{
+  margin-left:auto;
+  color:var(--accent);
+  font-size:10px;
+  font-weight:700;
+  letter-spacing:.08em;
+  text-transform:uppercase;
+}
+
 .table-result{
   display:grid;
   grid-template-columns:1fr 38px auto;
@@ -1341,4 +1390,11 @@ body.lightbox-open{overflow:hidden}
   .support-payment-grid{grid-template-columns:1fr}
   .support-qr-card{grid-template-columns:110px 1fr;min-height:0;padding:22px}
   .support-account-card{min-height:0;padding:22px}
+}
+
+@media(max-width:760px){
+  .promotion-row td{padding:8px 4px 10px}
+  .promotion-highlight{gap:8px 10px;padding:10px 12px}
+  .promotion-highlight strong{font-size:15px}
+  .promotion-note{width:100%;margin-left:23px}
 }

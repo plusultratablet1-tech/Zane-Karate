@@ -2517,3 +2517,244 @@ body.lightbox-open{overflow:hidden}
   }
   .academic-story-records{padding-bottom:22px}
 }
+
+
+/* Competition gear fund — compact rule-backed dropdowns */
+.campaign-top>div:first-child>p:last-child strong{
+  color:#fff;
+  font-weight:700;
+}
+.fund-dropdowns{
+  display:grid;
+  gap:12px;
+}
+.fund-dropdown{
+  border:1px solid rgba(48,41,37,.14);
+  border-radius:22px;
+  background:rgba(255,255,255,.52);
+  overflow:hidden;
+}
+.fund-dropdown>summary{
+  display:grid;
+  grid-template-columns:minmax(0,1fr) 44px;
+  gap:24px;
+  align-items:center;
+  padding:26px 30px;
+  list-style:none;
+  cursor:pointer;
+}
+.fund-dropdown>summary::-webkit-details-marker{display:none}
+.fund-dropdown>summary>div{
+  display:grid;
+  grid-template-columns:minmax(180px,.34fr) minmax(0,.66fr);
+  gap:5px 28px;
+  align-items:end;
+}
+.fund-dropdown>summary span{
+  grid-row:1/3;
+  align-self:center;
+  color:var(--accent);
+  font-size:10px;
+  font-weight:700;
+  letter-spacing:.13em;
+  line-height:1.5;
+}
+.fund-dropdown>summary strong{
+  color:var(--primary);
+  font-family:"Averia Serif Libre",serif;
+  font-size:28px;
+  line-height:1.15;
+  font-weight:600;
+}
+.fund-dropdown>summary p{
+  margin:0;
+  color:#77706b;
+  font-size:12px;
+  line-height:1.55;
+}
+.fund-dropdown>summary>i{
+  position:relative;
+  width:38px;
+  height:38px;
+  border:1px solid rgba(191,43,43,.3);
+  border-radius:50%;
+}
+.fund-dropdown>summary>i:before,
+.fund-dropdown>summary>i:after{
+  content:"";
+  position:absolute;
+  left:50%;
+  top:50%;
+  width:13px;
+  height:1px;
+  background:var(--accent);
+  transform:translate(-50%,-50%);
+  transition:transform .2s ease;
+}
+.fund-dropdown>summary>i:after{
+  transform:translate(-50%,-50%) rotate(90deg);
+}
+.fund-dropdown[open]>summary{
+  border-bottom:1px solid var(--line);
+  background:rgba(255,255,255,.55);
+}
+.fund-dropdown[open]>summary>i:after{
+  transform:translate(-50%,-50%);
+}
+.fund-dropdown-content{
+  padding:28px 30px 32px;
+}
+.fund-intro{
+  max-width:830px;
+  margin:0 0 24px;
+}
+.fund-intro p{
+  margin:0;
+  color:var(--text);
+  font-size:14px;
+  line-height:1.8;
+}
+.fund-intro strong{color:var(--primary)}
+.fund-dropdown .gear-grid{
+  border:1px solid var(--line);
+  border-radius:18px;
+  overflow:hidden;
+}
+.fund-dropdown .gear-card{
+  min-height:320px;
+}
+.approval-story{
+  display:grid;
+  grid-template-columns:minmax(0,.78fr) minmax(0,1.22fr);
+  gap:46px;
+  padding:8px 4px 30px;
+}
+.approval-story .tiny-label{
+  margin:0 0 9px;
+}
+.approval-story h3{
+  margin:0;
+  max-width:480px;
+  font-family:"Averia Serif Libre",serif;
+  font-size:36px;
+  line-height:1.12;
+  font-weight:600;
+}
+.approval-story>div:last-child{
+  max-width:800px;
+}
+.approval-story>div:last-child>p{
+  margin:0 0 13px;
+  color:#68615d;
+  font-size:14px;
+  line-height:1.78;
+}
+.approval-story>div:last-child>p:last-child{margin-bottom:0}
+.approval-story strong{color:var(--primary)}
+.approval-story .rule-caveat{
+  padding-top:13px;
+  border-top:1px solid var(--line);
+  color:#8b837e;
+  font-size:11px;
+}
+.fund-dropdown-rules .requirements-list{
+  border:1px solid var(--line);
+  border-radius:18px;
+  overflow:hidden;
+}
+.rule-sources{
+  display:flex;
+  flex-wrap:wrap;
+  align-items:center;
+  gap:10px 16px;
+  margin-top:18px;
+  padding-top:16px;
+  border-top:1px solid var(--line);
+}
+.rule-sources span{
+  color:#8c837d;
+  font-size:9px;
+  font-weight:700;
+  letter-spacing:.12em;
+}
+.rule-sources a{
+  color:var(--accent);
+  font-size:10px;
+  font-weight:600;
+  text-decoration:none;
+}
+.rule-sources a:hover{text-decoration:underline}
+.fund-dropdown .transport-support{
+  margin:0;
+  background:rgba(191,43,43,.035);
+}
+.fund-dropdown .transport-support h2{
+  font-size:34px;
+}
+
+@media(max-width:760px){
+  .fund-dropdowns{gap:10px}
+  .fund-dropdown>summary{
+    grid-template-columns:1fr 34px;
+    gap:14px;
+    padding:22px 18px;
+  }
+  .fund-dropdown>summary>div{
+    grid-template-columns:1fr;
+    gap:5px;
+  }
+  .fund-dropdown>summary span{
+    grid-row:auto;
+    font-size:9px;
+  }
+  .fund-dropdown>summary strong{
+    font-size:23px;
+  }
+  .fund-dropdown>summary p{
+    font-size:11px;
+  }
+  .fund-dropdown>summary>i{
+    width:32px;
+    height:32px;
+  }
+  .fund-dropdown-content{
+    padding:22px 18px 24px;
+  }
+  .fund-dropdown .gear-grid{
+    grid-template-columns:1fr;
+  }
+  .fund-dropdown .gear-card,
+  .fund-dropdown .gear-card:last-child{
+    min-height:0;
+    border-right:0;
+    border-bottom:1px solid var(--line);
+  }
+  .fund-dropdown .gear-card:last-child{border-bottom:0}
+  .approval-story{
+    grid-template-columns:1fr;
+    gap:18px;
+    padding-top:2px;
+  }
+  .approval-story h3{font-size:30px}
+  .fund-dropdown-rules .requirements-list{
+    grid-template-columns:1fr;
+  }
+  .fund-dropdown-rules .requirements-list>div,
+  .fund-dropdown-rules .requirements-list>div:nth-child(2n),
+  .fund-dropdown-rules .requirements-list>div:nth-last-child(-n+2){
+    min-height:0;
+    border-right:0;
+    border-bottom:1px solid var(--line);
+  }
+  .fund-dropdown-rules .requirements-list>div:last-child{border-bottom:0}
+  .rule-sources{
+    align-items:flex-start;
+    flex-direction:column;
+  }
+  .fund-dropdown .transport-support{
+    grid-template-columns:1fr;
+    gap:18px;
+    padding:26px 22px;
+  }
+  .fund-dropdown .transport-support h2{font-size:30px}
+}

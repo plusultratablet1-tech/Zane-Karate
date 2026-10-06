@@ -2295,3 +2295,44 @@ body.lightbox-open{overflow:hidden}
   .academic-achievements{padding:40px 0 54px}
   .academic-heading{margin-bottom:28px}
 }
+
+
+/* Narrative order: current Batang Pinoy chapter before credentials */
+.comeback-section{
+  padding:58px 0 62px;
+  background:#f4f0ec;
+  border-bottom:1px solid rgba(48,41,37,.08);
+}
+.comeback-section .support-event{
+  margin:0;
+}
+.comeback-section + .theme-achievements{
+  padding-top:72px;
+}
+
+/* "What comes with the opportunity" now begins the later support chapter */
+.theme-support{
+  padding-top:76px;
+}
+.theme-support .support-wrap{
+  gap:54px;
+}
+.theme-support .support-bridge{
+  margin-top:0;
+  padding:40px 42px;
+  border:1px solid rgba(191,43,43,.16);
+  border-radius:24px;
+  background:#fff;
+  box-shadow:0 14px 40px rgba(48,41,37,.04);
+}
+
+@media(max-width:760px){
+  .comeback-section{padding:38px 0 42px}
+  .comeback-section + .theme-achievements{padding-top:52px}
+  .theme-support{padding-top:54px}
+  .theme-support .support-wrap{gap:38px}
+  .theme-support .support-bridge{
+    padding:26px 20px;
+    border-radius:20px;
+  }
+}

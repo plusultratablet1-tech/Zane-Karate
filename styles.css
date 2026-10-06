@@ -2400,3 +2400,120 @@ body.lightbox-open{overflow:hidden}
   }
   .national-bridge + .comeback-section{padding-top:22px}
 }
+
+
+/* Compact academic story dropdown */
+.academic-story-wrap{
+  padding:26px 0 22px;
+}
+.academic-story{
+  border-top:1px solid var(--line);
+  border-bottom:1px solid var(--line);
+}
+.academic-story>summary{
+  list-style:none;
+  display:grid;
+  grid-template-columns:minmax(0,1fr) auto;
+  gap:28px;
+  align-items:center;
+  padding:26px 4px;
+  cursor:pointer;
+}
+.academic-story>summary::-webkit-details-marker{display:none}
+.academic-story-copy{
+  max-width:920px;
+}
+.academic-story-kicker{
+  display:block;
+  margin-bottom:8px;
+  color:var(--accent);
+  font-size:9px;
+  font-weight:700;
+  letter-spacing:.14em;
+}
+.academic-story-copy h2{
+  margin:0 0 7px;
+  font-family:"Averia Serif Libre",serif;
+  font-size:30px;
+  line-height:1.08;
+  font-weight:600;
+}
+.academic-story-copy p{
+  margin:0;
+  max-width:800px;
+  color:#6f6863;
+  font-size:13px;
+  line-height:1.6;
+}
+.academic-story-copy strong{
+  display:inline-block;
+  margin-top:10px;
+  color:var(--accent);
+  font-size:11px;
+  font-weight:700;
+  letter-spacing:.05em;
+}
+.academic-story-toggle{
+  width:40px;
+  height:40px;
+  border:1px solid rgba(191,43,43,.4);
+  border-radius:50%;
+  position:relative;
+  flex:0 0 40px;
+}
+.academic-story-toggle:before,
+.academic-story-toggle:after{
+  content:"";
+  position:absolute;
+  left:50%;
+  top:50%;
+  width:14px;
+  height:1px;
+  background:var(--accent);
+  transform:translate(-50%,-50%);
+}
+.academic-story-toggle:after{
+  transform:translate(-50%,-50%) rotate(90deg);
+}
+.academic-story[open] .academic-story-toggle{
+  background:var(--accent);
+}
+.academic-story[open] .academic-story-toggle:before,
+.academic-story[open] .academic-story-toggle:after{
+  background:#fff;
+}
+.academic-story[open] .academic-story-toggle:after{
+  transform:translate(-50%,-50%);
+}
+.academic-story-records{
+  padding:2px 0 30px;
+}
+.academic-story-note{
+  margin:0 0 18px;
+  color:#77706b;
+  font-size:11px;
+  line-height:1.6;
+}
+.academic-story-records .academic-grade-list{
+  margin-top:0;
+}
+.academic-story-records .academic-grade summary{
+  padding-top:20px;
+  padding-bottom:20px;
+}
+
+@media(max-width:760px){
+  .academic-story-wrap{padding:18px 0 16px}
+  .academic-story>summary{
+    gap:16px;
+    padding:22px 0;
+  }
+  .academic-story-copy h2{font-size:24px}
+  .academic-story-copy p{font-size:12px}
+  .academic-story-toggle{
+    width:34px;
+    height:34px;
+    flex-basis:34px;
+  }
+  .academic-story-records{padding-bottom:22px}
+}

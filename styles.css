@@ -2336,3 +2336,67 @@ body.lightbox-open{overflow:hidden}
     border-radius:20px;
   }
 }
+
+
+/* Compact context bridge before the Batang Pinoy comeback */
+.national-bridge{
+  padding:46px 0 18px;
+  background:#f4f0ec;
+}
+.national-bridge-inner{
+  border-top:1px solid rgba(48,41,37,.10);
+  padding-top:34px;
+}
+.national-bridge-inner>.tiny-label{
+  margin:0 0 14px;
+}
+.national-bridge-copy{
+  display:grid;
+  grid-template-columns:minmax(0,.78fr) minmax(0,1.22fr);
+  gap:54px;
+  align-items:start;
+}
+.national-bridge-copy h2{
+  margin:0;
+  max-width:520px;
+  font-family:"Averia Serif Libre",serif;
+  font-size:34px;
+  line-height:1.08;
+  font-weight:600;
+}
+.national-bridge-copy>div{
+  max-width:700px;
+}
+.national-bridge-copy p{
+  margin:0 0 12px;
+  color:#6f6863;
+  font-size:14px;
+  line-height:1.68;
+}
+.national-bridge-copy strong{color:var(--primary)}
+.national-bridge-copy .national-bridge-next{
+  margin:18px 0 0;
+  color:var(--accent);
+  font-family:"Averia Serif Libre",serif;
+  font-size:21px;
+  font-weight:600;
+}
+.national-bridge + .comeback-section{
+  padding-top:28px;
+}
+
+@media(max-width:760px){
+  .national-bridge{padding:32px 0 12px}
+  .national-bridge-inner{padding-top:24px}
+  .national-bridge-copy{
+    grid-template-columns:1fr;
+    gap:16px;
+  }
+  .national-bridge-copy h2{font-size:28px}
+  .national-bridge-copy p{font-size:13px}
+  .national-bridge-copy .national-bridge-next{
+    margin-top:14px;
+    font-size:19px;
+  }
+  .national-bridge + .comeback-section{padding-top:22px}
+}

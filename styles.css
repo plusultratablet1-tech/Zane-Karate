@@ -37,14 +37,26 @@ section{scroll-margin-top:90px}
 .hero-left{padding-top:28px;position:relative}
 .hero-left h1{margin:0;font-family:"Averia Serif Libre",serif;font-weight:400;font-size:58px;line-height:1.12;text-transform:uppercase;letter-spacing:-.03em}
 .hero-left h1 span{display:block}
-.focus-line{display:block!important;margin-left:0}
+.focus-line{display:block!important;margin-left:0;white-space:nowrap}
 .sunburst{width:52px;height:52px;border-radius:50%;flex:0 0 auto;background:repeating-conic-gradient(var(--accent) 0 5deg,transparent 5deg 10deg);position:relative}
 .sunburst:after{content:"";position:absolute;inset:31%;border-radius:50%;background:var(--bg)}
 .hero-sub{width:500px;max-width:88%;margin:14px 0 0;color:var(--text);font-size:15px;line-height:1.6}
 .cta-line-wrap{height:88px;position:relative;margin-top:4px}
 .swoop-line{position:absolute;left:0;top:48px;width:390px;height:52px;border-bottom:1px solid rgba(191,43,43,.45);border-radius:0 0 60% 50%;transform:rotate(5deg)}
-.round-cta{position:absolute;left:285px;top:6px;width:74px;height:74px;border-radius:50%;display:grid;place-items:center;text-align:center;background:var(--accent);color:#fff;text-decoration:none;font-family:"Averia Serif Libre",serif;font-weight:600;font-size:15px;line-height:1.1}
-.round-cta:hover{background:var(--accent-dark)}
+.text-cta{
+  position:absolute;
+  left:290px;
+  top:18px;
+  color:var(--accent);
+  text-decoration:none;
+  font-family:"Averia Serif Libre",serif;
+  font-weight:600;
+  font-size:20px;
+  line-height:1;
+  border-bottom:1px solid rgba(191,43,43,.35);
+  padding-bottom:3px;
+}
+.text-cta:hover{color:var(--accent-dark)}
 .hero-right{position:relative;min-height:460px}
 .red-panel{
   position:absolute;right:0;top:8px;width:90%;height:430px;border-radius:34px;overflow:hidden;
@@ -1487,4 +1499,9 @@ body.lightbox-open{overflow:hidden}
   .hero-photo-slot{inset:20px;border-radius:18px}
   .hero-photo-slot span{font-size:20px}
   .hero-photo-slot small{font-size:9px}
+}
+
+@media(max-width:760px){
+  .focus-line{white-space:normal}
+  .text-cta{left:190px;top:12px;font-size:17px}
 }

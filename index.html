@@ -1127,24 +1127,25 @@
       karateFloat.setAttribute('aria-hidden','false');
     };
 
-    const hideKarateFloat=()=>{
+    const hideKarateFloat=(dismiss=false)=>{
       if(!karateFloat) return;
-      karateFloatDismissed=true;
+      if(dismiss) karateFloatDismissed=true;
       karateFloat.classList.remove('is-visible');
       karateFloat.setAttribute('aria-hidden','true');
     };
 
-    karateFloatClose?.addEventListener('click',hideKarateFloat);
+    karateFloatClose?.addEventListener('click',()=>hideKarateFloat(true));
 
     if(journeySection && 'IntersectionObserver' in window){
       const karateObserver=new IntersectionObserver((entries)=>{
         entries.forEach(entry=>{
-          if(entry.isIntersecting){
+          if(entry.isIntersecting && entry.intersectionRatio>=.18){
             showKarateFloat();
-            karateObserver.disconnect();
+          }else if(entry.boundingClientRect.top<0){
+            hideKarateFloat(false);
           }
         });
-      },{threshold:.28});
+      },{threshold:[0,.18,.35]});
       karateObserver.observe(journeySection);
     }else if(journeySection){
       showKarateFloat();

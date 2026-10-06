@@ -2283,3 +2283,15 @@ body.lightbox-open{overflow:hidden}
   .karate-float-items h3{font-size:15px}
   .karate-float-items p{font-size:10px}
 }
+
+
+/* Tighter transition from competition achievements into academics */
+.theme-achievements{padding-bottom:64px}
+.academic-achievements{padding:54px 0 68px}
+.academic-heading{margin-bottom:38px}
+
+@media(max-width:760px){
+  .theme-achievements{padding-bottom:44px}
+  .academic-achievements{padding:40px 0 54px}
+  .academic-heading{margin-bottom:28px}
+}

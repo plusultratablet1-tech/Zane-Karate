@@ -133,40 +133,6 @@
       </div>
     </section>
 
-    <section class="karate-explainer" id="kata-kumite">
-      <div class="theme-container">
-        <div class="karate-explainer-heading">
-          <div>
-            <p class="tiny-label">HOW ZANE COMPETES</p>
-            <h2>Two sides of competitive karate.</h2>
-          </div>
-          <p>Zane competes in both <strong>Kata</strong> and <strong>Kumite</strong>. They test different skills, but both demand technique, discipline, control and confidence.</p>
-        </div>
-
-        <div class="karate-discipline-grid">
-          <article class="karate-discipline-card kata-card">
-            <div class="discipline-symbol" aria-hidden="true">形</div>
-            <div class="discipline-copy">
-              <span class="discipline-label">KATA · FORM</span>
-              <h3>Precision against an imagined opponent.</h3>
-              <p><strong>Kata</strong>, in Japanese, means “form.” In karate, Kata is the practice of performing a sequence of specific techniques against an imagined opponent.</p>
-              <p>Competitors are judged on qualities such as technique, balance, timing, power, control and the overall performance of the form.</p>
-            </div>
-          </article>
-
-          <article class="karate-discipline-card kumite-card">
-            <div class="discipline-symbol" aria-hidden="true">組手</div>
-            <div class="discipline-copy">
-              <span class="discipline-label">KUMITE · SPARRING</span>
-              <h3>Two competitors, one live match.</h3>
-              <p><strong>Kumite</strong> can mean “sparring.” It is where two competitors face each other using defensive and offensive techniques in a standing competition.</p>
-              <p>Competitors can score using controlled punches, kicks and permitted takedown techniques while demonstrating speed, timing, distance and control.</p>
-            </div>
-          </article>
-        </div>
-      </div>
-    </section>
-
     <section class="theme-feature">
       <div class="theme-container feature-grid">
         <div class="feature-visual">
@@ -986,6 +952,29 @@
     </section>
   </main>
 
+  <aside class="karate-float" id="karate-float" aria-label="How Zane competes" aria-hidden="true">
+    <button class="karate-float-close" type="button" aria-label="Close Kata and Kumite explainer">×</button>
+    <div class="karate-float-head">
+      <p>HOW ZANE COMPETES</p>
+      <h2>Two sides of competitive karate.</h2>
+      <span>Zane competes in both Kata and Kumite.</span>
+    </div>
+
+    <div class="karate-float-items">
+      <article>
+        <div class="karate-float-tag"><b>形</b><span>KATA · FORM</span></div>
+        <h3>Precision against an imagined opponent.</h3>
+        <p><strong>Kata</strong> means “form.” Competitors perform a sequence of techniques and are judged on technique, balance, timing, power, control and overall performance.</p>
+      </article>
+
+      <article>
+        <div class="karate-float-tag"><b>組手</b><span>KUMITE · SPARRING</span></div>
+        <h3>Two competitors, one live match.</h3>
+        <p><strong>Kumite</strong> means “sparring.” Competitors face each other using controlled punches, kicks and permitted takedowns while demonstrating speed, timing, distance and control.</p>
+      </article>
+    </div>
+  </aside>
+
   <div class="lightbox" id="gallery-lightbox" aria-hidden="true">
     <button class="lightbox-close" type="button" aria-label="Close image viewer">×</button>
     <button class="lightbox-nav lightbox-prev" type="button" aria-label="Previous image">‹</button>
@@ -1126,6 +1115,41 @@
         });
       });
     }
+
+    const karateFloat=document.querySelector('#karate-float');
+    const karateFloatClose=karateFloat?.querySelector('.karate-float-close');
+    const journeySection=document.querySelector('#journey');
+    let karateFloatDismissed=false;
+
+    const showKarateFloat=()=>{
+      if(!karateFloat || karateFloatDismissed) return;
+      karateFloat.classList.add('is-visible');
+      karateFloat.setAttribute('aria-hidden','false');
+    };
+
+    const hideKarateFloat=()=>{
+      if(!karateFloat) return;
+      karateFloatDismissed=true;
+      karateFloat.classList.remove('is-visible');
+      karateFloat.setAttribute('aria-hidden','true');
+    };
+
+    karateFloatClose?.addEventListener('click',hideKarateFloat);
+
+    if(journeySection && 'IntersectionObserver' in window){
+      const karateObserver=new IntersectionObserver((entries)=>{
+        entries.forEach(entry=>{
+          if(entry.isIntersecting){
+            showKarateFloat();
+            karateObserver.disconnect();
+          }
+        });
+      },{threshold:.28});
+      karateObserver.observe(journeySection);
+    }else if(journeySection){
+      showKarateFloat();
+    }
+
   </script>
 </body>
 </html>

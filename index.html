@@ -911,53 +911,85 @@
         <section class="support-payment" aria-labelledby="support-payment-title">
           <div class="support-payment-intro">
             <p class="tiny-label">WAYS TO SUPPORT ZANE</p>
-            <h2 id="support-payment-title">If you would like to be part of the journey.</h2>
-            <p>For anyone who chooses to help, support can be sent through the payment options below. We will only publish verified account details here.</p>
+            <h2 id="support-payment-title">Scan a QR code or send support directly.</h2>
+            <p>If you would like to be part of Zane’s journey, you may use any of the verified options below. Every contribution can be combined with the support of others toward his Batang Pinoy 2026 competition needs.</p>
           </div>
 
-          <div class="support-payment-grid">
-            <div class="support-qr-card">
-              <div class="qr-placeholder" aria-label="QR code placeholder">
-                <span>QR</span>
-                <small>Verified payment QR<br>will appear here</small>
+          <div class="support-payment-grid support-payment-grid-live">
+            <article class="payment-method-card payment-gcash">
+              <div class="payment-method-top">
+                <span class="payment-method-type">E-WALLET</span>
+                <strong class="payment-method-name">GCash</strong>
               </div>
-              <div>
-                <p class="payment-label">SCAN TO SUPPORT</p>
-                <h3>QR Payment</h3>
-                <p>Use the verified QR code once it is added to this page.</p>
+              <div class="payment-qr-live">
+                <img src="assets/gcash-support-qr.svg" alt="GCash InstaPay QR code for supporting Zane">
               </div>
-            </div>
+              <div class="payment-details-live">
+                <div>
+                  <span>Account name</span>
+                  <strong>MA***A M** O.</strong>
+                </div>
+                <div>
+                  <span>Mobile number</span>
+                  <strong>0916 248 ••••</strong>
+                </div>
+              </div>
+              <p class="payment-method-note">Scan the QR code using GCash or another participating InstaPay-enabled app.</p>
+            </article>
 
-            <div class="support-account-card">
-              <p class="payment-label">GCASH / E-WALLET</p>
-              <div class="payment-row">
-                <span>Account name</span>
-                <strong>To be added</strong>
+            <article class="payment-method-card payment-gotyme">
+              <div class="payment-method-top">
+                <span class="payment-method-type">DIGITAL BANK</span>
+                <strong class="payment-method-name">GoTyme Bank</strong>
               </div>
-              <div class="payment-row">
-                <span>Mobile number</span>
-                <strong>To be added</strong>
+              <div class="payment-qr-live">
+                <img src="assets/gotyme-support-qr.svg" alt="GoTyme Bank InstaPay QR code for supporting Zane">
               </div>
-            </div>
+              <div class="payment-details-live">
+                <div>
+                  <span>Account name</span>
+                  <strong>Martha Mae Gallana</strong>
+                </div>
+                <div>
+                  <span>Account number</span>
+                  <strong>0184 4590 7440</strong>
+                  <button class="copy-payment" type="button" data-copy="018445907440">Copy</button>
+                </div>
+              </div>
+              <p class="payment-method-note">Scan the InstaPay QR or transfer directly to the GoTyme account above.</p>
+            </article>
 
-            <div class="support-account-card">
-              <p class="payment-label">BANK TRANSFER</p>
-              <div class="payment-row">
-                <span>Bank</span>
-                <strong>To be added</strong>
+            <article class="payment-method-card payment-bpi">
+              <div class="payment-method-top">
+                <span class="payment-method-type">BANK TRANSFER</span>
+                <strong class="payment-method-name">BPI Savings</strong>
               </div>
-              <div class="payment-row">
-                <span>Account name</span>
-                <strong>To be added</strong>
+              <div class="payment-qr-live">
+                <img src="assets/bpi-support-qr.svg" alt="BPI InstaPay QR code for supporting Zane">
               </div>
-              <div class="payment-row">
-                <span>Account number</span>
-                <strong>To be added</strong>
+              <div class="payment-details-live">
+                <div>
+                  <span>Account name</span>
+                  <strong>MM Gallana</strong>
+                </div>
+                <div>
+                  <span>Account number</span>
+                  <strong>4099512432</strong>
+                  <button class="copy-payment" type="button" data-copy="4099512432">Copy</button>
+                </div>
+                <div>
+                  <span>Branch</span>
+                  <strong>BPI · Cainta-Ortigas Extension</strong>
+                </div>
               </div>
-            </div>
+              <p class="payment-method-note">Scan the InstaPay QR or use the BPI account details for a direct bank transfer.</p>
+            </article>
           </div>
 
-          <p class="payment-note">Please use only the account information published on this page. Payment details will be added after they are verified.</p>
+          <div class="payment-trust-note">
+            <strong>Before sending</strong>
+            <p>Please check that the recipient details shown by your payment app match the information above. Transfer fees may apply depending on the bank or e-wallet used.</p>
+          </div>
         </section>
 
         <div class="support-closing">
@@ -1190,6 +1222,22 @@
 
     document.addEventListener('keydown',(event)=>{
       if(event.key==='Escape' && quickSummary?.classList.contains('is-open')) closeQuickSummary();
+    });
+
+
+    document.querySelectorAll('.copy-payment').forEach(button=>{
+      button.addEventListener('click',async()=>{
+        const value=button.dataset.copy||'';
+        if(!value) return;
+        try{
+          await navigator.clipboard.writeText(value);
+          const original=button.textContent;
+          button.textContent='Copied';
+          window.setTimeout(()=>button.textContent=original,1400);
+        }catch{
+          button.textContent='Copy manually';
+        }
+      });
     });
 
   </script>

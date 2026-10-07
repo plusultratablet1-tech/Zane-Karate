@@ -3225,3 +3225,27 @@ body.lightbox-open{overflow:hidden}
     gap:7px;
   }
 }
+
+
+/* Payment brand logos */
+.payment-method-brand-top{
+  align-items:center;
+}
+.payment-brand-logo{
+  display:block;
+  width:auto;
+  height:42px;
+  max-width:180px;
+  object-fit:contain;
+  object-position:left center;
+}
+.payment-method-brand-top .payment-method-type{
+  margin-left:auto;
+  text-align:right;
+}
+@media(max-width:760px){
+  .payment-brand-logo{
+    height:38px;
+    max-width:160px;
+  }
+}

@@ -3593,3 +3593,61 @@ body.lightbox-open{overflow:hidden}
   .theme-about .about-photo{height:440px}
   .theme-about .about-photo img{height:440px !important}
 }
+
+
+/* Temporary placeholder for About Zane (no portrait or red photo backdrop). */
+.theme-about .about-photo.placeholder-photo{
+  display:flex !important;
+  justify-content:center !important;
+  align-items:center !important;
+  height:520px !important;
+  min-height:0 !important;
+  padding:0 !important;
+  overflow:visible !important;
+  background:transparent !important;
+  border:0 !important;
+  box-shadow:none !important;
+  border-radius:0 !important;
+}
+.theme-about .about-photo.placeholder-photo::before,
+.theme-about .about-photo.placeholder-photo::after{
+  display:none !important;
+  content:none !important;
+}
+.theme-about .placeholder-inner{
+  width:min(100%,430px);
+  height:480px;
+  display:flex;
+  flex-direction:column;
+  justify-content:center;
+  align-items:center;
+  gap:14px;
+  border:2px dashed rgba(69,49,44,.28);
+  border-radius:24px;
+  background:rgba(255,255,255,.24);
+  color:rgba(69,49,44,.58);
+  text-align:center;
+  font-family:inherit;
+  font-size:13px;
+  font-weight:700;
+  letter-spacing:.13em;
+}
+.theme-about .placeholder-symbol{
+  display:grid;
+  place-items:center;
+  width:42px;
+  height:42px;
+  border-radius:50%;
+  border:1px solid rgba(69,49,44,.3);
+  font-size:27px;
+  font-weight:400;
+  line-height:1;
+}
+@media(max-width:900px){
+  .theme-about .about-photo.placeholder-photo{height:420px !important}
+  .theme-about .placeholder-inner{height:380px;width:min(100%,360px)}
+}
+@media(max-width:600px){
+  .theme-about .about-photo.placeholder-photo{height:300px !important}
+  .theme-about .placeholder-inner{height:280px;width:100%}
+}

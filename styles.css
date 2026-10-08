@@ -3519,3 +3519,20 @@ body.lightbox-open{overflow:hidden}
     width:min(92vw,420px) !important;
   }
 }
+
+
+/* Hero cutout: use the original portrait's transparent alpha as a silhouette
+   mask over the full-resolution hero photo. This removes the rectangular
+   backdrop without downscaling the sharp portrait. */
+.hero-right .hero-zane {
+  -webkit-mask-image: url("assets/zane-hero.webp");
+  mask-image: url("assets/zane-hero.webp");
+  -webkit-mask-mode: alpha;
+  mask-mode: alpha;
+  -webkit-mask-repeat: no-repeat;
+  mask-repeat: no-repeat;
+  -webkit-mask-position: center;
+  mask-position: center;
+  -webkit-mask-size: 100% 100%;
+  mask-size: 100% 100%;
+}

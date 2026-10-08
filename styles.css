@@ -3651,3 +3651,106 @@ body.lightbox-open{overflow:hidden}
   .theme-about .about-photo.placeholder-photo{height:300px !important}
   .theme-about .placeholder-inner{height:280px;width:100%}
 }
+
+
+/* October photo swap: medal photo in hero; karate portrait in About */
+.hero-right,
+.hero-photo-wrap {
+  background:transparent !important;
+  overflow:visible !important;
+}
+.hero-right {
+  min-height:540px !important;
+  display:flex !important;
+  align-items:center !important;
+  justify-content:center !important;
+}
+.hero-photo-wrap {
+  position:relative !important;
+  inset:auto !important;
+  width:100% !important;
+  min-height:540px !important;
+  display:flex !important;
+  justify-content:center !important;
+  align-items:center !important;
+}
+.hero-right .hero-medal-image {
+  display:block !important;
+  width:min(100%,420px) !important;
+  height:540px !important;
+  max-width:100% !important;
+  max-height:540px !important;
+  object-fit:cover !important;
+  object-position:center !important;
+  border-radius:22px !important;
+  box-shadow:0 15px 34px rgba(36,30,28,.12) !important;
+  filter:none !important;
+  mix-blend-mode:normal !important;
+  -webkit-mask:none !important;
+  mask:none !important;
+  clip-path:none !important;
+  transform:none !important;
+  opacity:1 !important;
+  visibility:visible !important;
+}
+.theme-about .about-photo.restored-about-photo {
+  background:transparent !important;
+  border:0 !important;
+  border-radius:0 !important;
+  box-shadow:none !important;
+  padding:0 !important;
+  overflow:visible !important;
+  display:flex !important;
+  justify-content:center !important;
+  align-items:flex-end !important;
+  min-height:0 !important;
+  height:520px !important;
+}
+.theme-about .about-photo.restored-about-photo::before,
+.theme-about .about-photo.restored-about-photo::after {
+  display:none !important;
+  content:none !important;
+}
+.theme-about .about-photo.restored-about-photo img {
+  display:block !important;
+  position:relative !important;
+  width:auto !important;
+  max-width:100% !important;
+  height:500px !important;
+  max-height:100% !important;
+  object-fit:contain !important;
+  object-position:center bottom !important;
+  border-radius:0 !important;
+  border:0 !important;
+  box-shadow:none !important;
+  transform:none !important;
+  clip-path:none !important;
+  -webkit-mask:none !important;
+  mask:none !important;
+  mix-blend-mode:normal !important;
+  filter:none !important;
+  opacity:1 !important;
+  visibility:visible !important;
+}
+@media (max-width:900px) {
+  .hero-right,.hero-photo-wrap{min-height:420px !important}
+  .hero-right .hero-medal-image{
+    width:min(100%,340px) !important;
+    height:440px !important;
+    max-height:440px !important;
+  }
+  .theme-about .about-photo.restored-about-photo{height:430px !important}
+  .theme-about .about-photo.restored-about-photo img{height:420px !important}
+}
+@media (max-width:600px) {
+  .hero-right,.hero-photo-wrap{min-height:0 !important}
+  .hero-right .hero-medal-image{
+    width:min(90vw,340px) !important;
+    height:auto !important;
+    max-height:none !important;
+    aspect-ratio:3/4;
+    object-fit:cover !important;
+  }
+  .theme-about .about-photo.restored-about-photo{height:360px !important}
+  .theme-about .about-photo.restored-about-photo img{height:350px !important}
+}

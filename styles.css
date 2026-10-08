@@ -3539,3 +3539,15 @@ body.lightbox-open{overflow:hidden}
 
 /* Fix disappearing portrait: no masking or compositing */
 .hero-right .hero-zane { -webkit-mask-image:none !important; mask-image:none !important; opacity:1 !important; visibility:visible !important; display:block !important; }
+
+/* Blend the portrait's baked light background into the website canvas,
+   rather than displaying it as a separate rectangular photo panel. */
+.hero-right { background:transparent !important; }
+.hero-photo-wrap { background:transparent !important; }
+.hero-right .hero-zane {
+  -webkit-mask-image:none !important;
+  mask-image:none !important;
+  mix-blend-mode:multiply !important;
+  filter:none !important;
+  box-shadow:none !important;
+}

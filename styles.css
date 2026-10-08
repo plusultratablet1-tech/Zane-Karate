@@ -3536,3 +3536,6 @@ body.lightbox-open{overflow:hidden}
   -webkit-mask-size: 100% 100%;
   mask-size: 100% 100%;
 }
+
+/* Fix disappearing portrait: no masking or compositing */
+.hero-right .hero-zane { -webkit-mask-image:none !important; mask-image:none !important; opacity:1 !important; visibility:visible !important; display:block !important; }

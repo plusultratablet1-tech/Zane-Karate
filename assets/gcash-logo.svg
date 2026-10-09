@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 72" role="img" aria-label="GCash">
+  <rect width="240" height="72" rx="14" fill="#fff"/>
+  <circle cx="32" cy="36" r="18" fill="#007dfe"/>
+  <circle cx="32" cy="36" r="10" fill="#fff"/>
+  <path d="M32 20a16 16 0 0 1 13 6M32 52a16 16 0 0 0 13-6" fill="none" stroke="#007dfe" stroke-width="4" stroke-linecap="round"/>
+  <text x="62" y="45" font-family="Arial,Helvetica,sans-serif" font-size="34" font-weight="700" fill="#007dfe">GCash</text>
+</svg>

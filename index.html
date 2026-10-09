@@ -3,377 +3,1298 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-  <meta name="theme-color" content="#be383e">
-  <meta name="description" content="Zane's Karate Journey — a web recreation of Zane's original karate portfolio.">
+  <meta name="theme-color" content="#eaeaea">
+  <meta name="description" content="Zane Gabriel O. Gallana's karate journey, competition record and achievements.">
   <title>Zane's Karate Journey</title>
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <header class="site-nav">
-    <a class="site-brand" href="#home" aria-label="Zane's Karate Journey home">
-      <span class="brand-mark">Z</span>
-      <span>ZANE'S KARATE JOURNEY</span>
-    </a>
-    <nav aria-label="Primary navigation">
-      <a href="#home">Home</a>
-      <a href="#journey">Journey</a>
-      <a href="#achievements">Achievements</a>
-      <a href="#journey-continued">2025–2026</a>
-      <a href="#gallery">Gallery</a>
-      <a href="#support">Support</a>
-    </nav>
+  <header class="sensei-header">
+    <div class="header-inner">
+      <a class="sensei-brand" href="#home">
+        <span class="brand-round">空</span>
+        <strong>Zane</strong>
+      </a>
+
+      <button class="menu-toggle" type="button" aria-label="Toggle navigation" aria-expanded="false">
+        <span></span><span></span>
+      </button>
+
+      <nav class="sensei-nav" aria-label="Primary navigation">
+        <a class="active" href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#achievements">Achievements</a>
+        <a href="#gallery">Gallery</a>
+        <button class="quick-view-trigger nav-quick-view" type="button" aria-haspopup="dialog" aria-controls="quick-summary">Start Here</button>
+      </nav>
+
+      <a class="contact-pill" href="#support">Be Part of Zane’s Journey</a>
+    </div>
   </header>
 
-  <main class="portfolio" aria-label="Zane's Karate Journey">
-    <section class="pdf-page page-1" id="home" aria-labelledby="hero-title">
-      <div class="cloud cloud-tl" aria-hidden="true"></div>
-      <div class="hero-photo-card">
-        <img src="assets/p1-img2.webp" alt="Zane in karate uniform wearing a medal and holding his Go! I'm-a Zane! sign">
-      </div>
-      <div class="hero-copy">
-        <p class="hero-kicker">HELLO</p>
-        <h1 id="hero-title">MY NAME IS <strong>ZANE,</strong></h1>
-        <p class="hero-description">I am an aspiring karateka, with dreams of joining the<br>Philippine Karate National Team<br>and represent our country one day.</p>
-        <a class="hero-button" href="#journey">LEARN MORE ABOUT ME</a>
+  <main>
+    <section class="theme-hero" id="home">
+      <div class="theme-container hero-grid">
+        <div class="hero-left">
+          <h1>
+            <span>MEET ZANE.</span>
+            <span class="focus-line">A YOUNG KARATEKA</span>
+            <span>WITH A BIG DREAM.</span>
+          </h1>
+
+          <p class="hero-sub">Follow Zane's journey from his first karate class at age five to representing Marikina on the national stage — one belt, one tournament and one step closer to his dream of representing the Philippines.</p>
+
+          <div class="cta-line-wrap">
+            <a class="text-cta" href="#about">Meet Zane <span aria-hidden="true">→</span></a>
+          </div>
+        </div>
+
+        <div class="hero-right">
+          <div class="hero-photo-wrap">
+            <img class="hero-zane hero-medal-image" src="assets/zane-medal-hero-hd.avif?v=2" width="1086" height="1448" decoding="async" fetchpriority="high" alt="Zane proudly holding a karate team banner and wearing three medals">
+          </div>
+        </div>
       </div>
     </section>
 
-    <section class="pdf-page page-2" id="journey" aria-label="Karate journey 2023">
-      <p class="story">
-        As a kid, I was totally obsessed with Power Rangers and Ninja Kids! I couldn't help but mimic their epic moves and pretend to be a superhero. One day, my "yoya" (lola) caught
-        me in action and asked, "How about giving karate a shot?" On the morning of <strong>July 22, 2023</strong>, I eagerly joined a karate class , and I jumped into karate class like a ninja on a
-        mission—and I've been loving every kick and punch ever since!
-      </p>
-
-      <div class="timeline-columns">
-        <div class="timeline-col">
-          <article class="event event-title">
-            <h2>STARTED KARATE - WHITE BELT<br>(AGE: 5)</h2>
-          </article>
-
-          <article class="event">
-            <h2>NEWBIE 4-5 YEARS OLD</h2>
-            <h3>PASKA CHAMPIONSHIP</h3>
-            <p>8/27/23 - Robinson Metro East</p>
-            <div class="awards one">
-              <span>KUMITE<i class="medal bronze" aria-label="Bronze medal"></i></span>
-            </div>
-          </article>
-
-          <article class="event">
-            <h2>PROMOTED TO BLUE BELT</h2>
-            <p>September 17, 2023</p>
-          </article>
-
-          <article class="event">
-            <h3>1ST CAVITE KARATE DOJO-SKIP<br>KARATE-DO CHAMPIONSHIP</h3>
-            <p>10/7/23 - Robinsons Mall, Novaliches</p>
-            <div class="awards">
-              <span>KATA<i class="medal silver"></i></span>
-              <span>KUMITE<i class="medal silver"></i></span>
-            </div>
-          </article>
+    <section class="theme-about" id="about">
+      <div class="theme-container about-section">
+        <div class="about-intro">
+          <p class="tiny-label">ABOUT ZANE</p>
+          <h2>Meet the young karateka behind the journey.</h2>
+          <p>What began as something fun at age five has grown into a journey of training, competition, confidence and a dream of one day representing the Philippines.</p>
         </div>
 
-        <div class="timeline-col right">
-          <article class="event">
-            <h3>1ST SHIDOKAI KARATEDO-KYOKAI<br>OPEN KARATE CHAMPIONSHIP</h3>
-            <p>10/29/23 - Waltermart, Taytay</p>
-            <div class="awards triple">
-              <span>KATA<i class="medal gold"></i></span>
-              <span>KUMITE<i class="medal gold"></i></span>
-              <span>OPEN CLASS -KUMITE<i class="medal gold"></i></span>
+        <div class="about-two-column">
+          <div class="about-photo restored-about-photo">
+            <img src="assets/zane-about-studio.png?v=20261009" width="1024" height="1536" loading="lazy" decoding="async" alt="Zane smiling in his white karate gi and purple belt" onerror="this.onerror=null;this.src='assets/zane-hero-hq.webp'">
+          </div>
+
+          <div class="about-copy">
+            <h3>Hi, I'm Zane.</h3>
+            <p class="about-dream">I am an aspiring karateka, with dreams of joining the <strong>Philippine Karate National Team</strong> and representing our country one day.</p>
+
+            <div class="origin-story">
+              <span class="origin-label">HOW IT STARTED</span>
+              <p>As a kid, I was totally obsessed with <strong>Power Rangers</strong> and <strong>Ninja Kids</strong>! I couldn't help but copy their epic moves and pretend to be a superhero.</p>
+              <p>One day, my “Yoya” — my lola — caught me in action and asked, <em>“How about giving karate a shot?”</em></p>
+              <p>On the morning of <strong>July 22, 2023</strong>, I eagerly joined my first karate class. I jumped in like a ninja on a mission — and I've been loving every kick, punch and lesson ever since.</p>
             </div>
-          </article>
 
-          <article class="event">
-            <h2>NEWBIE 5-6 YEARS OLD</h2>
-            <h3>SHIHAN ERNIE MEMORIAL CUP - BDKA<br>OPEN KARATE TOURNAMENT</h3>
-            <p>11/18/23 - Tiendesitas Ortigas</p>
-            <div class="awards one"><span>KATA<i class="medal gold"></i></span></div>
-          </article>
-
-          <article class="event">
-            <h3>19TH PKTS KARATEDO CHAMPIONSHIP</h3>
-            <p>11/26/23 - Robinsons Metro East</p>
-            <div class="awards">
-              <span>KATA<i class="medal gold"></i></span>
-              <span>KUMITE<i class="medal silver"></i></span>
-            </div>
-          </article>
-
-          <article class="event">
-            <h3>RSK-PSKI KARATE-DO CHAMPIONSHIP</h3>
-            <p>12/3/23 - Tiendesitas Ortigas</p>
-            <div class="awards one"><span>KUMITE<i class="medal bronze"></i></span></div>
-          </article>
+            <p class="about-growth">Since then, every class, belt promotion and tournament has taught me something new. There have been wins, losses, medals and difficult matches, but every experience has helped me grow — and I am still only at the beginning of my journey.</p>
+            <a class="under-link" href="#achievements"><i></i> Follow My Journey</a>
+          </div>
         </div>
-      </div>
-
-      <aside class="definition definition-kumite">
-        <strong>KUMITE</strong>
-        <p>Kumite can mean 'sparring'.<br>Kumite is where two competitors<br>face off performing defensive<br>and offensive techniques in a<br>standing competition.<br>Competitors can use punches,<br>kicks or takedowns against their<br>opponents.</p>
-      </aside>
-      <div class="cloud cloud-br" aria-hidden="true"></div>
-      <div class="cloud cloud-bl" aria-hidden="true"></div>
-    </section>
-
-    <section class="pdf-page page-3" id="achievements" aria-label="Karate journey 2024 and academic achievements">
-      <div class="timeline-columns">
-        <div class="timeline-col">
-          <article class="event">
-            <h2>PROMOTED TO RED BELT</h2>
-            <p>December 17, 2023</p>
-          </article>
-
-          <article class="event">
-            <h2>NOVICE 6-7 YEARS OLD</h2>
-            <h3>11th ISKF-RYO SHOTOKAN Karate-do<br>Championship</h3>
-            <p>3/17/24 - Greenhills Mall</p>
-            <div class="awards"><span>KATA<i class="medal silver"></i></span><span>KUMITE<i class="medal silver"></i></span></div>
-          </article>
-
-          <article class="event">
-            <h3>2ND ISKF - KYODAI KARATE-DO CHAMPIONSHIP</h3>
-            <p>4/7/24 - Greenhills Mall</p>
-            <div class="awards"><span>KATA<i class="medal silver"></i></span><span>KUMITE<i class="medal silver"></i></span></div>
-          </article>
-
-          <article class="event">
-            <h3>1ST CELINO KARATE DOJO- SHOSHINKAN<br>KARATE-DO FRIENDSHIP TOURNAMENT</h3>
-            <p>5/5/24 - Robinson Mall, Las Piñas</p>
-            <div class="awards"><span>KATA<i class="medal gold"></i></span><span>KUMITE<i class="medal silver"></i></span></div>
-          </article>
-        </div>
-
-        <div class="timeline-col right">
-          <article class="event">
-            <h2>PROMOTED TO ORANGE BELT</h2>
-            <p>June 15, 2024 - Skipped Yellow Belt</p>
-          </article>
-
-          <article class="event">
-            <h3>SHITO-RYU KARATE-DO PHILIPPINES<br>YAMADA-HA SHUKOKAI INTERCLASS<br>TOURNAMENT</h3>
-            <p>6/30/24 One Mall, Valenzuela</p>
-            <div class="awards one wide"><span>OPEN CLASS - KUMITE<i class="medal gold"></i></span></div>
-          </article>
-
-          <article class="event">
-            <h3>2ND CAVITE KARATE DOJO-SKIP<br>KARATE-DO CHAMPIONSHIP</h3>
-            <p>8/4/24 Robinson Novaliches</p>
-            <div class="awards">
-              <span>KATA<i class="medal gold"></i></span>
-              <span>KUMITE<b class="dnq">DNQ<small>Did not qualify</small></b></span>
-            </div>
-          </article>
-
-          <article class="event">
-            <h2>NOVICE/INTERMEDIATE<br>6-7 YEARS OLD</h2>
-            <h3>BLACK DIAMOND KARATE ASSOCIATION<br>ISKF GOODWILL KARATE CUP</h3>
-            <p>10/28/24 - Starmall, Edsa Shaw</p>
-            <div class="awards labels-long">
-              <span>INTERMEDIATE -KATA<i class="medal gold"></i></span>
-              <span>NOVICE - KUMITE<i class="medal silver"></i></span>
-            </div>
-          </article>
-        </div>
-      </div>
-
-      <div class="portrait-card">
-        <img src="assets/p3-img2.webp" alt="Zane holding a medal and his Go! I'm-a Zane! sign">
-      </div>
-
-      <aside class="definition definition-kata">
-        <strong>KATA</strong>
-        <p>Kata, in Japanese, means 'form.' In Karate terms,<br>Kata is the practice of performing sequences of<br>specific Karate moves targeting a virtual opponent.</p>
-      </aside>
-
-      <section class="academic">
-        <h2>ACADEMIC ACHIEVEMENTS</h2>
-        <div>
-          <p><strong>GRADE 1 - 1ST QUARTER</strong><br>With Honors: 94% General Average</p>
-          <p><strong>KINDER 2</strong><br>Academic Achiever - 1st Honor<br>Class Leader, Best in Memory Verse</p>
-        </div>
-      </section>
-      <div class="cloud cloud-br small" aria-hidden="true"></div>
-    </section>
-
-    <section class="pdf-page page-4" id="journey-continued" aria-label="Karate journey late 2024 through March 2026">
-      <p class="story">
-        Zane continued competing across local, national and international tournaments, building on every lesson from training and every experience on the mat.
-      </p>
-
-      <div class="timeline-columns">
-        <div class="timeline-col">
-          <article class="event">
-            <h2>NOVICE / INTERMEDIATE 6-7 YEARS OLD</h2>
-            <h3>20TH PKTS KARATEDO CHAMPIONSHIP</h3>
-            <p>11/10/24 · Robinson Metro East</p>
-            <div class="awards">
-              <span>INTERMEDIATE - KATA<i class="medal silver"></i></span>
-              <span>NOVICE - KUMITE<i class="medal bronze"></i></span>
-            </div>
-          </article>
-
-          <article class="event">
-            <h2>PROMOTED TO GREEN BELT</h2>
-            <p>Date not recorded</p>
-          </article>
-
-          <article class="event">
-            <h2>PROMOTED TO PURPLE BELT</h2>
-            <p>December 2024 · Current Belt</p>
-          </article>
-
-          <article class="event">
-            <h2>INTERMEDIATE / NOVICE 6-7 YEARS OLD</h2>
-            <h3>4TH GOVERNOR'S CUP LAGUNA KARATEDO CHAMPIONSHIP</h3>
-            <p>2/1/25 · Laguna Sports Complex</p>
-            <div class="awards">
-              <span>INTERMEDIATE - KATA<i class="medal gold"></i></span>
-              <span>NOVICE - KUMITE<i class="medal silver"></i></span>
-            </div>
-          </article>
-
-          <article class="event">
-            <h3>6TH KARATE PILIPINAS NATIONAL CHAMPIONSHIPS</h3>
-            <p>3/1/25</p>
-            <div class="no-medal-lines">
-              <span>INTERMEDIATE - KATA · 2ND ROUND · NO MEDAL</span>
-              <span>INTERMEDIATE - KUMITE · 2ND ROUND · NO MEDAL</span>
-            </div>
-          </article>
-
-          <article class="event">
-            <h3>6TH ABR KARATE CUP</h3>
-            <p>4/5/25 · San Jose del Monte, Bulacan</p>
-            <div class="awards">
-              <span>INTERMEDIATE - KATA<i class="medal gold"></i></span>
-              <span>INTERMEDIATE - KUMITE<i class="medal gold"></i></span>
-            </div>
-          </article>
-        </div>
-
-        <div class="timeline-col right">
-          <article class="event">
-            <h3>KSK OPEN PASIG · KPI SANCTIONED TOURNAMENT</h3>
-            <p>4/20/25 · Pasig</p>
-            <div class="awards">
-              <span>INTERMEDIATE - KATA<i class="medal gold"></i></span>
-              <span>NOVICE - KUMITE<i class="medal gold"></i></span>
-            </div>
-          </article>
-
-          <article class="event">
-            <h3>2ND CELINO KARATE TOURNAMENT</h3>
-            <p>5/11/25 · Waltermart Valenzuela</p>
-            <div class="awards four-awards">
-              <span>OPEN - KATA<i class="medal silver"></i></span>
-              <span>INTERMEDIATE - KATA<i class="medal gold"></i></span>
-              <span>OPEN - KUMITE<i class="medal silver"></i></span>
-              <span>INTERMEDIATE - KUMITE<i class="medal silver"></i></span>
-            </div>
-          </article>
-
-          <article class="event">
-            <h3>ALL LUZON MKKPI KARATEDO CHAMPIONSHIP</h3>
-            <p>September 2025</p>
-            <div class="awards three-awards">
-              <span>ADVANCED - KATA<i class="medal silver"></i></span>
-              <span>INTERMEDIATE - KATA<i class="medal gold"></i></span>
-              <span>NOVICE - KUMITE<i class="medal gold"></i></span>
-            </div>
-          </article>
-
-          <article class="event">
-            <h3>21ST PKTS OPEN KARATE CHAMPIONSHIP</h3>
-            <p>11/16/25 · Robinsons Metro East, Cainta</p>
-            <div class="awards three-awards">
-              <span>INTERMEDIATE - KATA<i class="medal silver"></i></span>
-              <span>OPEN - KATA<i class="medal gold"></i></span>
-              <span>INTERMEDIATE - KUMITE<i class="medal gold"></i></span>
-            </div>
-          </article>
-
-          <article class="event">
-            <h2>OPEN KATA · AGES 8-12</h2>
-            <h3>WMA INTERNATIONAL TOURNAMENT</h3>
-            <p>March 2026</p>
-            <div class="awards one">
-              <span>OPEN - KATA<i class="medal gold"></i></span>
-            </div>
-          </article>
-        </div>
-      </div>
-
-      <aside class="definition definition-kumite medal-summary">
-        <strong>MEDAL TOTALS</strong>
-        <p>20 Gold · 16 Silver · 3 Bronze<br><b>39 Medals through March 2026</b></p>
-      </aside>
-
-      <div class="cloud cloud-br" aria-hidden="true"></div>
-      <div class="cloud cloud-bl" aria-hidden="true"></div>
-    </section>
-
-    <section class="pdf-page page-5" id="gallery" aria-label="Karate photo memories">
-      <div class="photo-collage">
-        <img class="g1" src="assets/p5-img1.webp" alt="Zane at a karate championship">
-        <img class="g2" src="assets/p5-img2.webp" alt="Zane with family">
-        <img class="g3" src="assets/p5-img3.webp" alt="Zane celebrating with fellow karate competitors">
-        <img class="g4" src="assets/p5-img4.webp" alt="Zane at a karate tournament">
-        <img class="g5" src="assets/p5-img5.webp" alt="Zane celebrating a medal">
-        <img class="g6" src="assets/p5-img6.webp" alt="Zane at a karate event">
-        <img class="g7" src="assets/p5-img7.webp" alt="Zane with family and friends">
-        <img class="g8" src="assets/p5-img8.webp" alt="Zane and family">
-        <img class="g9" src="assets/p5-img9.webp" alt="Zane showing his medal and sign">
       </div>
     </section>
 
-    <section class="pdf-page page-6" id="support" aria-label="Support Zane's karate journey">
-      <div class="quote">
-        <span class="quote-mark open" aria-hidden="true">“</span>
-        <blockquote>Practicing karate is both enjoyable and potentially costly.<br><br>I would greatly appreciate your assistance in helping me<br>realize my dream, progressing one step at a time.</blockquote>
-        <span class="quote-mark close" aria-hidden="true">”</span>
-        <cite>-Zane</cite>
-      </div>
+    <div class="martial-strip" aria-label="Zane's karate highlights">
+      <span><b>始</b> Started at Age 5</span>
+      <span><b>紫</b> Purple Belt</span>
+      <span><b>賞</b> 39 Medals</span>
+      <span><b>形</b> Kata &amp; Kumite</span>
+      <span><b>市</b> Marikina Team</span>
+      <span><b>国</b> Batang Pinoy 2026</span>
+    </div>
 
-      <div class="support-portrait">
-        <img src="assets/p6-img1.webp" alt="Zane giving two thumbs up">
-      </div>
+    <section class="theme-achievements" id="achievements">
+      <div class="theme-container">
+        <div class="section-lead compact achievements-heading">
+          <div>
+            <p class="tiny-label">HOW HE GOT HERE</p>
+            <h2>Every medal has<br>a story behind it</h2>
+          </div>
+        </div>
 
-      <section class="tournament-panel">
-        <h2>UPCOMING TOURNAMENTS:</h2>
-        <div class="tournament-grid">
-          <article>
-            <h3>November 10,2024</h3>
-            <strong>Robinson Metro East</strong>
-            <p><u>Category:</u></p>
-            <p>KATA &nbsp;&nbsp;&nbsp; KUMITE</p>
-          </article>
-          <article>
-            <h3>December 8,2024</h3>
-            <strong>Starmall Edsa Shaw</strong>
-            <p><u>Category:</u></p>
-            <p>KATA &nbsp;&nbsp;&nbsp; KUMITE</p>
-          </article>
+        <div class="medal-summary">
+          <div><i class="medal gold"></i><strong>20</strong><span>Gold</span></div>
+          <div><i class="medal silver"></i><strong>16</strong><span>Silver</span></div>
+          <div><i class="medal bronze"></i><strong>3</strong><span>Bronze</span></div>
+          <div class="total"><strong>39</strong><span>Total Medals</span></div>
         </div>
-        <div class="registration">
-          <h3>REGISTRATION PER CATEGORY:</h3>
-          <p>KATA: P500</p>
-          <p>KUMITE: P500</p>
-          <p>OPEN CLASS:P500</p>
+
+        <div class="achievement-table-wrap">
+          <table class="achievement-table">
+            <thead>
+              <tr>
+                <th>Date</th>
+                <th>Tournament / Event</th>
+                <th>Venue</th>
+                <th>Age / Division</th>
+                <th>Result</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr class="year-row"><th colspan="5">2023</th></tr>
+              <tr>
+                <td>Aug. 27, 2023</td>
+                <td>PASKA Championship</td>
+                <td>Robinsons Metro East</td>
+                <td>Age 5 · Newbie 4–5 yrs</td>
+                <td><span class="table-result">Kumite <i class="medal bronze"></i><b>Bronze</b></span></td>
+              </tr>
+              <tr class="promotion-row">
+                <td colspan="5">
+                  <div class="promotion-highlight">
+                    <span class="belt-dot belt-blue" aria-hidden="true"></span>
+                    <span class="promotion-date">Sept. 17, 2023</span>
+                    <strong>Promoted to Blue Belt</strong>
+                    <span class="promotion-note">Age 5</span>
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td>Oct. 7, 2023</td>
+                <td>1st Cavite Karate Dojo-SKIP Karate-do Championship</td>
+                <td>Robinsons Mall, Novaliches</td>
+                <td>Age 5</td>
+                <td>
+                  <span class="table-result">Kata <i class="medal silver"></i><b>Silver</b></span>
+                  <span class="table-result">Kumite <i class="medal silver"></i><b>Silver</b></span>
+                </td>
+              </tr>
+              <tr>
+                <td>Oct. 29, 2023</td>
+                <td>1st Shidokai Karatedo-Kyokai Open Karate Championship</td>
+                <td>Waltermart, Taytay</td>
+                <td>Age 5</td>
+                <td>
+                  <span class="table-result">Kata <i class="medal gold"></i><b>Gold</b></span>
+                  <span class="table-result">Kumite <i class="medal gold"></i><b>Gold</b></span>
+                  <span class="table-result">Open Kumite <i class="medal gold"></i><b>Gold</b></span>
+                </td>
+              </tr>
+              <tr>
+                <td>Nov. 18, 2023</td>
+                <td>Shihan Ernie Memorial Cup · BDKA Open Karate Tournament</td>
+                <td>Tiendesitas, Ortigas</td>
+                <td>Age 5 · Newbie 5–6 yrs</td>
+                <td><span class="table-result">Kata <i class="medal gold"></i><b>Gold</b></span></td>
+              </tr>
+              <tr>
+                <td>Nov. 26, 2023</td>
+                <td>19th PKTS Karatedo Championship</td>
+                <td>Robinsons Metro East</td>
+                <td>Age 5</td>
+                <td>
+                  <span class="table-result">Kata <i class="medal gold"></i><b>Gold</b></span>
+                  <span class="table-result">Kumite <i class="medal silver"></i><b>Silver</b></span>
+                </td>
+              </tr>
+              <tr>
+                <td>Dec. 3, 2023</td>
+                <td>RSK-PSKI Karate-do Championship</td>
+                <td>Tiendesitas, Ortigas</td>
+                <td>Age 5</td>
+                <td><span class="table-result">Kumite <i class="medal bronze"></i><b>Bronze</b></span></td>
+              </tr>
+              <tr class="promotion-row">
+                <td colspan="5">
+                  <div class="promotion-highlight">
+                    <span class="belt-dot belt-red" aria-hidden="true"></span>
+                    <span class="promotion-date">Dec. 17, 2023</span>
+                    <strong>Promoted to Red Belt</strong>
+                    <span class="promotion-note">Belt milestone</span>
+                  </div>
+                </td>
+              </tr>
+
+              <tr class="year-row"><th colspan="5">2024</th></tr>
+              <tr>
+                <td>Mar. 17, 2024</td>
+                <td>11th ISKF-RSK Championship</td>
+                <td>Greenhills Mall</td>
+                <td>Age 6</td>
+                <td>
+                  <span class="table-result">Novice Kata <i class="medal silver"></i><b>Silver</b></span>
+                  <span class="table-result">Novice Kumite <i class="medal silver"></i><b>Silver</b></span>
+                </td>
+              </tr>
+              <tr>
+                <td>Apr. 7, 2024</td>
+                <td>2nd ISKF · Kyodai Karate-do Championship</td>
+                <td>Greenhills Mall</td>
+                <td>Age 6 · 6–7 yrs</td>
+                <td>
+                  <span class="table-result">Novice Kata <i class="medal silver"></i><b>Silver</b></span>
+                  <span class="table-result">Novice Kumite <i class="medal silver"></i><b>Silver</b></span>
+                </td>
+              </tr>
+              <tr>
+                <td>May 5, 2024</td>
+                <td>1st Celino Karate Dojo · Shoshinkan Friendship Tournament</td>
+                <td>One Mall, Valenzuela</td>
+                <td>Age 6</td>
+                <td>
+                  <span class="table-result">Open Kata <i class="medal gold"></i><b>Gold</b></span>
+                  <span class="table-result">Open Kumite <i class="medal silver"></i><b>Silver</b></span>
+                </td>
+              </tr>
+              <tr class="promotion-row">
+                <td colspan="5">
+                  <div class="promotion-highlight">
+                    <span class="belt-dot belt-orange" aria-hidden="true"></span>
+                    <span class="promotion-date">June 15, 2024</span>
+                    <strong>Promoted to Orange Belt</strong>
+                    <span class="promotion-note">Age 6 · Skipped Yellow Belt</span>
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td>Jun. 30, 2024</td>
+                <td>Yamada-Ha Shukokai Interclass Tournament</td>
+                <td>One Mall, Valenzuela</td>
+                <td>Age 6</td>
+                <td><span class="table-result">Open Kumite <i class="medal gold"></i><b>Gold</b></span></td>
+              </tr>
+              <tr>
+                <td>Aug. 4, 2024</td>
+                <td>2nd Cavite Karate Dojo-SKIP Championship</td>
+                <td>Robinsons Novaliches</td>
+                <td>Age 6</td>
+                <td>
+                  <span class="table-result">Kata <i class="medal gold"></i><b>Gold</b></span>
+                  <span class="table-result no-medal-result">Kumite <b>DNQ</b></span>
+                </td>
+              </tr>
+              <tr>
+                <td>Oct. 28, 2024</td>
+                <td>Black Diamond Karate Association · ISKF Goodwill Karate Cup</td>
+                <td>Starmall, EDSA Shaw</td>
+                <td>Age 6</td>
+                <td>
+                  <span class="table-result">Intermediate Kata <i class="medal gold"></i><b>Gold</b></span>
+                  <span class="table-result">Novice Kumite <i class="medal silver"></i><b>Silver</b></span>
+                </td>
+              </tr>
+              <tr>
+                <td>Nov. 10, 2024</td>
+                <td>20th PKTS Karatedo Championship</td>
+                <td>—</td>
+                <td>Age 6</td>
+                <td>
+                  <span class="table-result">Intermediate Kata <i class="medal silver"></i><b>Silver</b></span>
+                  <span class="table-result">Novice Kumite <i class="medal bronze"></i><b>Bronze</b></span>
+                </td>
+              </tr>
+              <tr class="promotion-row">
+                <td colspan="5">
+                  <div class="promotion-highlight">
+                    <span class="belt-dot belt-green" aria-hidden="true"></span>
+                    <span class="promotion-date">Dec. 22, 2024</span>
+                    <strong>Promoted from Orange to Green Belt</strong>
+                    <span class="promotion-note">Belt milestone</span>
+                  </div>
+                </td>
+              </tr>
+
+              <tr class="year-row"><th colspan="5">2025</th></tr>
+              <tr>
+                <td>Feb. 1, 2025</td>
+                <td>4th Governor's Cup Laguna Karatedo Championship</td>
+                <td>Laguna Sports Complex</td>
+                <td>Age 7 · 6–7 yrs</td>
+                <td>
+                  <span class="table-result">Intermediate Kata <i class="medal gold"></i><b>Gold</b></span>
+                  <span class="table-result">Novice Kumite <i class="medal silver"></i><b>Silver</b></span>
+                </td>
+              </tr>
+              <tr>
+                <td>Mar. 1, 2025</td>
+                <td>6th Karate Pilipinas National Championships</td>
+                <td>—</td>
+                <td>Age 7</td>
+                <td>
+                  <span class="table-result no-medal-result">Intermediate Kata <b>2nd Round</b></span>
+                  <span class="table-result no-medal-result">Intermediate Kumite <b>2nd Round</b></span>
+                </td>
+              </tr>
+              <tr>
+                <td>Apr. 5, 2025</td>
+                <td>6th ABR Karate Cup</td>
+                <td>San Jose del Monte, Bulacan</td>
+                <td>Age 7</td>
+                <td>
+                  <span class="table-result">Intermediate Kata <i class="medal gold"></i><b>Gold</b></span>
+                  <span class="table-result">Intermediate Kumite <i class="medal gold"></i><b>Gold</b></span>
+                </td>
+              </tr>
+              <tr>
+                <td>Apr. 20, 2025</td>
+                <td>KSK Open Pasig · KPI Sanctioned Tournament</td>
+                <td>Pasig</td>
+                <td>Age 7 · 6–7 yrs</td>
+                <td>
+                  <span class="table-result">Intermediate Kata <i class="medal gold"></i><b>Gold</b></span>
+                  <span class="table-result">Novice Kumite <i class="medal gold"></i><b>Gold</b></span>
+                </td>
+              </tr>
+              <tr>
+                <td>May 11, 2025</td>
+                <td>2nd Celino Karate Tournament</td>
+                <td>Waltermart Valenzuela</td>
+                <td>Age 7 · Kata 7 yrs / Intermediate 6–7 yrs</td>
+                <td>
+                  <span class="table-result">Open Kata <i class="medal silver"></i><b>Silver</b></span>
+                  <span class="table-result">Intermediate Kata <i class="medal gold"></i><b>Gold</b></span>
+                  <span class="table-result">Open Kumite <i class="medal silver"></i><b>Silver</b></span>
+                  <span class="table-result">Intermediate Kumite <i class="medal silver"></i><b>Silver</b></span>
+                </td>
+              </tr>
+              <tr class="promotion-row">
+                <td colspan="5">
+                  <div class="promotion-highlight">
+                    <span class="belt-dot belt-purple" aria-hidden="true"></span>
+                    <span class="promotion-date">May 31, 2025</span>
+                    <strong>Promoted from Green to Purple Belt</strong>
+                    <span class="promotion-note">Current Belt</span>
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td>Sept. 2025</td>
+                <td>All Luzon MKKPI Karatedo Championship</td>
+                <td>—</td>
+                <td>Age 7</td>
+                <td>
+                  <span class="table-result">Advanced Kata <i class="medal silver"></i><b>Silver</b></span>
+                  <span class="table-result">Intermediate Kata <i class="medal gold"></i><b>Gold</b></span>
+                  <span class="table-result">Novice Kumite <i class="medal gold"></i><b>Gold</b></span>
+                </td>
+              </tr>
+              <tr>
+                <td>Nov. 16, 2025</td>
+                <td>21st PKTS Open Karate Championship</td>
+                <td>Robinsons Metro East, Cainta</td>
+                <td>Age 7 · 6–7 yrs</td>
+                <td>
+                  <span class="table-result">Intermediate Kata <i class="medal silver"></i><b>Silver</b></span>
+                  <span class="table-result">Open Kata <i class="medal gold"></i><b>Gold</b></span>
+                  <span class="table-result">Intermediate Kumite <i class="medal gold"></i><b>Gold</b></span>
+                </td>
+              </tr>
+
+              <tr class="year-row"><th colspan="5">2026</th></tr>
+              <tr>
+                <td>Mar. 2026</td>
+                <td>WMA International Tournament</td>
+                <td>—</td>
+                <td>Age 8 · Open Kata 8–12 yrs</td>
+                <td><span class="table-result">Open Kata <i class="medal gold"></i><b>Gold</b></span></td>
+              </tr>
+            </tbody>
+          </table>
         </div>
-      </section>
+      </div>
+    </section>
+
+    <div class="academic-story-wrap" id="academics">
+      <div class="theme-container">
+        <details class="academic-story">
+                    <summary>
+                      <div class="academic-story-copy">
+                        <span class="academic-story-kicker">BEYOND THE MAT</span>
+                        <h2>His discipline goes beyond karate.</h2>
+                        <p>Zane brings the same focus he shows in karate into the classroom, earning academic honors while continuing to train and compete.</p>
+                        <strong>View Zane’s academic achievements</strong>
+                      </div>
+                      <i class="academic-story-toggle" aria-hidden="true"></i>
+                    </summary>
+                    <div class="academic-story-records">
+                      <p class="academic-story-note">School records are shown by grade level. Entries marked <strong>SAMPLE</strong> are temporary placeholders until the complete records are added.</p>
+                  <div class="academic-grade-list">
+                    <details class="academic-grade">
+                      <summary>
+                        <span>
+                          <small>EARLY SCHOOL YEARS</small>
+                          <strong>Kinder 2</strong>
+                        </span>
+                        <i aria-hidden="true"></i>
+                      </summary>
+                      <div class="academic-quarter-grid">
+                        <article class="academic-card sample">
+                          <span class="quarter-label">1st Quarter</span>
+                          <b class="sample-badge">SAMPLE</b>
+                          <h3>Academic Achiever</h3>
+                          <p>Strong classroom participation and consistent performance.</p>
+                        </article>
+                        <article class="academic-card sample">
+                          <span class="quarter-label">2nd Quarter</span>
+                          <b class="sample-badge">SAMPLE</b>
+                          <h3>With Honors</h3>
+                          <p>Recognized for steady academic progress.</p>
+                        </article>
+                        <article class="academic-card sample">
+                          <span class="quarter-label">3rd Quarter</span>
+                          <b class="sample-badge">SAMPLE</b>
+                          <h3>Best in Reading</h3>
+                          <p>Sample classroom recognition for literacy progress.</p>
+                        </article>
+                        <article class="academic-card sample">
+                          <span class="quarter-label">4th Quarter</span>
+                          <b class="sample-badge">SAMPLE</b>
+                          <h3>Outstanding Conduct</h3>
+                          <p>Sample recognition for responsibility and classroom behavior.</p>
+                        </article>
+                        <article class="academic-card overall verified">
+                          <span class="quarter-label">Overall</span>
+                          <b class="verified-badge">RECORD</b>
+                          <h3>Academic Achiever · 1st Honor</h3>
+                          <p>Class Leader<br>Best in Memory Verse</p>
+                        </article>
+                      </div>
+                    </details>
+        
+                    <details class="academic-grade">
+                      <summary>
+                        <span>
+                          <small>PRIMARY</small>
+                          <strong>Grade 1</strong>
+                        </span>
+                        <i aria-hidden="true"></i>
+                      </summary>
+                      <div class="academic-quarter-grid">
+                        <article class="academic-card verified">
+                          <span class="quarter-label">1st Quarter</span>
+                          <b class="verified-badge">RECORD</b>
+                          <h3>With Honors</h3>
+                          <p><strong>94%</strong> General Average</p>
+                        </article>
+                        <article class="academic-card verified">
+                          <span class="quarter-label">2nd Quarter</span>
+                          <b class="verified-badge">RECORD</b>
+                          <h3>With High Honors</h3>
+                          <p>Quarterly academic recognition</p>
+                        </article>
+                        <article class="academic-card verified">
+                          <span class="quarter-label">3rd Quarter</span>
+                          <b class="verified-badge">RECORD</b>
+                          <h3>With High Honors</h3>
+                          <p><strong>96%</strong> General Average</p>
+                        </article>
+                        <article class="academic-card verified">
+                          <span class="quarter-label">4th Quarter</span>
+                          <b class="verified-badge">RECORD</b>
+                          <h3>With High Honors</h3>
+                          <p><strong>96%</strong> General Average</p>
+                        </article>
+                        <article class="academic-card overall verified">
+                          <span class="quarter-label">Overall</span>
+                          <b class="verified-badge">RECORD</b>
+                          <h3>Grade 1 Academic Progress</h3>
+                          <p>1st Quarter: With Honors · 2nd–4th Quarter: With High Honors</p>
+                        </article>
+                      </div>
+                    </details>
+        
+                    <details class="academic-grade">
+                      <summary>
+                        <span>
+                          <small>PRIMARY</small>
+                          <strong>Grade 2</strong>
+                        </span>
+                        <i aria-hidden="true"></i>
+                      </summary>
+                      <div class="academic-quarter-grid">
+                        <article class="academic-card sample"><span class="quarter-label">1st Quarter</span><b class="sample-badge">SAMPLE</b><h3>With Honors</h3><p>Sample quarterly recognition.</p></article>
+                        <article class="academic-card sample"><span class="quarter-label">2nd Quarter</span><b class="sample-badge">SAMPLE</b><h3>Academic Achiever</h3><p>Sample quarterly recognition.</p></article>
+                        <article class="academic-card sample"><span class="quarter-label">3rd Quarter</span><b class="sample-badge">SAMPLE</b><h3>With Honors</h3><p>Sample quarterly recognition.</p></article>
+                        <article class="academic-card sample"><span class="quarter-label">4th Quarter</span><b class="sample-badge">SAMPLE</b><h3>Academic Excellence</h3><p>Sample quarterly recognition.</p></article>
+                        <article class="academic-card overall sample"><span class="quarter-label">Overall</span><b class="sample-badge">SAMPLE</b><h3>With Honors</h3><p>Sample overall Grade 2 recognition.</p></article>
+                      </div>
+                    </details>
+        
+                    <details class="academic-grade">
+                      <summary>
+                        <span>
+                          <small>CURRENT SCHOOL YEAR</small>
+                          <strong>Grade 3</strong>
+                        </span>
+                        <i aria-hidden="true"></i>
+                      </summary>
+                      <div class="academic-quarter-grid">
+                        <article class="academic-card sample"><span class="quarter-label">1st Quarter</span><b class="sample-badge">SAMPLE</b><h3>With Honors</h3><p>Sample quarterly recognition.</p></article>
+                        <article class="academic-card sample"><span class="quarter-label">2nd Quarter</span><b class="sample-badge">SAMPLE</b><h3>Academic Achiever</h3><p>Sample quarterly recognition.</p></article>
+                        <article class="academic-card sample"><span class="quarter-label">3rd Quarter</span><b class="sample-badge">SAMPLE</b><h3>With Honors</h3><p>Sample quarterly recognition.</p></article>
+                        <article class="academic-card sample"><span class="quarter-label">4th Quarter</span><b class="sample-badge">SAMPLE</b><h3>Academic Excellence</h3><p>Sample quarterly recognition.</p></article>
+                        <article class="academic-card overall sample"><span class="quarter-label">Overall</span><b class="sample-badge">SAMPLE</b><h3>Year-End Achievement</h3><p>Sample overall Grade 3 recognition.</p></article>
+                      </div>
+                    </details>
+                  </div>
+                    </div>
+                  </details>
+      </div>
+    </div>
+
+    <section class="national-bridge" aria-labelledby="national-bridge-title">
+      <div class="theme-container national-bridge-inner">
+        <p class="tiny-label">FIRST NATIONAL EXPERIENCE</p>
+        <div class="national-bridge-copy">
+          <h2 id="national-bridge-title">His first test on the national stage.</h2>
+          <div>
+            <p>After building experience through local and regional competition, Zane earned the chance to test himself on a bigger stage.</p>
+            <p>One of those opportunities brought him to the <strong>6th Karate Pilipinas National Championships</strong>, where he reached the second round in both Kata and Kumite. He did not advance further, but the experience became an important part of his growth.</p>
+            <p class="national-bridge-next">Now, he has another opportunity.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="comeback-section" id="batang-pinoy">
+      <div class="theme-container">
+        <div class="support-event milestone-spotlight">
+          <div class="spotlight-topline">
+            <span class="spotlight-badge">RETURNING TO THE NATIONAL STAGE</span>
+            <span class="spotlight-edition">BATANG PINOY · BACOLOD 2026</span>
+          </div>
+
+          <div class="spotlight-grid">
+            <div class="event-logo-card">
+              <img src="data:image/webp;base64,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" alt="Batang Pinoy Bacolod 2026 official banner" loading="lazy">
+              <span>BATANG PINOY · BACOLOD 2026</span>
+            </div>
+
+            <div class="support-story">
+              <p class="tiny-label">THE NEXT STEP</p>
+              <h2>Back to the national stage — better prepared.</h2>
+              <p class="selection-copy">This will not be Zane's first experience on a national stage. Earlier in his journey, he competed at the <strong>6th Karate Pilipinas National Championships</strong>, where he reached the second round in both Kata and Kumite but did not advance further. It was a difficult result, but also an important lesson in what national-level competition demands.</p>
+              <p class="spotlight-note">Now he has another opportunity. <strong>Zane has been selected to represent the Marikina Karate Team at Batang Pinoy 2026 in Bacolod City.</strong> This time, he returns with more competition experience, a better understanding of the level he is preparing for, and a clear goal: to arrive properly equipped, ready and confident for both Kata and Kumite.</p>
+              <div class="event-meta" aria-label="Batang Pinoy event details">
+                <span>December 12–18, 2026</span>
+                <span>Bacolod City</span>
+                <span>Karate · Kata &amp; Kumite</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="theme-gallery" id="gallery">
+      <div class="theme-container">
+        <div class="section-lead compact">
+          <div><h2>Moments from the journey</h2></div>
+          <p>Not every important moment happens on the podium. These are memories from training, tournaments, family, teammates and the people who continue to support Zane along the way.</p>
+        </div>
+
+        <div class="gallery-grid" aria-label="Zane karate photo gallery">
+          <button class="gallery-item tall" type="button" aria-label="Open photo 1">
+            <img src="assets/p5-img1.webp" alt="Zane at a karate championship">
+          </button>
+          <button class="gallery-item" type="button" aria-label="Open photo 2">
+            <img src="assets/p5-img2.webp" alt="Zane with family">
+          </button>
+          <button class="gallery-item" type="button" aria-label="Open photo 3">
+            <img src="assets/p5-img3.webp" alt="Zane celebrating with fellow karate competitors">
+          </button>
+          <button class="gallery-item" type="button" aria-label="Open photo 4">
+            <img src="assets/p5-img4.webp" alt="Zane at a karate tournament">
+          </button>
+          <button class="gallery-item" type="button" aria-label="Open photo 5">
+            <img src="assets/p5-img5.webp" alt="Zane celebrating a medal">
+          </button>
+          <button class="gallery-item" type="button" aria-label="Open photo 6">
+            <img src="assets/p5-img6.webp" alt="Zane at a karate event">
+          </button>
+          <button class="gallery-item" type="button" aria-label="Open photo 7">
+            <img src="assets/p5-img7.webp" alt="Zane with family and friends">
+          </button>
+          <button class="gallery-item wide" type="button" aria-label="Open photo 8">
+            <img src="assets/p5-img9.webp" alt="Zane showing his medal and sign">
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <section class="theme-support" id="support">
+      <div class="theme-container support-wrap">
+          <div class="support-bridge">
+            <div class="support-bridge-label">
+              <span>WHAT COMES WITH THE OPPORTUNITY</span>
+            </div>
+            <div class="support-bridge-copy">
+              <h3>Preparing for the next step.</h3>
+              <p>Returning to national-level competition also comes with practical needs. For Kata and Kumite, Zane needs the proper approved uniforms and protective equipment required for competition, along with the travel needed to reach Bacolod. We are sharing these costs openly so family, friends and anyone following Zane's journey can understand what it takes to help him arrive prepared. There is no expectation to contribute; this is simply a transparent look at the support surrounding his next chapter.</p>
+              <details class="stage-dropdown">
+                <summary>
+                  <span>WHY THIS STAGE MATTERS</span>
+                  <strong>See how Batang Pinoy has helped shape Filipino champions</strong>
+                  <i aria-hidden="true"></i>
+                </summary>
+                <div class="stage-dropdown-content">
+                  <section class="batang-legacy" aria-labelledby="batang-legacy-title">
+                            <div class="batang-legacy-intro">
+                              <p class="tiny-label">WHY THIS STAGE MATTERS</p>
+                              <h2 id="batang-legacy-title">Before the world knew their names, some Filipino champions competed here too.</h2>
+                              <p>Batang Pinoy was created as a bridge from grassroots sport to higher levels of competition. For Zane, Bacolod is not a promise of where his journey will end — it is a chance to gain the same kind of national experience that has helped shape generations of Filipino athletes.</p>
+                            </div>
+                  
+                            <div class="batang-legacy-grid">
+                              <article class="legacy-card">
+                                <span class="legacy-sport">WEIGHTLIFTING</span>
+                                <h3>Hidilyn Diaz-Naranjo</h3>
+                                <strong>Batang Pinoy 2002 → Olympic Champion</strong>
+                                <p>Her first competition was the 2002 Batang Pinoy, where she won gold. She later became the Philippines' first Olympic gold medalist and also won Olympic silver.</p>
+                              </article>
+                  
+                              <article class="legacy-card">
+                                <span class="legacy-sport">GYMNASTICS</span>
+                                <h3>Carlos Yulo</h3>
+                                <strong>Grassroots pathway → 2× Olympic Gold</strong>
+                                <p>The Philippine Sports Commission has cited Batang Pinoy and the Philippine National Games among the grassroots competitions that helped produce Yulo, who later won two Olympic gold medals in Paris 2024.</p>
+                              </article>
+                  
+                              <article class="legacy-card">
+                                <span class="legacy-sport">BOXING</span>
+                                <h3>Carlo Paalam</h3>
+                                <strong>Batang Pinoy pathway → Olympic Silver</strong>
+                                <p>Paalam rose through Batang Pinoy and other national youth competitions before becoming an Olympic silver medalist for the Philippines.</p>
+                              </article>
+                  
+                              <article class="legacy-card">
+                                <span class="legacy-sport">BOXING</span>
+                                <h3>Eumir Marcial</h3>
+                                <strong>Batang Pinoy alumnus → Olympic Bronze</strong>
+                                <p>Marcial is a former Batang Pinoy and Philippine National Games competitor who went on to win an Olympic bronze medal and major international boxing honors.</p>
+                              </article>
+                  
+                              <article class="legacy-card">
+                                <span class="legacy-sport">WUSHU</span>
+                                <h3>Agatha Wong</h3>
+                                <strong>2× Batang Pinoy Gold → World &amp; Asian Medalist</strong>
+                                <p>Wong won two Batang Pinoy gold medals in 2013 before becoming a six-time SEA Games champion, World Wushu silver medalist and Asian Games bronze medalist.</p>
+                              </article>
+                  
+                              <article class="legacy-card">
+                                <span class="legacy-sport">SAMBO</span>
+                                <h3>Sydney Sy-Tancontian</h3>
+                                <strong>9× Batang Pinoy Gold → World Sambo Medalist</strong>
+                                <p>After collecting nine Batang Pinoy gold medals from 2011 to 2016, Sy-Tancontian went on to earn medals at the World Sambo Championship and other international events.</p>
+                              </article>
+                            </div>
+                  
+                            <div class="legacy-message">
+                              <span>THE POINT IS NOT THAT EVERY YOUNG ATHLETE BECOMES AN OLYMPIAN.</span>
+                              <p>It is that national youth competition can be an important place to learn, be tested and discover how far an athlete can grow. For Zane, Batang Pinoy 2026 is another opportunity to take that step.</p>
+                            </div>
+                  
+                            <p class="legacy-sources">Athlete pathways and achievements referenced from the Philippine Sports Commission and Philippine News Agency.</p>
+                          </section>
+                </div>
+              </details>
+            </div>
+          </div>
+
+        <div class="support-appeal">
+          <div class="appeal-copy">
+            <p class="tiny-label">WHY WE'RE ASKING FOR SUPPORT</p>
+            <blockquote>“Practicing karate is both enjoyable and potentially costly. I would greatly appreciate your assistance in helping me realize my dream, progressing one step at a time.”</blockquote>
+            <cite>— Zane</cite>
+            <p class="appeal-note">Preparing for a national competition involves more than registration and training. Zane needs competition-specific uniforms and protective equipment for Kata and Kumite. Rather than asking for general financial assistance, we want supporters to see exactly what we are preparing for, how much is needed and how much has already been raised.</p>
+          </div>
+          <div class="support-photo">
+            <img src="assets/p3-img2.webp" alt="Zane holding a karate medal">
+          </div>
+        </div>
+
+        <section class="campaign-card" aria-labelledby="campaign-title">
+          <div class="campaign-top">
+            <div>
+              <p class="campaign-kicker">BATANG PINOY 2026 · COMPETITION GEAR FUND</p>
+              <h2 id="campaign-title">Help Zane arrive competition-ready.</h2>
+              <p>The ₱48,000 equipment fund is for competition uniforms and protective gear that meet the approval rules used in national-level karate. <strong>Karate Pilipinas Sports Federation</strong> is the Philippine Olympic Committee member federation for karate and is recognized by the World Karate Federation (WKF) as its national federation in the Philippines. Published Batang Pinoy karate rules require WKF- or Karate Pilipinas-approved uniforms and protective gear — so this is not simply about buying ordinary karate equipment, but securing gear aligned with recognized international competition standards.</p>
+            </div>
+            <div class="campaign-goal">
+              <strong>₱48,000</strong>
+              <span>Funding goal</span>
+            </div>
+          </div>
+
+          <div class="campaign-stats">
+            <div><span>Raised so far</span><strong>₱3,500</strong></div>
+            <div><span>Still needed</span><strong>₱44,500</strong></div>
+            <div><span>Goal funded</span><strong>7%</strong></div>
+          </div>
+
+          <div class="campaign-deadline" aria-label="Fundraising deadline">
+            <span class="deadline-label">Funding target deadline</span>
+            <strong>October 31, 2026</strong>
+            <p>We’re aiming to complete the equipment fund by the last week of October / before November, so there is enough time to secure Zane’s correct sizes and approved competition gear before Batang Pinoy.</p>
+          </div>
+
+          <div class="fund-progress" role="progressbar" aria-label="Fundraising progress" aria-valuemin="0" aria-valuemax="48000" aria-valuenow="3500">
+            <span style="width:7.3%"></span>
+          </div>
+          <p class="progress-caption">₱3,500 of ₱48,000 raised · every contribution helps close the remaining ₱44,500 equipment gap.</p>
+        </section>
+
+        <div class="fund-dropdowns" aria-label="Competition gear fund details">
+          <details class="fund-dropdown">
+            <summary>
+              <div>
+                <span>WHAT THE FUND IS FOR</span>
+                <strong>Where the ₱48,000 goes</strong>
+                <p>See the three equipment goals behind the competition gear fund.</p>
+              </div>
+              <i aria-hidden="true"></i>
+            </summary>
+            <div class="fund-dropdown-content">
+              <div class="fund-intro">
+                <p>You do not need to sponsor an entire item. <strong>₱100, ₱500, ₱1,000 or any amount</strong> can be combined with the support of others until each equipment goal is completed.</p>
+              </div>
+
+              <div class="gear-grid">
+                <article class="gear-card">
+                  <span class="gear-number">01</span>
+                  <p class="gear-type">KATA</p>
+                  <h3>Kata Gi</h3>
+                  <strong class="gear-budget">₱17,000</strong>
+                  <p>Approved competition uniform for Zane's Kata events, where precision, technique, movement and presentation are judged.</p>
+                </article>
+
+                <article class="gear-card">
+                  <span class="gear-number">02</span>
+                  <p class="gear-type">KUMITE</p>
+                  <h3>Kumite Gi</h3>
+                  <strong class="gear-budget">₱15,000</strong>
+                  <p>Approved competition uniform for Zane's Kumite events, designed for the movement and speed required during sparring.</p>
+                </article>
+
+                <article class="gear-card">
+                  <span class="gear-number">03</span>
+                  <p class="gear-type">KUMITE SAFETY</p>
+                  <h3>Protective Gear</h3>
+                  <strong class="gear-budget">₱16,000</strong>
+                  <p>Approved protective equipment for Kumite, including the required red and blue gear and age-appropriate protection for an under-14 athlete.</p>
+                </article>
+              </div>
+            </div>
+          </details>
+
+          <details class="fund-dropdown fund-dropdown-rules">
+            <summary>
+              <div>
+                <span>WHY APPROVED GEAR MATTERS</span>
+                <strong>Competition rules — not just preference</strong>
+                <p>Why Zane needs WKF- or Karate Pilipinas-approved equipment.</p>
+              </div>
+              <i aria-hidden="true"></i>
+            </summary>
+            <div class="fund-dropdown-content">
+              <div class="approval-story">
+                <div>
+                  <p class="tiny-label">THE STANDARD BEHIND THE GEAR</p>
+                  <h3>Built for recognized competition standards.</h3>
+                </div>
+                <div>
+                  <p><strong>Karate Pilipinas Sports Federation</strong> is the Philippine Olympic Committee's member federation for karate and the country's national federation recognized by the World Karate Federation. Batang Pinoy's published karate technical rules apply updated WKF rules and require approved uniforms and protective equipment.</p>
+                  <p>For a competitor, that means the correct approval matters at equipment check. The goal is not to buy the most expensive gear — it is to make sure Zane has the <strong>correct, competition-legal equipment</strong> for Kata and Kumite.</p>
+                  <p class="rule-caveat">We will still confirm the final Batang Pinoy 2026 technical bulletin, Zane's size and the required approval markings with his coaches and tournament officials before purchase.</p>
+                </div>
+              </div>
+
+              <div class="requirements-list">
+                <div><b>Karate Gi</b><span>Batang Pinoy's published rules call for WKF- or Karate Pilipinas-approved Aka / Ao competition uniforms for Kata and Kumite.</span></div>
+                <div><b>Body protection</b><span>Approved body protection is compulsory for Kumite. Current WKF rules also require an external body protector for athletes under 14.</span></div>
+                <div><b>Shin + instep</b><span>Approved red and blue shin and instep protection is required for Kumite competition.</span></div>
+                <div><b>Mitts + belts</b><span>Approved red and blue mitts and red / blue belts (obi) are part of the published Batang Pinoy equipment requirements.</span></div>
+                <div><b>Under-14 helmet</b><span>Current 2026 WKF Kumite rules require a WKF-approved helmet for athletes under 14.</span></div>
+                <div><b>Other protection</b><span>A mouthguard is compulsory, together with any other protection required by the applicable competition rules.</span></div>
+              </div>
+
+              <div class="rule-sources">
+                <span>RULE REFERENCES</span>
+                <a href="https://batangpinoy.psc.gov.ph/wp-content/uploads/2025/07/KarateV2-As-of-July-10-2025.pdf" target="_blank" rel="noopener">Batang Pinoy published karate rules ↗</a>
+                <a href="https://www.wkf.net/files/pdf/documents/WKF%202026%20Kumite%20Competition%20Rules%20MASTER%20COPY_V11.pdf" target="_blank" rel="noopener">WKF 2026 Kumite rules ↗</a>
+                <a href="https://www.olympic.ph/regular-members-backup" target="_blank" rel="noopener">Philippine Olympic Committee federation list ↗</a>
+              </div>
+            </div>
+          </details>
+
+          <details class="fund-dropdown fund-dropdown-travel">
+            <summary>
+              <div>
+                <span>ADDITIONAL SUPPORT, IF POSSIBLE</span>
+                <strong>Travel to Bacolod</strong>
+                <p>Airfare &amp; transport · separate from the ₱48,000 equipment goal.</p>
+              </div>
+              <i aria-hidden="true"></i>
+            </summary>
+            <div class="fund-dropdown-content">
+              <div class="transport-support">
+                <div>
+                  <p class="tiny-label">SEPARATE FROM THE EQUIPMENT FUND</p>
+                  <h2>Getting Zane to the competition.</h2>
+                </div>
+                <div class="transport-copy">
+                  <p>The ₱48,000 campaign is specifically for competition uniforms and protective equipment. Once that requirement is covered, any additional support can help with <strong>airfare and local transportation to and from Bacolod</strong>. Keeping travel separate makes it clear exactly where the main equipment fund goes.</p>
+                  <span class="transport-badge">Airfare &amp; transport · separate from equipment goal</span>
+                </div>
+              </div>
+            </div>
+          </details>
+        </div>
+
+
+        <section class="supporter-wall" aria-labelledby="supporter-wall-title">
+          <div class="supporter-wall-heading">
+            <div>
+              <p class="tiny-label">CHEERING ZANE ON</p>
+              <h2 id="supporter-wall-title">A little support can carry a long way.</h2>
+            </div>
+            <div class="supporter-wall-note">
+              <span class="sample-support-badge">SAMPLE ENTRIES</span>
+              <p>These are demo messages and amounts for now. They will be replaced with verified supporters as the campaign is updated.</p>
+            </div>
+          </div>
+
+          <div class="supporter-marquee" aria-label="Sample supporter messages">
+            <div class="supporter-track">
+              <article class="supporter-chip">
+                <p>“Keep going, Zane! Enjoy every match and keep learning.”</p>
+                <div><strong>Tita M.</strong><span>₱500</span></div>
+              </article>
+              <article class="supporter-chip">
+                <p>“Good luck in Bacolod. We’re cheering for you!”</p>
+                <div><strong>Coach R.</strong><span>₱1,000</span></div>
+              </article>
+              <article class="supporter-chip">
+                <p>“One step at a time. Keep chasing that dream.”</p>
+                <div><strong>Team G.</strong><span>₱300</span></div>
+              </article>
+              <article class="supporter-chip">
+                <p>“Train hard, stay humble, and enjoy the journey.”</p>
+                <div><strong>Ninong J.</strong><span>₱750</span></div>
+              </article>
+              <article class="supporter-chip">
+                <p>“Proud of your courage to compete again. Go Zane!”</p>
+                <div><strong>Karate Friend</strong><span>₱250</span></div>
+              </article>
+              <article class="supporter-chip">
+                <p>“For the gear you need — keep moving forward.”</p>
+                <div><strong>Anonymous</strong><span>₱700</span></div>
+              </article>
+
+              <article class="supporter-chip" aria-hidden="true">
+                <p>“Keep going, Zane! Enjoy every match and keep learning.”</p>
+                <div><strong>Tita M.</strong><span>₱500</span></div>
+              </article>
+              <article class="supporter-chip" aria-hidden="true">
+                <p>“Good luck in Bacolod. We’re cheering for you!”</p>
+                <div><strong>Coach R.</strong><span>₱1,000</span></div>
+              </article>
+              <article class="supporter-chip" aria-hidden="true">
+                <p>“One step at a time. Keep chasing that dream.”</p>
+                <div><strong>Team G.</strong><span>₱300</span></div>
+              </article>
+              <article class="supporter-chip" aria-hidden="true">
+                <p>“Train hard, stay humble, and enjoy the journey.”</p>
+                <div><strong>Ninong J.</strong><span>₱750</span></div>
+              </article>
+              <article class="supporter-chip" aria-hidden="true">
+                <p>“Proud of your courage to compete again. Go Zane!”</p>
+                <div><strong>Karate Friend</strong><span>₱250</span></div>
+              </article>
+              <article class="supporter-chip" aria-hidden="true">
+                <p>“For the gear you need — keep moving forward.”</p>
+                <div><strong>Anonymous</strong><span>₱700</span></div>
+              </article>
+            </div>
+          </div>
+
+          <p class="supporter-wall-cta">Every message becomes part of Zane’s journey. <strong>If you choose to support him, your encouragement can be added here too.</strong></p>
+        </section>
+
+        <section class="support-payment" aria-labelledby="support-payment-title">
+          <div class="support-payment-intro">
+            <p class="tiny-label">WAYS TO SUPPORT ZANE</p>
+            <h2 id="support-payment-title">Scan a QR code or send support directly.</h2>
+            <p>If you would like to be part of Zane’s journey, you may use any of the verified options below. Every contribution can be combined with the support of others toward his Batang Pinoy 2026 competition needs.</p>
+          </div>
+
+          <div class="support-payment-grid support-payment-grid-live">
+            <article class="payment-method-card payment-gcash">
+              <div class="payment-method-top payment-method-brand-top">
+                <img class="payment-brand-logo" src="assets/gcash-logo.svg" alt="GCash">
+                <span class="payment-method-type">E-WALLET</span>
+              </div>
+              <div class="payment-qr-live">
+                <img src="assets/gcash-support-qr.svg" alt="GCash InstaPay QR code for supporting Zane">
+              </div>
+              <div class="payment-details-live">
+                <div>
+                  <span>Account name</span>
+                  <strong>MA***A M** O.</strong>
+                </div>
+                <div>
+                  <span>Mobile number</span>
+                  <strong>0916 248 ••••</strong>
+                </div>
+              </div>
+              <p class="payment-method-note">Scan the QR code using GCash or another participating InstaPay-enabled app.</p>
+            </article>
+
+            <article class="payment-method-card payment-gotyme">
+              <div class="payment-method-top payment-method-brand-top">
+                <img class="payment-brand-logo" src="assets/gotyme-logo.svg" alt="GoTyme Bank">
+                <span class="payment-method-type">DIGITAL BANK</span>
+              </div>
+              <div class="payment-qr-live">
+                <img src="assets/gotyme-support-qr.svg" alt="GoTyme Bank InstaPay QR code for supporting Zane">
+              </div>
+              <div class="payment-details-live">
+                <div>
+                  <span>Account name</span>
+                  <strong>Martha Mae Gallana</strong>
+                </div>
+                <div>
+                  <span>Account number</span>
+                  <strong>0184 4590 7440</strong>
+                  <button class="copy-payment" type="button" data-copy="018445907440">Copy</button>
+                </div>
+              </div>
+              <p class="payment-method-note">Scan the InstaPay QR or transfer directly to the GoTyme account above.</p>
+            </article>
+
+            <article class="payment-method-card payment-bpi">
+              <div class="payment-method-top payment-method-brand-top">
+                <img class="payment-brand-logo" src="assets/bpi-logo.svg" alt="BPI">
+                <span class="payment-method-type">BANK TRANSFER</span>
+              </div>
+              <div class="payment-qr-live">
+                <img src="assets/bpi-support-qr.svg" alt="BPI InstaPay QR code for supporting Zane">
+              </div>
+              <div class="payment-details-live">
+                <div>
+                  <span>Account name</span>
+                  <strong>Martha Mae Gallana</strong>
+                </div>
+                <div>
+                  <span>Account number</span>
+                  <strong>4099512432</strong>
+                  <button class="copy-payment" type="button" data-copy="4099512432">Copy</button>
+                </div>
+                <div>
+                  <span>Branch</span>
+                  <strong>BPI · Cainta-Ortigas Extension</strong>
+                </div>
+              </div>
+              <p class="payment-method-note">Scan the InstaPay QR or use the BPI account details for a direct bank transfer.</p>
+            </article>
+          </div>
+
+          <div class="payment-trust-note">
+            <strong>Before sending</strong>
+            <p>Please check that the recipient details shown by your payment app match the information above. Transfer fees may apply depending on the bank or e-wallet used.</p>
+          </div>
+        </section>
+
+        <div class="support-closing">
+          <strong>One competition. One important step.</strong>
+          <p>Zane is still young, and we do not know exactly where karate will take him. But Batang Pinoy 2026 is the next chapter — a chance to represent Marikina, compete on a national stage and move one step closer to his dream of representing the Philippines.</p>
+        </div>
+
+        <p class="campaign-disclaimer">Campaign amounts reflect our current target budget toward a ₱48,000 equipment goal. Final purchases will depend on Zane's size, local availability and confirmation of the required approval markings with his coaches and tournament officials.</p>
+      </div>
     </section>
   </main>
 
-  <nav class="page-dots" aria-label="Portfolio pages">
-    <a href="#home" aria-label="Page 1"></a>
-    <a href="#journey" aria-label="Page 2"></a>
-    <a href="#achievements" aria-label="Page 3"></a>
-    <a href="#2024-recap" aria-label="Page 4"></a>
-    <a href="#gallery" aria-label="Page 5"></a>
-    <a href="#support" aria-label="Page 6"></a>
-  </nav>
+  <button class="quick-summary-fab quick-view-trigger" type="button" aria-haspopup="dialog" aria-controls="quick-summary">
+    <span>Start Here</span>
+    <b aria-hidden="true">＋</b>
+  </button>
+
+  <div class="quick-summary-shell" id="quick-summary" role="dialog" aria-modal="true" aria-labelledby="quick-summary-title" aria-hidden="true">
+    <button class="quick-summary-backdrop" type="button" aria-label="Close quick summary"></button>
+    <aside class="quick-summary-panel">
+      <div class="quick-summary-head">
+        <div>
+          <span class="quick-summary-kicker">START HERE</span>
+          <h2 id="quick-summary-title">Choose how you’d like to follow Zane’s journey.</h2>
+        </div>
+        <button class="quick-summary-close" type="button" aria-label="Close quick view">×</button>
+      </div>
+
+      <div class="quick-summary-intro">
+        <p>Zane has been selected to represent the <strong>Marikina Karate Team at Batang Pinoy 2026 in Bacolod</strong>. We created this site so family, friends and supporters can either learn more about the journey that brought him here or go directly to the support details for his competition needs.</p>
+      </div>
+
+      <div class="quick-choice-grid">
+        <a class="quick-choice-card" href="#about">
+          <span class="quick-choice-label">READ THE STORY</span>
+          <h3>See how Zane got here.</h3>
+          <p>From his first karate class at age five to 39 medals, belt promotions and his return to national-level competition.</p>
+          <strong>Read Zane’s journey <b aria-hidden="true">→</b></strong>
+        </a>
+
+        <a class="quick-choice-card support-choice" href="#support">
+          <span class="quick-choice-label">GO STRAIGHT TO SUPPORT</span>
+          <h3>See what Zane needs for Batang Pinoy.</h3>
+          <p>View the ₱48,000 competition gear goal, approved-equipment requirements, fund breakdown and verified payment options.</p>
+          <strong>View support details <b aria-hidden="true">→</b></strong>
+        </a>
+      </div>
+
+      <div class="quick-summary-mini">
+        <div>
+          <span>Competition gear goal</span>
+          <strong>₱48,000</strong>
+        </div>
+        <div>
+          <span>Raised so far</span>
+          <strong>₱3,500</strong>
+        </div>
+        <div>
+          <span>Still needed</span>
+          <strong>₱44,500</strong>
+        </div>
+      </div>
+
+      <p class="quick-summary-note">Already know Zane’s story? You can skip directly to the support section. Want the full context first? Start with his journey and achievements.</p>
+    </aside>
+  </div>
+
+  <div class="lightbox" id="gallery-lightbox" aria-hidden="true">
+    <button class="lightbox-close" type="button" aria-label="Close image viewer">×</button>
+    <button class="lightbox-nav lightbox-prev" type="button" aria-label="Previous image">‹</button>
+    <figure class="lightbox-stage">
+      <img class="lightbox-image" src="" alt="">
+      <figcaption>
+        <span class="lightbox-caption"></span>
+        <span class="lightbox-count"></span>
+      </figcaption>
+    </figure>
+    <button class="lightbox-nav lightbox-next" type="button" aria-label="Next image">›</button>
+  </div>
+
+  <footer class="sensei-footer">
+    <div class="theme-container">
+      <a class="sensei-brand" href="#home"><span class="brand-round">空</span><strong>Zane</strong></a>
+      <p>Zane Gabriel O. Gallana · Karate Journey</p>
+      <a href="#home">Back to top ↑</a>
+    </div>
+  </footer>
+
+  <script>
+
+
+    const toggle=document.querySelector('.menu-toggle');
+    const nav=document.querySelector('.sensei-nav');
+    toggle?.addEventListener('click',()=>{
+      const open=document.body.classList.toggle('nav-open');
+      toggle.setAttribute('aria-expanded',String(open));
+    });
+    nav?.querySelectorAll('a').forEach(a=>a.addEventListener('click',()=>{
+      document.body.classList.remove('nav-open');
+      toggle?.setAttribute('aria-expanded','false');
+    }));
+
+    const galleryItems=[...document.querySelectorAll('.gallery-item')];
+    const lightbox=document.querySelector('#gallery-lightbox');
+    const lightboxImage=lightbox?.querySelector('.lightbox-image');
+    const lightboxCaption=lightbox?.querySelector('.lightbox-caption');
+    const lightboxCount=lightbox?.querySelector('.lightbox-count');
+    const closeButton=lightbox?.querySelector('.lightbox-close');
+    const prevButton=lightbox?.querySelector('.lightbox-prev');
+    const nextButton=lightbox?.querySelector('.lightbox-next');
+    let activeIndex=0;
+    let lastFocused=null;
+
+    function renderLightbox(index){
+      if(!galleryItems.length||!lightbox||!lightboxImage) return;
+      activeIndex=(index+galleryItems.length)%galleryItems.length;
+      const image=galleryItems[activeIndex].querySelector('img');
+      lightboxImage.src=image.currentSrc||image.src;
+      lightboxImage.alt=image.alt;
+      if(lightboxCaption) lightboxCaption.textContent=image.alt;
+      if(lightboxCount) lightboxCount.textContent=(activeIndex+1)+' / '+galleryItems.length;
+    }
+
+    function openLightbox(index){
+      lastFocused=document.activeElement;
+      renderLightbox(index);
+      lightbox?.classList.add('is-open');
+      lightbox?.setAttribute('aria-hidden','false');
+      document.body.classList.add('lightbox-open');
+      closeButton?.focus();
+    }
+
+    function closeLightbox(){
+      lightbox?.classList.remove('is-open');
+      lightbox?.setAttribute('aria-hidden','true');
+      document.body.classList.remove('lightbox-open');
+      if(lastFocused instanceof HTMLElement) lastFocused.focus();
+    }
+
+    galleryItems.forEach((item,index)=>{
+      item.addEventListener('click',()=>openLightbox(index));
+    });
+
+    // Thirteen additional user-provided gallery photos.
+    // Load cards only when their assets exist in this deployment; this keeps
+    // existing gallery and lightbox working before the image upload finishes.
+    const addedGalleryPhotos=[
+      ["zane-gallery-01.jpg","Zane at the Laguna Governor's Cup karate event"],
+      ["zane-gallery-02.jpg","Karate competitors on the podium at the 20th PKTS championship"],
+      ["zane-gallery-03.jpg","Zane with his Go Am-a Zane sign at the 20th PKTS event"],
+      ["zane-gallery-04.jpg","Zane with an event official at the Governor's Cup podium"],
+      ["zane-gallery-05.jpg","Zane on the first-place podium at the Governor's Cup"],
+      ["zane-gallery-06.jpg","Zane at the KSK Open karate championship"],
+      ["zane-gallery-07.jpg","Competitors on the podium at the KSK Open championship"],
+      ["zane-gallery-08.jpg","Zane with a coach on the podium at the KSK Open"],
+      ["zane-gallery-09.jpg","Zane demonstrating a karate stance in sparring gear"],
+      ["zane-gallery-10.jpg","Zane and his karate teammates in uniform at a gathering"],
+      ["zane-gallery-11.jpg","Zane spending time with fellow karate athletes"],
+      ["zane-gallery-12.jpg","Zane at the 2nd All Luzon Karatedo Championship"],
+      ["zane-gallery-13.jpg","Zane with teammates and fellow karate athletes"]
+    ];
+    const galleryGrid=document.querySelector('.gallery-grid');
+    if(galleryGrid){
+      Promise.all(addedGalleryPhotos.map(async ([file,alt])=>{
+        const src='assets/'+file;
+        try{
+          const response=await fetch(src,{method:'HEAD',cache:'no-cache'});
+          if(!response.ok || !(response.headers.get('content-type')||'').startsWith('image/')) return null;
+          return {src,alt};
+        }catch(error){return null;}
+      })).then(photos=>{
+        for(const photo of photos){
+          if(!photo) continue;
+          const button=document.createElement('button');
+          button.type='button';
+          button.className='gallery-item';
+          button.setAttribute('aria-label','Open '+photo.alt);
+          const image=document.createElement('img');
+          image.src=photo.src;
+          image.alt=photo.alt;
+          image.loading='lazy';
+          image.decoding='async';
+          button.appendChild(image);
+          galleryGrid.appendChild(button);
+          galleryItems.push(button);
+          button.addEventListener('click',()=>openLightbox(galleryItems.indexOf(button)));
+        }
+      });
+    }
+    prevButton?.addEventListener('click',()=>renderLightbox(activeIndex-1));
+    nextButton?.addEventListener('click',()=>renderLightbox(activeIndex+1));
+    closeButton?.addEventListener('click',closeLightbox);
+    lightbox?.addEventListener('click',(event)=>{
+      if(event.target===lightbox) closeLightbox();
+    });
+    document.addEventListener('keydown',(event)=>{
+      if(!lightbox?.classList.contains('is-open')) return;
+      if(event.key==='Escape') closeLightbox();
+      if(event.key==='ArrowLeft') renderLightbox(activeIndex-1);
+      if(event.key==='ArrowRight') renderLightbox(activeIndex+1);
+    });
+
+
+    const achievementTable=document.querySelector('.achievement-table');
+    if(achievementTable){
+      const rows=[...achievementTable.querySelectorAll('tbody > tr')];
+      const yearRows=rows.filter(row=>row.classList.contains('year-row'));
+      yearRows.forEach((yearRow,index)=>{
+        const year=yearRow.textContent.trim();
+        const detailRows=[];
+        let next=yearRow.nextElementSibling;
+        while(next && !next.classList.contains('year-row')){
+          detailRows.push(next);
+          next=next.nextElementSibling;
+        }
+
+        yearRow.classList.add('year-accordion-row');
+        const cell=yearRow.querySelector('th');
+        if(cell){
+          cell.innerHTML=`
+            <button class="year-toggle" type="button" aria-expanded="${index===0}" aria-controls="year-${year}">
+              <span class="year-toggle-main">
+                <span class="year-toggle-year">${year}</span>
+                <span class="year-toggle-hint">${index===0 ? 'Showing results' : 'Click to view results'}</span>
+              </span>
+              <span class="year-toggle-icon" aria-hidden="true">${index===0 ? '−' : '+'}</span>
+            </button>`;
+        }
+
+        detailRows.forEach(row=>{
+          row.classList.add('year-detail-row');
+          row.dataset.year=year;
+          if(index!==0) row.hidden=true;
+        });
+
+        const button=yearRow.querySelector('.year-toggle');
+        button?.addEventListener('click',()=>{
+          const willOpen=button.getAttribute('aria-expanded')!=='true';
+
+          yearRows.forEach(otherYearRow=>{
+            const otherButton=otherYearRow.querySelector('.year-toggle');
+            if(!otherButton) return;
+            const otherYear=otherYearRow.textContent.match(/\d{4}/)?.[0];
+            const otherOpen=otherYear===year && willOpen;
+            otherButton.setAttribute('aria-expanded',String(otherOpen));
+            const hint=otherButton.querySelector('.year-toggle-hint');
+            const icon=otherButton.querySelector('.year-toggle-icon');
+            if(hint) hint.textContent=otherOpen ? 'Showing results' : 'Click to view results';
+            if(icon) icon.textContent=otherOpen ? '−' : '+';
+            achievementTable.querySelectorAll(`.year-detail-row[data-year="${otherYear}"]`).forEach(row=>{
+              row.hidden=!otherOpen;
+            });
+          });
+        });
+      });
+    }
+
+    const quickSummary=document.querySelector('#quick-summary');
+    const quickSummaryPanel=quickSummary?.querySelector('.quick-summary-panel');
+    const quickSummaryClose=quickSummary?.querySelector('.quick-summary-close');
+    const quickSummaryBackdrop=quickSummary?.querySelector('.quick-summary-backdrop');
+    const quickSummaryTriggers=[...document.querySelectorAll('.quick-view-trigger')];
+    let quickSummaryLastFocused=null;
+
+    function openQuickSummary(){
+      if(!quickSummary) return;
+      quickSummaryLastFocused=document.activeElement;
+      quickSummary.classList.add('is-open');
+      quickSummary.setAttribute('aria-hidden','false');
+      document.body.classList.add('quick-summary-open');
+      document.body.classList.remove('nav-open');
+      toggle?.setAttribute('aria-expanded','false');
+      window.setTimeout(()=>quickSummaryClose?.focus(),60);
+    }
+
+    function closeQuickSummary(){
+      if(!quickSummary) return;
+      quickSummary.classList.remove('is-open');
+      quickSummary.setAttribute('aria-hidden','true');
+      document.body.classList.remove('quick-summary-open');
+      if(quickSummaryLastFocused instanceof HTMLElement) quickSummaryLastFocused.focus();
+    }
+
+    quickSummaryTriggers.forEach(trigger=>trigger.addEventListener('click',openQuickSummary));
+    quickSummaryClose?.addEventListener('click',closeQuickSummary);
+    quickSummaryBackdrop?.addEventListener('click',closeQuickSummary);
+    quickSummaryPanel?.querySelectorAll('a').forEach(link=>link.addEventListener('click',closeQuickSummary));
+
+    document.addEventListener('keydown',(event)=>{
+      if(event.key==='Escape' && quickSummary?.classList.contains('is-open')) closeQuickSummary();
+    });
+
+
+    document.querySelectorAll('.copy-payment').forEach(button=>{
+      button.addEventListener('click',async()=>{
+        const value=button.dataset.copy||'';
+        if(!value) return;
+        try{
+          await navigator.clipboard.writeText(value);
+          const original=button.textContent;
+          button.textContent='Copied';
+          window.setTimeout(()=>button.textContent=original,1400);
+        }catch{
+          button.textContent='Copy manually';
+        }
+      });
+    });
+
+  </script>
 </body>
 </html>

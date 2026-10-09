@@ -1129,6 +1129,53 @@
     galleryItems.forEach((item,index)=>{
       item.addEventListener('click',()=>openLightbox(index));
     });
+
+    // Thirteen additional user-provided gallery photos.
+    // Load cards only when their assets exist in this deployment; this keeps
+    // existing gallery and lightbox working before the image upload finishes.
+    const addedGalleryPhotos=[
+      ["zane-gallery-01.jpg","Zane at the Laguna Governor's Cup karate event"],
+      ["zane-gallery-02.jpg","Karate competitors on the podium at the 20th PKTS championship"],
+      ["zane-gallery-03.jpg","Zane with his Go Am-a Zane sign at the 20th PKTS event"],
+      ["zane-gallery-04.jpg","Zane with an event official at the Governor's Cup podium"],
+      ["zane-gallery-05.jpg","Zane on the first-place podium at the Governor's Cup"],
+      ["zane-gallery-06.jpg","Zane at the KSK Open karate championship"],
+      ["zane-gallery-07.jpg","Competitors on the podium at the KSK Open championship"],
+      ["zane-gallery-08.jpg","Zane with a coach on the podium at the KSK Open"],
+      ["zane-gallery-09.jpg","Zane demonstrating a karate stance in sparring gear"],
+      ["zane-gallery-10.jpg","Zane and his karate teammates in uniform at a gathering"],
+      ["zane-gallery-11.jpg","Zane spending time with fellow karate athletes"],
+      ["zane-gallery-12.jpg","Zane at the 2nd All Luzon Karatedo Championship"],
+      ["zane-gallery-13.jpg","Zane with teammates and fellow karate athletes"]
+    ];
+    const galleryGrid=document.querySelector('.gallery-grid');
+    if(galleryGrid){
+      Promise.all(addedGalleryPhotos.map(async ([file,alt])=>{
+        const src='assets/'+file;
+        try{
+          const response=await fetch(src,{method:'HEAD',cache:'no-cache'});
+          if(!response.ok || !(response.headers.get('content-type')||'').startsWith('image/')) return null;
+          return {src,alt};
+        }catch(error){return null;}
+      })).then(photos=>{
+        for(const photo of photos){
+          if(!photo) continue;
+          const button=document.createElement('button');
+          button.type='button';
+          button.className='gallery-item';
+          button.setAttribute('aria-label','Open '+photo.alt);
+          const image=document.createElement('img');
+          image.src=photo.src;
+          image.alt=photo.alt;
+          image.loading='lazy';
+          image.decoding='async';
+          button.appendChild(image);
+          galleryGrid.appendChild(button);
+          galleryItems.push(button);
+          button.addEventListener('click',()=>openLightbox(galleryItems.indexOf(button)));
+        }
+      });
+    }
     prevButton?.addEventListener('click',()=>renderLightbox(activeIndex-1));
     nextButton?.addEventListener('click',()=>renderLightbox(activeIndex+1));
     closeButton?.addEventListener('click',closeLightbox);

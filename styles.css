@@ -3774,3 +3774,168 @@ body.lightbox-open{overflow:hidden}
     transform: none !important;
   }
 }
+
+
+/* JPGFORMAT / Zane: compact supporting sections (October 2026) */
+/* Retain all content and interactive behavior while reducing scroll length. */
+
+/* HOW HE GOT HERE — shorter overview and an internally scrollable full record. */
+.theme-achievements{padding-top:42px;padding-bottom:54px}
+.theme-achievements .section-lead h2{font-size:clamp(29px,3.1vw,43px);line-height:1.12}
+.theme-achievements .medal-summary{margin-top:24px}
+.theme-achievements .medal-summary>div{min-height:85px;gap:10px}
+.theme-achievements .medal-summary strong{font-size:36px}
+.theme-achievements .medal-summary .medal{width:27px}
+.theme-achievements .medal-summary span{font-size:11px}
+.theme-achievements .achievement-table-wrap{
+  margin-top:24px;
+  max-height:580px;
+  overflow:auto;
+  overscroll-behavior:contain;
+}
+.theme-achievements .achievement-table th,
+.theme-achievements .achievement-table td{padding:11px 12px}
+.theme-achievements .achievement-table thead th{padding-top:12px;padding-bottom:12px}
+.theme-achievements .achievement-table tbody td{font-size:12px;line-height:1.45}
+.theme-achievements .achievement-table tbody td:nth-child(2){font-size:15px}
+.theme-achievements .year-toggle{padding:12px 12px}
+.theme-achievements .year-toggle-year{font-size:27px}
+.theme-achievements .year-toggle-icon{width:30px;height:30px;flex-basis:30px;font-size:20px}
+.theme-achievements .promotion-row td{padding:7px 12px}
+.theme-achievements .promotion-highlight{min-height:0;padding:8px 10px}
+
+/* RETURNING TO THE NATIONAL STAGE — concise event spotlight. */
+.comeback-section{padding:28px 0 34px}
+.comeback-section .support-event{padding:22px;border-radius:22px}
+.comeback-section .spotlight-topline{margin-bottom:14px}
+.comeback-section .spotlight-badge{min-height:28px;padding:6px 11px;font-size:9px}
+.comeback-section .spotlight-grid{grid-template-columns:minmax(0,32%) minmax(0,1fr);gap:25px}
+.comeback-section .event-logo-card{padding:14px;gap:10px;border-radius:16px}
+.comeback-section .event-logo-card img{max-width:330px;max-height:240px;object-fit:contain}
+.comeback-section .support-story{padding:0 8px 0 0}
+.comeback-section .support-story h2{font-size:clamp(26px,3vw,36px);margin:7px 0 11px}
+.comeback-section .selection-copy,
+.comeback-section .spotlight-note{font-size:13px;line-height:1.55}
+.comeback-section .spotlight-note{margin-top:10px}
+.comeback-section .event-meta{gap:7px;margin-top:14px}
+.comeback-section .event-meta span{padding:6px 10px;font-size:10px}
+
+/* GALLERY — denser thumbnail display; full-size lightbox remains unchanged. */
+.theme-gallery{padding:50px 0 55px}
+.theme-gallery .section-lead h2{font-size:clamp(29px,3vw,42px);line-height:1.12}
+.theme-gallery .section-lead>p{font-size:13px;line-height:1.55}
+.theme-gallery .gallery-grid{
+  margin-top:25px;
+  grid-auto-rows:145px;
+  gap:8px;
+}
+
+/* WHAT COMES WITH THE OPPORTUNITY — shorter information card. */
+.theme-support{padding-top:36px;padding-bottom:65px}
+.theme-support .support-wrap{gap:28px}
+.theme-support .support-bridge{
+  grid-template-columns:minmax(150px,24%) minmax(0,1fr);
+  gap:20px;
+  margin:0;
+  padding:23px 28px;
+  border-radius:18px;
+}
+.theme-support .support-bridge-label span{font-size:10px}
+.theme-support .support-bridge-copy h3{font-size:26px;margin:0 0 9px}
+.theme-support .support-bridge-copy p{font-size:13px;line-height:1.6}
+.theme-support .stage-dropdown{margin-top:15px}
+.theme-support .stage-dropdown summary{padding:13px 0 12px;gap:12px}
+.theme-support .stage-dropdown summary>strong{font-size:17px}
+
+/* BATANG PINOY 2026 COMPETITION GEAR FUND — compact progress panel. */
+.theme-support .campaign-card{padding:32px 38px;border-radius:20px}
+.theme-support .campaign-top{gap:24px}
+.theme-support .campaign-kicker{margin-bottom:9px;font-size:10px}
+.theme-support .campaign-card h2{font-size:clamp(28px,3vw,36px)}
+.theme-support .campaign-top>div:first-child>p:last-child{
+  margin-top:11px;
+  max-width:780px;
+  font-size:12.5px;
+  line-height:1.6;
+}
+.theme-support .campaign-goal{min-width:170px}
+.theme-support .campaign-goal strong{font-size:43px}
+.theme-support .campaign-stats{margin-top:20px}
+.theme-support .campaign-stats>div{padding:13px 0;gap:4px}
+.theme-support .campaign-stats>div+div{padding-left:18px}
+.theme-support .campaign-stats strong{font-size:20px}
+.theme-support .campaign-deadline{margin-top:16px;padding:11px 14px;gap:12px}
+.theme-support .campaign-deadline strong{font-size:18px}
+.theme-support .campaign-deadline p{font-size:10.5px;line-height:1.45}
+.theme-support .fund-progress{height:10px;margin-top:18px}
+.theme-support .progress-caption{margin-top:7px}
+
+/* WAYS TO SUPPORT ZANE — smaller cards, but readable/scannable QR codes. */
+.theme-support .support-payment{padding:30px 34px;border-radius:20px}
+.theme-support .support-payment-intro{gap:22px;padding-bottom:18px}
+.theme-support .support-payment-intro h2{font-size:clamp(28px,3vw,36px);margin-top:4px}
+.theme-support .support-payment-intro>p:last-child{font-size:13px;line-height:1.6}
+.theme-support .support-payment-grid{margin-top:18px;gap:12px}
+.theme-support .payment-method-card{padding:16px;gap:12px;border-radius:16px}
+.theme-support .payment-qr-live{width:min(100%,225px);margin-inline:auto;padding:12px}
+.theme-support .payment-details-live>div{padding:9px 0;gap:3px}
+.theme-support .payment-method-note{padding-top:10px;line-height:1.5}
+.theme-support .payment-trust-note{padding:12px 16px;margin-top:12px}
+
+@media (max-width:980px){
+  .comeback-section .spotlight-grid{grid-template-columns:minmax(0,36%) minmax(0,1fr);gap:16px}
+  .theme-support .campaign-top{gap:18px}
+}
+@media (max-width:760px){
+  .theme-achievements{padding-top:30px;padding-bottom:38px}
+  .theme-achievements .medal-summary{margin-top:18px}
+  .theme-achievements .medal-summary>div{min-height:76px;gap:7px}
+  .theme-achievements .medal-summary strong{font-size:30px}
+  .theme-achievements .medal-summary .medal{width:23px}
+  .theme-achievements .achievement-table-wrap{margin-top:16px;max-height:440px}
+  .theme-achievements .year-toggle{padding:12px 6px}
+  .theme-gallery{padding:34px 0 40px}
+  .theme-gallery .gallery-grid{grid-template-columns:repeat(2,minmax(0,1fr));grid-auto-rows:145px;margin-top:17px;gap:7px}
+  .theme-gallery .gallery-grid .tall{grid-row:span 2;grid-column:auto}
+  .theme-gallery .gallery-grid .wide{grid-column:span 2;grid-row:auto}
+  .comeback-section{padding:22px 0 28px}
+  .comeback-section .support-event{padding:16px;border-radius:18px}
+  .comeback-section .spotlight-topline{gap:8px;margin-bottom:12px}
+  .comeback-section .spotlight-grid{grid-template-columns:minmax(0,1fr);gap:14px}
+  .comeback-section .event-logo-card{min-height:0;padding:10px}
+  .comeback-section .event-logo-card img{max-width:245px;max-height:160px}
+  .comeback-section .support-story{padding:0}
+  .comeback-section .support-story h2{font-size:27px;margin:7px 0 10px}
+  .comeback-section .selection-copy,.comeback-section .spotlight-note{font-size:12.5px;line-height:1.55}
+  .comeback-section .event-meta{margin-top:12px}
+  .theme-support{padding-top:25px;padding-bottom:45px}
+  .theme-support .support-wrap{gap:20px}
+  .theme-support .support-bridge{grid-template-columns:minmax(0,1fr);gap:10px;padding:18px}
+  .theme-support .support-bridge-copy h3{font-size:23px;margin-bottom:7px}
+  .theme-support .support-bridge-copy p{font-size:12.5px;line-height:1.55}
+  .theme-support .stage-dropdown summary{grid-template-columns:1fr 30px;gap:7px}
+  .theme-support .stage-dropdown summary>span{grid-column:1/-1;font-size:10px}
+  .theme-support .stage-dropdown summary>strong{font-size:15px}
+  .theme-support .campaign-card{padding:22px 18px;border-radius:18px}
+  .theme-support .campaign-top{grid-template-columns:minmax(0,1fr);gap:12px}
+  .theme-support .campaign-card h2{font-size:29px}
+  .theme-support .campaign-top>div:first-child>p:last-child{font-size:12px;line-height:1.55}
+  .theme-support .campaign-goal{text-align:left;min-width:0}
+  .theme-support .campaign-goal strong{font-size:38px}
+  .theme-support .campaign-stats{grid-template-columns:repeat(3,minmax(0,1fr));margin-top:16px}
+  .theme-support .campaign-stats>div,
+  .theme-support .campaign-stats>div+div{padding:12px 6px;border-right:1px solid rgba(255,255,255,.16);border-bottom:0}
+  .theme-support .campaign-stats>div:first-child{padding-left:0}
+  .theme-support .campaign-stats>div:last-child{border-right:0;padding-right:0}
+  .theme-support .campaign-stats span{font-size:9px;line-height:1.4}
+  .theme-support .campaign-stats strong{font-size:18px}
+  .theme-support .campaign-deadline{grid-template-columns:1fr;gap:5px;padding:12px}
+  .theme-support .campaign-deadline strong{font-size:17px}
+  .theme-support .support-payment{padding:21px 17px;border-radius:18px}
+  .theme-support .support-payment-intro{grid-template-columns:1fr;gap:9px;padding-bottom:15px}
+  .theme-support .support-payment-intro h2{font-size:28px}
+  .theme-support .support-payment-intro>p:last-child{font-size:12px}
+  .theme-support .support-payment-grid-live{grid-template-columns:1fr;gap:10px;margin-top:14px}
+  .theme-support .payment-method-card,.theme-support .payment-method-card:last-child{grid-column:auto;padding:15px}
+  .theme-support .payment-qr-live{width:min(100%,225px);padding:10px}
+}

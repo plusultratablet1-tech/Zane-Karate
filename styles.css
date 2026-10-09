@@ -3754,3 +3754,21 @@ body.lightbox-open{overflow:hidden}
   .theme-about .about-photo.restored-about-photo{height:360px !important}
   .theme-about .about-photo.restored-about-photo img{height:350px !important}
 }
+
+
+/* Hero spacing: bring medal portrait closer to the headline without cropping. */
+@media (min-width: 1051px) {
+  .hero-right .hero-medal-image {
+    transform: translateX(-78px) !important;
+  }
+}
+@media (min-width: 761px) and (max-width: 1050px) {
+  .hero-right .hero-medal-image {
+    transform: translateX(-30px) !important;
+  }
+}
+@media (max-width: 760px) {
+  .hero-right .hero-medal-image {
+    transform: none !important;
+  }
+}

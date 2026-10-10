@@ -3983,3 +3983,54 @@ body.lightbox-open{overflow:hidden}
     margin-top:10px;
   }
 }
+
+
+/* Medals So Far: expandable first highlight (pilot) */
+.martial-strip .martial-medals-toggle{
+  flex:0 0 auto;
+  display:inline-flex;
+  align-items:center;
+  justify-content:center;
+  gap:7px;
+  white-space:nowrap;
+  border:1px solid rgba(191,43,43,.32);
+  border-radius:999px;
+  padding:10px 13px;
+  background:rgba(191,43,43,.055);
+  color:var(--primary);
+  font-family:"Averia Serif Libre",serif;
+  font-size:17px;
+  font-weight:600;
+  cursor:pointer;
+  transition:background .2s ease,border-color .2s ease;
+}
+.martial-strip .martial-medals-toggle:hover,
+.martial-strip .martial-medals-toggle[aria-expanded="true"]{
+  background:rgba(191,43,43,.14);
+  border-color:var(--accent);
+}
+.martial-strip .martial-medals-toggle:focus-visible{
+  outline:3px solid var(--accent);
+  outline-offset:3px;
+}
+.martial-strip .martial-medals-toggle b{margin-right:0}
+.martial-toggle-indicator{
+  display:inline-grid;
+  place-items:center;
+  width:22px;
+  height:22px;
+  margin-left:4px;
+  border:1px solid rgba(191,43,43,.40);
+  border-radius:50%;
+  color:var(--accent);
+  font-family:Arial,sans-serif;
+  font-size:17px;
+  font-weight:400;
+  line-height:1;
+}
+.theme-achievements[hidden]{display:none!important}
+#achievements{scroll-margin-top:88px}
+@media(max-width:760px){
+  .martial-strip .martial-medals-toggle{padding:8px 11px;font-size:16px}
+  .martial-toggle-indicator{width:21px;height:21px}
+}

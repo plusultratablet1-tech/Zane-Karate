@@ -3985,9 +3985,10 @@ body.lightbox-open{overflow:hidden}
 }
 
 
-/* Expandable highlights: Medals So Far and Beyond the Mat */
+/* Expandable highlights: Medals So Far, Beyond the Mat, and Moments from the Journey */
 .martial-strip .martial-medals-toggle,
-.martial-strip .martial-academics-toggle{
+.martial-strip .martial-academics-toggle,
+.martial-strip .martial-gallery-toggle{
   flex:0 0 auto;
   display:inline-flex;
   align-items:center;
@@ -4008,17 +4009,21 @@ body.lightbox-open{overflow:hidden}
 .martial-strip .martial-medals-toggle:hover,
 .martial-strip .martial-medals-toggle[aria-expanded="true"],
 .martial-strip .martial-academics-toggle:hover,
-.martial-strip .martial-academics-toggle[aria-expanded="true"]{
+.martial-strip .martial-academics-toggle[aria-expanded="true"],
+.martial-strip .martial-gallery-toggle:hover,
+.martial-strip .martial-gallery-toggle[aria-expanded="true"]{
   background:rgba(191,43,43,.14);
   border-color:var(--accent);
 }
 .martial-strip .martial-medals-toggle:focus-visible,
-.martial-strip .martial-academics-toggle:focus-visible{
+.martial-strip .martial-academics-toggle:focus-visible,
+.martial-strip .martial-gallery-toggle:focus-visible{
   outline:3px solid var(--accent);
   outline-offset:3px;
 }
 .martial-strip .martial-medals-toggle b,
-.martial-strip .martial-academics-toggle b{margin-right:0}
+.martial-strip .martial-academics-toggle b,
+.martial-strip .martial-gallery-toggle b{margin-right:0}
 .martial-toggle-indicator{
   display:inline-grid;
   place-items:center;
@@ -4034,11 +4039,14 @@ body.lightbox-open{overflow:hidden}
   line-height:1;
 }
 .theme-achievements[hidden],
-.academic-story-wrap[hidden]{display:none!important}
+.academic-story-wrap[hidden],
+.theme-gallery[hidden]{display:none!important}
 #achievements,
-#academics{scroll-margin-top:88px}
+#academics,
+#gallery{scroll-margin-top:88px}
 @media(max-width:760px){
   .martial-strip .martial-medals-toggle,
-  .martial-strip .martial-academics-toggle{padding:8px 11px;font-size:16px}
+  .martial-strip .martial-academics-toggle,
+  .martial-strip .martial-gallery-toggle{padding:8px 11px;font-size:16px}
   .martial-toggle-indicator{width:21px;height:21px}
 }

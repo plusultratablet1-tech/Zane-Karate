@@ -3789,9 +3789,10 @@ body.lightbox-open{overflow:hidden}
 .theme-achievements .medal-summary span{font-size:11px}
 .theme-achievements .achievement-table-wrap{
   margin-top:24px;
-  max-height:580px;
-  overflow:auto;
-  overscroll-behavior:contain;
+  max-height:none;
+  overflow-x:auto;
+  overflow-y:visible;
+  overscroll-behavior:auto;
 }
 .theme-achievements .achievement-table th,
 .theme-achievements .achievement-table td{padding:11px 12px}
@@ -3892,7 +3893,7 @@ body.lightbox-open{overflow:hidden}
   .theme-achievements .medal-summary>div{min-height:76px;gap:7px}
   .theme-achievements .medal-summary strong{font-size:30px}
   .theme-achievements .medal-summary .medal{width:23px}
-  .theme-achievements .achievement-table-wrap{margin-top:16px;max-height:440px}
+  .theme-achievements .achievement-table-wrap{margin-top:16px;max-height:none}
   .theme-achievements .year-toggle{padding:12px 6px}
   .theme-gallery{padding:34px 0 40px}
   .theme-gallery .gallery-grid{grid-template-columns:repeat(2,minmax(0,1fr));grid-auto-rows:145px;margin-top:17px;gap:7px}

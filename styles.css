@@ -3962,3 +3962,23 @@ body.lightbox-open{overflow:hidden}
   .comeback-section + .national-bridge .national-bridge-inner{padding-top:16px}
   .supporter-wall .supporter-wall-note p{font-size:12px}
 }
+
+
+/* Combined comeback-and-opportunity narrative */
+.theme-support .support-bridge-copy .bridge-paragraph{
+  margin:0;
+  max-width:920px;
+  line-height:1.65;
+}
+.theme-support .support-bridge-copy .bridge-paragraph + .bridge-paragraph{
+  margin-top:12px;
+}
+.theme-support .support-bridge-copy .bridge-paragraph strong{
+  color:var(--primary);
+  font-weight:700;
+}
+@media(max-width:760px){
+  .theme-support .support-bridge-copy .bridge-paragraph + .bridge-paragraph{
+    margin-top:10px;
+  }
+}

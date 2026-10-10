@@ -119,7 +119,9 @@
     </section>
 
         <div class="martial-strip" aria-label="Zane's karate highlights">
-      <span><b>始</b> Started at Age 5</span>
+      <button class="martial-medals-toggle" type="button" aria-controls="achievements" aria-expanded="false" aria-label="Show Medals So Far">
+        <b>賞</b> Medals So Far <small class="martial-toggle-indicator" aria-hidden="true">+</small>
+      </button>
       <span><b>紫</b> Purple Belt</span>
       <span><b>賞</b> 39 Medals</span>
       <span><b>形</b> Kata &amp; Kumite</span>
@@ -127,7 +129,7 @@
       <span><b>国</b> Batang Pinoy 2026</span>
     </div>
 
-    <section class="theme-achievements" id="achievements">
+    <section class="theme-achievements" id="achievements" hidden>
       <div class="theme-container">
         <div class="section-lead compact achievements-heading">
           <div>
@@ -1016,6 +1018,32 @@
       document.body.classList.remove('nav-open');
       toggle?.setAttribute('aria-expanded','false');
     }));
+
+    // Keep the full achievements record collapsible without trapping page scrolling.
+    const medalsToggle=document.querySelector('.martial-medals-toggle');
+    const medalsPanel=document.querySelector('#achievements');
+    function showMedals(open,scrollToPanel=false){
+      if(!medalsPanel||!medalsToggle) return;
+      medalsPanel.hidden=!open;
+      medalsToggle.setAttribute('aria-expanded',String(open));
+      medalsToggle.setAttribute('aria-label',open ? 'Hide Medals So Far' : 'Show Medals So Far');
+      const indicator=medalsToggle.querySelector('.martial-toggle-indicator');
+      if(indicator) indicator.textContent=open ? '−' : '+';
+      if(open && scrollToPanel){
+        medalsPanel.scrollIntoView({behavior:'auto',block:'start'});
+      }
+    }
+    medalsToggle?.addEventListener('click',()=>{
+      showMedals(medalsPanel?.hidden===true,medalsPanel?.hidden===true);
+    });
+    // Existing Achievements navigation links and direct URLs open the panel first.
+    document.querySelectorAll('a[href="#achievements"]').forEach(link=>{
+      link.addEventListener('click',()=>showMedals(true));
+    });
+    window.addEventListener('hashchange',()=>{
+      if(window.location.hash==='#achievements') showMedals(true);
+    });
+    if(window.location.hash==='#achievements') showMedals(true);
 
     const galleryItems=[...document.querySelectorAll('.gallery-item')];
     const lightbox=document.querySelector('#gallery-lightbox');

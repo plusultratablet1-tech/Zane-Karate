@@ -4270,3 +4270,23 @@ body.lightbox-open{overflow:hidden}
   }
   .theme-support .support-action-panels>.fund-dropdown>summary{padding:17px 15px}
 }
+
+
+/* Three centered karate highlights after About Zane */
+.martial-strip.martial-strip-centered{
+  justify-content:center;
+  flex-wrap:wrap;
+  gap:12px 24px;
+  height:auto;
+  min-height:94px;
+  padding:18px 20px;
+  overflow:visible;
+}
+@media(max-width:760px){
+  .martial-strip.martial-strip-centered{
+    justify-content:center;
+    gap:10px;
+    min-height:78px;
+    padding:15px 12px;
+  }
+}

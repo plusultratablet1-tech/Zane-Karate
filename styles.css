@@ -1476,7 +1476,7 @@ body.lightbox-open{overflow:hidden}
 .campaign-disclaimer{
   margin:-38px 0 0;
   padding-top:22px;
-  border-top:1px solid var(--line);
+  border-top:none;
   color:#8b837e;
   font-size:10px;
   line-height:1.7;

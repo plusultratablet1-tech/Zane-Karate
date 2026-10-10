@@ -4076,68 +4076,87 @@ body.lightbox-open{overflow:hidden}
 }
 
 
-/* Centered Batang Pinoy support introduction and relocated champions dropdown */
+/* Compact, unified Batang Pinoy support introduction and Zane's message */
 .theme-support .support-bridge{
   grid-template-columns:minmax(0,1fr);
-  gap:16px;
-  padding:clamp(34px,4vw,60px) clamp(22px,5vw,74px);
+  gap:10px;
+  padding:clamp(24px,2.8vw,34px) clamp(20px,4vw,46px);
 }
-.theme-support .support-bridge-label{
-  justify-content:center;
-}
+.theme-support .support-bridge-label{justify-content:center}
 .theme-support .support-bridge-label span{
-  font-size:clamp(13px,1.4vw,16px);
-  line-height:1.5;
+  font-size:clamp(11px,1.2vw,13px);
+  line-height:1.4;
   text-align:center;
 }
-.theme-support .support-bridge-copy{
-  text-align:center;
-}
+.theme-support .support-bridge-copy{text-align:center}
 .theme-support .support-bridge-copy h3{
-  margin:0 auto 22px;
-  max-width:920px;
-  font-size:clamp(36px,4.6vw,56px);
-  line-height:1.13;
+  max-width:800px;
+  margin:0 auto 14px;
+  font-size:clamp(29px,3.2vw,39px);
+  line-height:1.16;
 }
 .theme-support .support-bridge-copy .bridge-paragraph{
+  max-width:900px;
   margin:0 auto;
-  max-width:870px;
-  font-size:clamp(16px,1.55vw,18px);
-  line-height:1.78;
+  font-size:clamp(14px,1.3vw,16px);
+  line-height:1.65;
 }
-.theme-support .support-bridge-copy .bridge-paragraph + .bridge-paragraph{
-  margin-top:20px;
+.theme-support .support-bridge-copy .bridge-paragraph + .bridge-paragraph{margin-top:12px}
+.theme-support .support-bridge > .support-appeal{
+  width:100%;
+  margin:12px 0 0;
+  border-radius:17px;
 }
-.comeback-section .stage-dropdown{
-  margin:22px 0 0;
-  padding:8px 28px 12px;
-  border:1px solid rgba(191,43,43,.16);
-  border-radius:20px;
-  background:#fff;
+.theme-support .support-bridge .appeal-copy{
+  padding:22px clamp(18px,3vw,38px);
 }
-.comeback-section .stage-dropdown summary>strong{
-  font-size:clamp(19px,2vw,24px);
+.theme-support .support-bridge .appeal-copy blockquote{
+  max-width:950px;
+  font-size:clamp(21px,2.25vw,27px);
+  line-height:1.28;
 }
+.theme-support .support-bridge .appeal-note{
+  max-width:850px;
+  margin-top:12px;
+  padding-top:12px;
+  font-size:12.5px;
+  line-height:1.55;
+}
+/* Place the expandable champions story directly inside the National Stage card */
+.comeback-section .support-event > .stage-dropdown{
+  position:relative;
+  z-index:2;
+  margin:16px 0 0;
+  padding:8px 0 0;
+  border:0;
+  border-top:1px solid rgba(191,43,43,.23);
+  border-radius:0;
+  background:transparent;
+}
+.comeback-section .stage-dropdown summary>strong{font-size:clamp(18px,1.8vw,21px)}
 @media(max-width:760px){
   .theme-support .support-bridge{
     grid-template-columns:minmax(0,1fr);
-    gap:13px;
-    padding:32px 20px;
+    gap:9px;
+    padding:23px 17px;
   }
-  .theme-support .support-bridge-label span{font-size:12px}
+  .theme-support .support-bridge-label span{font-size:11px}
   .theme-support .support-bridge-copy h3{
-    margin-bottom:18px;
-    font-size:clamp(32px,8vw,40px);
+    margin-bottom:12px;
+    font-size:clamp(27px,7vw,33px);
   }
   .theme-support .support-bridge-copy .bridge-paragraph{
-    font-size:15px;
-    line-height:1.7;
+    font-size:13.5px;
+    line-height:1.6;
   }
-  .theme-support .support-bridge-copy .bridge-paragraph + .bridge-paragraph{margin-top:16px}
-  .comeback-section .stage-dropdown{
-    margin-top:16px;
-    padding:4px 18px 12px;
-    border-radius:16px;
+  .theme-support .support-bridge-copy .bridge-paragraph + .bridge-paragraph{margin-top:11px}
+  .theme-support .support-bridge > .support-appeal{
+    margin-top:9px;
+    border-radius:14px;
   }
-  .comeback-section .stage-dropdown summary>strong{font-size:18px}
+  .theme-support .support-bridge .appeal-copy{padding:20px 16px}
+  .theme-support .support-bridge .appeal-copy blockquote{font-size:20px}
+  .theme-support .support-bridge .appeal-note{font-size:12px}
+  .comeback-section .support-event > .stage-dropdown{margin-top:13px;padding-top:5px}
+  .comeback-section .stage-dropdown summary>strong{font-size:17px}
 }

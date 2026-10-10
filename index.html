@@ -122,7 +122,9 @@
       <button class="martial-medals-toggle" type="button" aria-controls="achievements" aria-expanded="false" aria-label="Show Medals So Far">
         <b>賞</b> Medals So Far <small class="martial-toggle-indicator" aria-hidden="true">+</small>
       </button>
-      <span><b>紫</b> Purple Belt</span>
+      <button class="martial-academics-toggle" type="button" aria-controls="academics" aria-expanded="false" aria-label="Show Beyond the Mat">
+        <b>学</b> Beyond the Mat <small class="martial-toggle-indicator" aria-hidden="true">+</small>
+      </button>
       <span><b>賞</b> 39 Medals</span>
       <span><b>形</b> Kata &amp; Kumite</span>
       <span><b>市</b> Marikina Team</span>
@@ -420,9 +422,9 @@
       </div>
     </section>
 
-    <div class="academic-story-wrap" id="academics">
+    <div class="academic-story-wrap" id="academics" hidden>
       <div class="theme-container">
-        <details class="academic-story">
+        <details class="academic-story" open>
                     <summary>
                       <div class="academic-story-copy">
                         <span class="academic-story-kicker">BEYOND THE MAT</span>
@@ -1044,6 +1046,35 @@
       if(window.location.hash==='#achievements') showMedals(true);
     });
     if(window.location.hash==='#achievements') showMedals(true);
+
+    // An independent dropdown for the full Beyond the Mat academic section.
+    const academicsToggle=document.querySelector('.martial-academics-toggle');
+    const academicsPanel=document.querySelector('#academics');
+    const academicStory=academicsPanel?.querySelector('.academic-story');
+    function showAcademics(open,scrollToPanel=false){
+      if(!academicsPanel||!academicsToggle) return;
+      academicsPanel.hidden=!open;
+      academicsToggle.setAttribute('aria-expanded',String(open));
+      academicsToggle.setAttribute('aria-label',open ? 'Hide Beyond the Mat' : 'Show Beyond the Mat');
+      const indicator=academicsToggle.querySelector('.martial-toggle-indicator');
+      if(indicator) indicator.textContent=open ? '−' : '+';
+      // First click reveals the complete section; grade-level rows remain expandable.
+      if(open && academicStory) academicStory.open=true;
+      if(open && scrollToPanel){
+        academicsPanel.scrollIntoView({behavior:'auto',block:'start'});
+      }
+    }
+    academicsToggle?.addEventListener('click',()=>{
+      const willOpen=academicsPanel?.hidden===true;
+      showAcademics(willOpen,willOpen);
+    });
+    document.querySelectorAll('a[href="#academics"]').forEach(link=>{
+      link.addEventListener('click',()=>showAcademics(true));
+    });
+    window.addEventListener('hashchange',()=>{
+      if(window.location.hash==='#academics') showAcademics(true);
+    });
+    if(window.location.hash==='#academics') showAcademics(true);
 
     const galleryItems=[...document.querySelectorAll('.gallery-item')];
     const lightbox=document.querySelector('#gallery-lightbox');

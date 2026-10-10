@@ -4050,3 +4050,27 @@ body.lightbox-open{overflow:hidden}
   .martial-strip .martial-gallery-toggle{padding:8px 11px;font-size:16px}
   .martial-toggle-indicator{width:21px;height:21px}
 }
+
+
+/* Medals So Far: red interactive highlight */
+.martial-strip .martial-medals-toggle{
+  background:var(--accent);
+  border-color:var(--accent);
+  color:#fff;
+}
+.martial-strip .martial-medals-toggle b{color:#fff}
+.martial-strip .martial-medals-toggle .martial-toggle-indicator{
+  color:#fff;
+  border-color:rgba(255,255,255,.85);
+  background:rgba(255,255,255,.1);
+}
+.martial-strip .martial-medals-toggle:hover,
+.martial-strip .martial-medals-toggle[aria-expanded="true"]{
+  background:#991f24;
+  border-color:#991f24;
+  color:#fff;
+}
+.martial-strip .martial-medals-toggle:focus-visible{
+  outline:3px solid #991f24;
+  outline-offset:3px;
+}

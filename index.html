@@ -125,7 +125,9 @@
       <button class="martial-academics-toggle" type="button" aria-controls="academics" aria-expanded="false" aria-label="Show Beyond the Mat">
         <b>学</b> Beyond the Mat <small class="martial-toggle-indicator" aria-hidden="true">+</small>
       </button>
-      <span><b>賞</b> 39 Medals</span>
+      <button class="martial-gallery-toggle" type="button" aria-controls="gallery" aria-expanded="false" aria-label="Show Moments from the Journey">
+        <b>影</b> Moments from the Journey <small class="martial-toggle-indicator" aria-hidden="true">+</small>
+      </button>
       <span><b>形</b> Kata &amp; Kumite</span>
       <span><b>市</b> Marikina Team</span>
       <span><b>国</b> Batang Pinoy 2026</span>
@@ -560,7 +562,7 @@
       </div>
     </div>
 
-    <section class="theme-gallery" id="gallery">
+    <section class="theme-gallery" id="gallery" hidden>
       <div class="theme-container">
         <div class="section-lead compact">
           <div><h2>Moments from the journey</h2></div>
@@ -1075,6 +1077,33 @@
       if(window.location.hash==='#academics') showAcademics(true);
     });
     if(window.location.hash==='#academics') showAcademics(true);
+
+    // Show and hide the photo gallery separately from medals and academics.
+    const galleryToggle=document.querySelector('.martial-gallery-toggle');
+    const galleryPanel=document.querySelector('#gallery');
+    function showGallery(open,scrollToPanel=false){
+      if(!galleryPanel||!galleryToggle) return;
+      galleryPanel.hidden=!open;
+      galleryToggle.setAttribute('aria-expanded',String(open));
+      galleryToggle.setAttribute('aria-label',open ? 'Hide Moments from the Journey' : 'Show Moments from the Journey');
+      const indicator=galleryToggle.querySelector('.martial-toggle-indicator');
+      if(indicator) indicator.textContent=open ? '−' : '+';
+      if(open && scrollToPanel){
+        galleryPanel.scrollIntoView({behavior:'auto',block:'start'});
+      }
+    }
+    galleryToggle?.addEventListener('click',()=>{
+      const willOpen=galleryPanel?.hidden===true;
+      showGallery(willOpen,willOpen);
+    });
+    // Keep the existing Gallery navigation link and direct gallery URLs usable.
+    document.querySelectorAll('a[href="#gallery"]').forEach(link=>{
+      link.addEventListener('click',()=>showGallery(true));
+    });
+    window.addEventListener('hashchange',()=>{
+      if(window.location.hash==='#gallery') showGallery(true);
+    });
+    if(window.location.hash==='#gallery') showGallery(true);
 
     const galleryItems=[...document.querySelectorAll('.gallery-item')];
     const lightbox=document.querySelector('#gallery-lightbox');

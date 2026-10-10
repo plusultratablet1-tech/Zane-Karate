@@ -4290,3 +4290,17 @@ body.lightbox-open{overflow:hidden}
     padding:15px 12px;
   }
 }
+
+
+/* Two payment methods only: GoTyme and BPI */
+.theme-support .support-payment-grid-two{
+  grid-template-columns:repeat(2,minmax(0,1fr));
+}
+.theme-support .support-payment-grid-two>.payment-method-card:last-child{
+  grid-column:auto;
+}
+@media(max-width:760px){
+  .theme-support .support-payment-grid-two{
+    grid-template-columns:minmax(0,1fr);
+  }
+}

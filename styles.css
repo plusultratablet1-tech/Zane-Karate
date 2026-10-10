@@ -4079,48 +4079,48 @@ body.lightbox-open{overflow:hidden}
 /* Compact, unified Batang Pinoy support introduction and Zane's message */
 .theme-support .support-bridge{
   grid-template-columns:minmax(0,1fr);
-  gap:10px;
-  padding:clamp(24px,2.8vw,34px) clamp(20px,4vw,46px);
+  gap:7px;
+  padding:clamp(18px,2vw,25px) clamp(18px,3vw,32px);
 }
 .theme-support .support-bridge-label{justify-content:center}
 .theme-support .support-bridge-label span{
-  font-size:clamp(11px,1.2vw,13px);
-  line-height:1.4;
+  font-size:clamp(10px,1vw,12px);
+  line-height:1.35;
   text-align:center;
 }
 .theme-support .support-bridge-copy{text-align:center}
 .theme-support .support-bridge-copy h3{
   max-width:800px;
-  margin:0 auto 14px;
-  font-size:clamp(29px,3.2vw,39px);
+  margin:0 auto 9px;
+  font-size:clamp(26px,2.65vw,33px);
   line-height:1.16;
 }
 .theme-support .support-bridge-copy .bridge-paragraph{
-  max-width:900px;
+  max-width:950px;
   margin:0 auto;
-  font-size:clamp(14px,1.3vw,16px);
-  line-height:1.65;
+  font-size:clamp(13px,1.12vw,14px);
+  line-height:1.52;
 }
-.theme-support .support-bridge-copy .bridge-paragraph + .bridge-paragraph{margin-top:12px}
+.theme-support .support-bridge-copy .bridge-paragraph + .bridge-paragraph{margin-top:8px}
 .theme-support .support-bridge > .support-appeal{
   width:100%;
-  margin:12px 0 0;
-  border-radius:17px;
+  margin:8px 0 0;
+  border-radius:15px;
 }
 .theme-support .support-bridge .appeal-copy{
-  padding:22px clamp(18px,3vw,38px);
+  padding:16px clamp(16px,2.5vw,28px);
 }
 .theme-support .support-bridge .appeal-copy blockquote{
   max-width:950px;
-  font-size:clamp(21px,2.25vw,27px);
-  line-height:1.28;
+  font-size:clamp(18px,1.8vw,22px);
+  line-height:1.25;
 }
 .theme-support .support-bridge .appeal-note{
   max-width:850px;
-  margin-top:12px;
-  padding-top:12px;
-  font-size:12.5px;
-  line-height:1.55;
+  margin-top:8px;
+  padding-top:8px;
+  font-size:12px;
+  line-height:1.45;
 }
 /* Place the expandable champions story directly inside the National Stage card */
 .comeback-section .support-event > .stage-dropdown{
@@ -4137,26 +4137,26 @@ body.lightbox-open{overflow:hidden}
 @media(max-width:760px){
   .theme-support .support-bridge{
     grid-template-columns:minmax(0,1fr);
-    gap:9px;
-    padding:23px 17px;
+    gap:7px;
+    padding:19px 15px;
   }
-  .theme-support .support-bridge-label span{font-size:11px}
+  .theme-support .support-bridge-label span{font-size:10px}
   .theme-support .support-bridge-copy h3{
-    margin-bottom:12px;
-    font-size:clamp(27px,7vw,33px);
+    margin-bottom:9px;
+    font-size:clamp(24px,6vw,29px);
   }
   .theme-support .support-bridge-copy .bridge-paragraph{
-    font-size:13.5px;
-    line-height:1.6;
+    font-size:13px;
+    line-height:1.52;
   }
-  .theme-support .support-bridge-copy .bridge-paragraph + .bridge-paragraph{margin-top:11px}
+  .theme-support .support-bridge-copy .bridge-paragraph + .bridge-paragraph{margin-top:8px}
   .theme-support .support-bridge > .support-appeal{
-    margin-top:9px;
-    border-radius:14px;
+    margin-top:7px;
+    border-radius:13px;
   }
-  .theme-support .support-bridge .appeal-copy{padding:20px 16px}
-  .theme-support .support-bridge .appeal-copy blockquote{font-size:20px}
-  .theme-support .support-bridge .appeal-note{font-size:12px}
+  .theme-support .support-bridge .appeal-copy{padding:15px 14px}
+  .theme-support .support-bridge .appeal-copy blockquote{font-size:18px}
+  .theme-support .support-bridge .appeal-note{font-size:11.5px}
   .comeback-section .support-event > .stage-dropdown{margin-top:13px;padding-top:5px}
   .comeback-section .stage-dropdown summary>strong{font-size:17px}
 }

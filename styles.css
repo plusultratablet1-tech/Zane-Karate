@@ -3985,8 +3985,9 @@ body.lightbox-open{overflow:hidden}
 }
 
 
-/* Medals So Far: expandable first highlight (pilot) */
-.martial-strip .martial-medals-toggle{
+/* Expandable highlights: Medals So Far and Beyond the Mat */
+.martial-strip .martial-medals-toggle,
+.martial-strip .martial-academics-toggle{
   flex:0 0 auto;
   display:inline-flex;
   align-items:center;
@@ -4005,15 +4006,19 @@ body.lightbox-open{overflow:hidden}
   transition:background .2s ease,border-color .2s ease;
 }
 .martial-strip .martial-medals-toggle:hover,
-.martial-strip .martial-medals-toggle[aria-expanded="true"]{
+.martial-strip .martial-medals-toggle[aria-expanded="true"],
+.martial-strip .martial-academics-toggle:hover,
+.martial-strip .martial-academics-toggle[aria-expanded="true"]{
   background:rgba(191,43,43,.14);
   border-color:var(--accent);
 }
-.martial-strip .martial-medals-toggle:focus-visible{
+.martial-strip .martial-medals-toggle:focus-visible,
+.martial-strip .martial-academics-toggle:focus-visible{
   outline:3px solid var(--accent);
   outline-offset:3px;
 }
-.martial-strip .martial-medals-toggle b{margin-right:0}
+.martial-strip .martial-medals-toggle b,
+.martial-strip .martial-academics-toggle b{margin-right:0}
 .martial-toggle-indicator{
   display:inline-grid;
   place-items:center;
@@ -4028,9 +4033,12 @@ body.lightbox-open{overflow:hidden}
   font-weight:400;
   line-height:1;
 }
-.theme-achievements[hidden]{display:none!important}
-#achievements{scroll-margin-top:88px}
+.theme-achievements[hidden],
+.academic-story-wrap[hidden]{display:none!important}
+#achievements,
+#academics{scroll-margin-top:88px}
 @media(max-width:760px){
-  .martial-strip .martial-medals-toggle{padding:8px 11px;font-size:16px}
+  .martial-strip .martial-medals-toggle,
+  .martial-strip .martial-academics-toggle{padding:8px 11px;font-size:16px}
   .martial-toggle-indicator{width:21px;height:21px}
 }

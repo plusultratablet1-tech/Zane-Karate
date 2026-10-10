@@ -3939,3 +3939,26 @@ body.lightbox-open{overflow:hidden}
   .theme-support .payment-method-card,.theme-support .payment-method-card:last-child{grid-column:auto;padding:15px}
   .theme-support .payment-qr-live{width:min(100%,225px);padding:10px}
 }
+
+
+/* Refine updated Zane logo and Batang Pinoy story order */
+/* Two-character mark stays legible inside the red circle, including on phones. */
+.sensei-brand .brand-round{
+  font-size:13px;
+  font-weight:700;
+  letter-spacing:-1px;
+  line-height:1;
+  white-space:nowrap;
+  flex-shrink:0;
+}
+/* Batang Pinoy spotlight leads; the background story follows as a concise bridge. */
+.comeback-section + .national-bridge{padding:10px 0 28px}
+.comeback-section + .national-bridge .national-bridge-inner{padding-top:22px}
+/* Supporter messages are only shown once received and approved. */
+.supporter-wall .supporter-wall-heading{margin-bottom:0}
+.supporter-wall .supporter-wall-note p{margin:0;font-size:13px;line-height:1.6}
+@media(max-width:760px){
+  .comeback-section + .national-bridge{padding:8px 0 24px}
+  .comeback-section + .national-bridge .national-bridge-inner{padding-top:16px}
+  .supporter-wall .supporter-wall-note p{font-size:12px}
+}
